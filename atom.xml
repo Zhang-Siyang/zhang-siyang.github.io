@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-03-31T17:39:05.218Z</updated>
+  <updated>2017-03-31T17:41:48.937Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="https://blog.zhangsy.me/2017/04/01/20170401-T-SQL-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/"/>
     <id>https://blog.zhangsy.me/2017/04/01/20170401-T-SQL-语句实训作业/</id>
     <published>2017-03-31T16:30:46.000Z</published>
-    <updated>2017-03-31T17:39:05.218Z</updated>
+    <updated>2017-03-31T17:41:48.937Z</updated>
     
     <content type="html"><![CDATA[<p>实验目标: 进一步熟悉 T-SQL 语句<br>实验人: ZhangSiyang<br>实验内容: 完成老师给出十四道题，详细见下</p>
+<a id="more"></a>
 <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
 <li><a href="#1. 创建名为stuDB的数据库…">1. 创建名为stuDB的数据库…</a></li>
 <li><a href="#2. 为数据库更名">2. 为数据库更名</a></li>
@@ -116,7 +117,6 @@
     <summary type="html">
     
       &lt;p&gt;实验目标: 进一步熟悉 T-SQL 语句&lt;br&gt;实验人: ZhangSiyang&lt;br&gt;实验内容: 完成老师给出十四道题，详细见下&lt;/p&gt;
-&lt;h4 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h4&gt;
     
     </summary>
     
