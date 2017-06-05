@@ -1,0 +1,758 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Guide,JDK,Java," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZhangSiyang 's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/ZhangSiyang_logo.png?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="JDK 的安装
+下载 JDK 安装包
+
+我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDK 的安装与配置【For Windows】">
+<meta property="og:url" content="https://blog.zhangsy.me/2017/02/21/JDK-的安装与配置【For-Windows】/index.html">
+<meta property="og:site_name" content="ZhangSiyang 's Blog">
+<meta property="og:description" content="JDK 的安装
+下载 JDK 安装包
+
+我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】">
+<meta property="og:image" content="https://i.imgur.com/yoy2QX0.png">
+<meta property="og:image" content="https://i.imgur.com/ccqQ6ae.png">
+<meta property="og:image" content="https://i.imgur.com/NxhRSVS.png">
+<meta property="og:image" content="https://i.imgur.com/vGn95lT.png">
+<meta property="og:image" content="https://i.imgur.com/lTMyMwM.png">
+<meta property="og:updated_time" content="2017-03-24T12:57:42.581Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JDK 的安装与配置【For Windows】">
+<meta name="twitter:description" content="JDK 的安装
+下载 JDK 安装包
+
+我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】">
+<meta name="twitter:image" content="https://i.imgur.com/yoy2QX0.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/02/21/JDK-的安装与配置【For-Windows】/"/>
+
+
+
+
+
+  <title>JDK 的安装与配置【For Windows】 | ZhangSiyang 's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZhangSiyang 's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.zhangsy.me/2017/02/21/JDK-的安装与配置【For-Windows】/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhangSiyang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/ZhangSiyang_logo_big.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZhangSiyang 's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JDK 的安装与配置【For Windows】</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-21T23:15:17+08:00">
+                2017-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="JDK-的安装"><a href="#JDK-的安装" class="headerlink" title="JDK 的安装"></a>JDK 的安装</h2><ol>
+<li>下载 JDK 安装包</li>
+</ol>
+<p>我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载<br><code>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</code></p>
+<p>选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】<br><a id="more"></a><br><img src="https://i.imgur.com/yoy2QX0.png" alt="Java 官网下载界面"></p>
+<ol>
+<li>安装其实很简单，下一步 下一步 下一步就好了，如果已经安装过 JDK 或 JDE，最好卸载干净之后再安装新版 JDK。</li>
+</ol>
+<h2 id="JDK的配置"><a href="#JDK的配置" class="headerlink" title="JDK的配置"></a>JDK的配置</h2><ol>
+<li><p>先寻找 JDK 安装到了哪里</p>
+<ol>
+<li>一般都是安装到了 <code>C:\Program Files\Java\jdk1.8.0_121</code> 这样的路径<br>文件夹下通常有以下文件：<img src="https://i.imgur.com/ccqQ6ae.png" alt="文件夹概览"><br><code>bin/ jre/ src.zip COPYRIGHT lib/ THIRDPARTYLICENSEREADME.txt db/ LICENSE THIRDPARTYLICENSEREADME-JAVAFX.txt include/ README.html javafx-src.zip release</code></li>
+<li>复制这个路径 </li>
+</ol>
+</li>
+</ol>
+<p>至此，安装完成，下一步配置 JDK 环境  </p>
+<ol>
+<li><p><code>Win</code> + <code>R</code> 打开运行，输入 <code>sysdm.cpl</code> ，回车 </p>
+<ol>
+<li><p>切换到 <code>高级</code> 选项卡，点击环境变量按钮，可参考下图<br><img src="https://i.imgur.com/NxhRSVS.png" alt="切换到 `高级` 选项卡，点击环境变量">  </p>
+<ol>
+<li><p>新建变量，名为 <code>JAVA_HOME</code> ,路径为 <code>C:\Program Files\Java\jdk1.8.0_121</code> 【就是我们刚才找到的那个安装路径】<br><img src="https://i.imgur.com/vGn95lT.png" alt="各个按钮的位置"></p>
+</li>
+<li><p>点击 Path ，点击编辑，点击 编辑文本 ，可参考下图<br><img src="https://i.imgur.com/lTMyMwM.png" alt="编辑文本按钮的位置"></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>在出来的一串字符的最前面添加 <code>%JAVA_HOME%/bin;%JAVA_HOME%/jre/bin;</code> 保存退出。</p>
+<pre><code>3.  新建变量，名为 `CLASSPATH` ,路径为 `.;%JAVA_HOME%/lib/dt.jar;%JAVA_HOME%/lib/tools.jar` 【千万不要忽略前面的那个点】
+
+4. 保存退出
+</code></pre><p>至此，配置完成，下一步检测安装是否正确</p>
+<ol>
+<li><p><code>Win</code> + <code>R</code> 打开运行，输入 <code>cmd</code> ，回车</p>
+<ol>
+<li><p>输入 <code>java -version</code> ，回车后出现如下内容即为正常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">java version &quot;1.8.0_121&quot;</div><div class="line">Java(TM) SE Runtime Environment (build 1.8.0_121-b13)</div><div class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)</div></pre></td></tr></table></figure>
+</li>
+<li><p>输入 <code>javac -version</code> ，回车后出现如下内容即为正常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javac 1.8.0_121</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<p>至此，安装与配置过程结束</p>
+<p>—-EOF–</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Guide/" rel="tag"># Guide</a>
+          
+            <a href="/tags/JDK/" rel="tag"># JDK</a>
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/21/SQL-Server-2016-Developer-with-Service-Pack-1-下载链接-Download-Link/" rel="next" title="SQL Server 2016 Developer with Service Pack 1 下载链接 [Download Link]">
+                <i class="fa fa-chevron-left"></i> SQL Server 2016 Developer with Service Pack 1 下载链接 [Download Link]
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/04/破事水-机房个性化工具/" rel="prev" title="[破事水]机房个性化工具">
+                [破事水]机房个性化工具 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/ZhangSiyang_logo_big.png"
+               alt="ZhangSiyang" />
+          <p class="site-author-name" itemprop="name">ZhangSiyang</p>
+           
+              <p class="site-description motion-element" itemprop="description">这里是张思扬的博客，写写日记，谢谢心得。更多的是吐槽与无理取闹。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-的安装"><span class="nav-number">1.</span> <span class="nav-text">JDK 的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK的配置"><span class="nav-number">2.</span> <span class="nav-text">JDK的配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZhangSiyang</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

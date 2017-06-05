@@ -1,0 +1,733 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZhangSiyang 's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/ZhangSiyang_logo.png?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="本篇文章记录 20170321 交的 SQL 语句实训报告
+实验目标: 掌握 T-SQL 的基本用法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20170321-简单 T-SQL 语句练习">
+<meta property="og:url" content="https://blog.zhangsy.me/2017/03/22/20170321-简单-T-SQL-语句练习/index.html">
+<meta property="og:site_name" content="ZhangSiyang 's Blog">
+<meta property="og:description" content="本篇文章记录 20170321 交的 SQL 语句实训报告
+实验目标: 掌握 T-SQL 的基本用法">
+<meta property="og:updated_time" content="2017-03-24T12:57:42.581Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="20170321-简单 T-SQL 语句练习">
+<meta name="twitter:description" content="本篇文章记录 20170321 交的 SQL 语句实训报告
+实验目标: 掌握 T-SQL 的基本用法">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/03/22/20170321-简单-T-SQL-语句练习/"/>
+
+
+
+
+
+  <title>20170321-简单 T-SQL 语句练习 | ZhangSiyang 's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZhangSiyang 's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.zhangsy.me/2017/03/22/20170321-简单-T-SQL-语句练习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhangSiyang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/ZhangSiyang_logo_big.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZhangSiyang 's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">20170321-简单 T-SQL 语句练习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-22T20:03:06+08:00">
+                2017-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本篇文章记录 20170321 交的 SQL 语句实训报告</p>
+<p>实验目标: 掌握 T-SQL 的基本用法<br><a id="more"></a><br>实验人: ZhangSiyang</p>
+<h2 id="1-创建名为stuDB的数据库，属性都取默认值"><a href="#1-创建名为stuDB的数据库，属性都取默认值" class="headerlink" title="1. 创建名为stuDB的数据库，属性都取默认值"></a>1. 创建名为stuDB的数据库，属性都取默认值</h2><pre><code>1)创建名为stuDB的数据库，属性都取默认值。
+</code></pre><h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> stuDB;</div></pre></td></tr></table></figure>
+<h5 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h5><p>创建数据库：<code>create database NAME</code>，未指定的参数取默认值</p>
+<h2 id="2-删除数据库stuDB"><a href="#2-删除数据库stuDB" class="headerlink" title="2. 删除数据库stuDB"></a>2. 删除数据库stuDB</h2><h5 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h5><pre><code>2)删除数据库stuDB。
+</code></pre><h5 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">drop</span> <span class="keyword">database</span> stuDB;</div></pre></td></tr></table></figure>
+<h5 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h5><p>删除数据库：<code>drop database NAME</code></p>
+<h2 id="3-创建满足如下要求的数据库"><a href="#3-创建满足如下要求的数据库" class="headerlink" title="3. 创建满足如下要求的数据库"></a>3. 创建满足如下要求的数据库</h2><h5 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h5><pre><code>3)创建满足如下要求的数据库：
+   数据库名称stuDB(存储位置D:\SQL),包含两个数据文件和两个日志文件：
+   第一个数据文件stuDB_data1初始大小为50MB，文件的最大大小不受限制，文件的增长率为10%；
+   第二个数据文件stuDB_data2初始大小为50MB，文件的最大大小200MB，文件的增长率为10MB；
+   日志文件stuDB_log1初始大小为10MB，文件的最大大小为100MB，文件的增长率为10MB；
+   日志文件stuDB_log2初始大小为10MB，文件的最大大小为100MB，文件的增长率为10%。
+</code></pre><h5 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> stuDB</div><div class="line">	<span class="keyword">ON</span> ( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data1,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_data1.MDF'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>% ) , </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data2, </div><div class="line">		FILENAME=<span class="string">'D:\stuDB_data2.mdf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>%,</div><div class="line">		<span class="keyword">MAXSIZE</span> = <span class="keyword">UNLIMITED</span> ) </div><div class="line"></div><div class="line">	<span class="keyword">LOG</span> <span class="keyword">ON</span> ( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_log1,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_log1.ldf'</span>, </div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>, </div><div class="line">		<span class="keyword">MAXSIZE</span> = <span class="number">100</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span> ), </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_log2,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_log2.ldf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>,</div><div class="line">		<span class="keyword">MAXSIZE</span>=<span class="number">100</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>% </div><div class="line">		);</div></pre></td></tr></table></figure>
+<h5 id="收获-2"><a href="#收获-2" class="headerlink" title="收获"></a>收获</h5><ol>
+<li>NAME 与 FILENAME 都是必须指出的，单位为mb时，可写可不写</li>
+<li>格式见上</li>
+</ol>
+<h2 id="4-在stuDB数据库中添加数据文件stuDB-data3-初……"><a href="#4-在stuDB数据库中添加数据文件stuDB-data3-初……" class="headerlink" title="4. 在stuDB数据库中添加数据文件stuDB_data3,初……"></a>4. 在stuDB数据库中添加数据文件stuDB_data3,初……</h2><h5 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h5><pre><code>4)在stuDB数据库中添加数据文件stuDB_data3,初始大小为20MB，增长增量为15%，最大大小100MB；
+</code></pre><h5 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> <span class="keyword">file</span> (</div><div class="line">	<span class="keyword">name</span> = stuDB_data3,</div><div class="line">	filename=<span class="string">'D:\stuDB_data3.MDF'</span>,</div><div class="line">	<span class="keyword">size</span> =<span class="number">20</span>,</div><div class="line">	filegrowth = <span class="number">15</span>%,</div><div class="line">	<span class="keyword">maxsize</span>=<span class="number">100</span>);</div></pre></td></tr></table></figure>
+<h5 id="收获-3"><a href="#收获-3" class="headerlink" title="收获"></a>收获</h5><p>添加文件只需三步：1. 进入相应数据库 2. 添加文件 3. 执行</p>
+<h2 id="5-将数据文件stuDB-data3的最大大小改为不受限制"><a href="#5-将数据文件stuDB-data3的最大大小改为不受限制" class="headerlink" title="5. 将数据文件stuDB_data3的最大大小改为不受限制"></a>5. 将数据文件stuDB_data3的最大大小改为不受限制</h2><h5 id="题目-3"><a href="#题目-3" class="headerlink" title="题目"></a>题目</h5><pre><code>5)修改数据库stuDB的属性，将数据文件stuDB_data3的最大大小改为不受限制；
+</code></pre><h5 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">modify</span> <span class="keyword">file</span>(</div><div class="line">	<span class="keyword">name</span> =stuDB_data3,</div><div class="line">	<span class="keyword">maxsize</span> = <span class="keyword">unlimited</span></div><div class="line">);</div></pre></td></tr></table></figure>
+<h5 id="收获-4"><a href="#收获-4" class="headerlink" title="收获"></a>收获</h5><p>主要是学习到这个格式，别的……没有</p>
+<h2 id="6-删除日志文件stuDB-log2"><a href="#6-删除日志文件stuDB-log2" class="headerlink" title="6. 删除日志文件stuDB_log2"></a>6. 删除日志文件stuDB_log2</h2><h5 id="题目-4"><a href="#题目-4" class="headerlink" title="题目"></a>题目</h5><pre><code>6)将日志文件stuDB_log2删除；
+</code></pre><h5 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line">REMOVE <span class="keyword">file</span> stuDB_log2;</div></pre></td></tr></table></figure>
+<h5 id="收获-5"><a href="#收获-5" class="headerlink" title="收获"></a>收获</h5><p>REMOVE file FILENAME</p>
+<h2 id="7-创建自定义文件组second"><a href="#7-创建自定义文件组second" class="headerlink" title="7. 创建自定义文件组second"></a>7. 创建自定义文件组second</h2><h5 id="题目-5"><a href="#题目-5" class="headerlink" title="题目"></a>题目</h5><pre><code>7)创建自定义文件组second；
+</code></pre><h5 id="代码-6"><a href="#代码-6" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
+<h2 id="8-添加数据文件stuDB-data4到文件组second"><a href="#8-添加数据文件stuDB-data4到文件组second" class="headerlink" title="8. 添加数据文件stuDB_data4到文件组second"></a>8. 添加数据文件stuDB_data4到文件组second</h2><h5 id="题目-6"><a href="#题目-6" class="headerlink" title="题目"></a>题目</h5><pre><code>8)添加数据文件stuDB_data4到文件组second,初始大小为20MB，增长增量为10MB，最大大小100MB；
+</code></pre><h5 id="代码-7"><a href="#代码-7" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> <span class="keyword">file</span> (</div><div class="line">	<span class="keyword">name</span>=stuDB_data4,</div><div class="line">	filename=<span class="string">'D:\stuDB_data4.MDF'</span>,</div><div class="line">	<span class="keyword">size</span>=<span class="number">20</span>,</div><div class="line">	filegrowth=<span class="number">10</span>,</div><div class="line">	<span class="keyword">maxsize</span>=<span class="number">100</span></div><div class="line">)<span class="keyword">to</span> filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
+<h5 id="收获-6"><a href="#收获-6" class="headerlink" title="收获"></a>收获</h5><p>…to filegroup second;</p>
+<h2 id="9-删除文件组second"><a href="#9-删除文件组second" class="headerlink" title="9. 删除文件组second"></a>9. 删除文件组second</h2><h5 id="题目-7"><a href="#题目-7" class="headerlink" title="题目"></a>题目</h5><pre><code>9)删除文件组second；
+</code></pre><h5 id="代码-8"><a href="#代码-8" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line">REMOVE <span class="keyword">file</span> stuDB_data4</div><div class="line">REMOVE filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
+<h5 id="收获-7"><a href="#收获-7" class="headerlink" title="收获"></a>收获</h5><p>删除文件组时，文件组内必须没有文件</p>
+<h2 id="10-将数据库stuDB重命名为studentDB"><a href="#10-将数据库stuDB重命名为studentDB" class="headerlink" title="10. 将数据库stuDB重命名为studentDB"></a>10. 将数据库stuDB重命名为studentDB</h2><h5 id="题目-8"><a href="#题目-8" class="headerlink" title="题目"></a>题目</h5><pre><code>10)将数据库stuDB重命名为studentDB；
+</code></pre><h5 id="代码-9"><a href="#代码-9" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">modify</span> <span class="keyword">name</span> = studentDB;</div></pre></td></tr></table></figure>
+<h2 id="11-按如下要求创建数据库"><a href="#11-按如下要求创建数据库" class="headerlink" title="11. 按如下要求创建数据库"></a>11. 按如下要求创建数据库</h2><h5 id="题目-9"><a href="#题目-9" class="headerlink" title="题目"></a>题目</h5><pre><code>11)按如下要求创建数据库：
+        数据库名称studentDB(存储位置D:\SQL，要求判断该服务器上是否已有同名数据库,若有,将其删除),
+        包含三个数据文件和一个日志文件：
+        第一个数据文件stuDB_data1放在主文件组PRIMARY,初始大小为50MB,其他属性默认；
+        第二个数据文件stuDB_data2放在SECOND文件组，初始大小为50MB，其他属性默认；
+        第三个数据文件stuDB_data3放在SECOND文件组，初始大小为50MB，其他属性默认；
+    日志文件stuDB_log初始大小为10MB，文件的最大大小为100MB。
+</code></pre><h5 id="代码-10"><a href="#代码-10" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> sysdatabases</div><div class="line">		<span class="keyword">where</span> <span class="keyword">name</span> = <span class="string">'stuDB'</span>)	</div><div class="line">	<span class="keyword">drop</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> studentDB</div><div class="line">	<span class="keyword">on</span>	(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_data1,</div><div class="line">		FILENAME = <span class="string">'D:\SQL\stuDB_data1.MDF'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup PRIMARY , </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data2, </div><div class="line">		FILENAME = <span class="string">'D:\SQL\stuDB_data2.mdf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup <span class="keyword">SECOND</span> ,</div><div class="line">		(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_data3,</div><div class="line">                FILENAME = <span class="string">'D:\SQL\stuDB_data3.mdf'</span>,</div><div class="line">                <span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup <span class="keyword">SECOND</span></div><div class="line">	<span class="keyword">log</span> <span class="keyword">on</span>	(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_log,</div><div class="line">		FILENAME = <span class="string">'stuDB_log.ldf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>,</div><div class="line">		<span class="keyword">MAXSIZE</span> =<span class="number">100</span>);</div></pre></td></tr></table></figure>
+<h5 id="收获-8"><a href="#收获-8" class="headerlink" title="收获"></a>收获</h5><pre><code>if exists(select * from sysdatabases
+                where name = &apos;stuDB&apos;)
+        drop database stuDB
+</code></pre><p>文中所述代码均已开源 : &lt; TODO &gt;</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/05/20170305-今天的C-实验报告/" rel="next" title="20170305-今天的C#实验报告">
+                <i class="fa fa-chevron-left"></i> 20170305-今天的C#实验报告
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/24/上山下乡/" rel="prev" title="上山下乡">
+                上山下乡 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/ZhangSiyang_logo_big.png"
+               alt="ZhangSiyang" />
+          <p class="site-author-name" itemprop="name">ZhangSiyang</p>
+           
+              <p class="site-description motion-element" itemprop="description">这里是张思扬的博客，写写日记，谢谢心得。更多的是吐槽与无理取闹。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建名为stuDB的数据库，属性都取默认值"><span class="nav-number">1.</span> <span class="nav-text">1. 创建名为stuDB的数据库，属性都取默认值</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#代码"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-删除数据库stuDB"><span class="nav-number">2.</span> <span class="nav-text">2. 删除数据库stuDB</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-1"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-1"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-创建满足如下要求的数据库"><span class="nav-number">3.</span> <span class="nav-text">3. 创建满足如下要求的数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-1"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-2"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-2"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-在stuDB数据库中添加数据文件stuDB-data3-初……"><span class="nav-number">4.</span> <span class="nav-text">4. 在stuDB数据库中添加数据文件stuDB_data3,初……</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-2"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-3"><span class="nav-number">4.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-3"><span class="nav-number">4.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-将数据文件stuDB-data3的最大大小改为不受限制"><span class="nav-number">5.</span> <span class="nav-text">5. 将数据文件stuDB_data3的最大大小改为不受限制</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-3"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-4"><span class="nav-number">5.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-4"><span class="nav-number">5.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-删除日志文件stuDB-log2"><span class="nav-number">6.</span> <span class="nav-text">6. 删除日志文件stuDB_log2</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-4"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-5"><span class="nav-number">6.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-5"><span class="nav-number">6.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-创建自定义文件组second"><span class="nav-number">7.</span> <span class="nav-text">7. 创建自定义文件组second</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-5"><span class="nav-number">7.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-6"><span class="nav-number">7.0.0.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-添加数据文件stuDB-data4到文件组second"><span class="nav-number">8.</span> <span class="nav-text">8. 添加数据文件stuDB_data4到文件组second</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-6"><span class="nav-number">8.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-7"><span class="nav-number">8.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-6"><span class="nav-number">8.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-删除文件组second"><span class="nav-number">9.</span> <span class="nav-text">9. 删除文件组second</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-7"><span class="nav-number">9.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-8"><span class="nav-number">9.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-7"><span class="nav-number">9.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-将数据库stuDB重命名为studentDB"><span class="nav-number">10.</span> <span class="nav-text">10. 将数据库stuDB重命名为studentDB</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-8"><span class="nav-number">10.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-9"><span class="nav-number">10.0.0.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-按如下要求创建数据库"><span class="nav-number">11.</span> <span class="nav-text">11. 按如下要求创建数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#题目-9"><span class="nav-number">11.0.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码-10"><span class="nav-number">11.0.0.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#收获-8"><span class="nav-number">11.0.0.3.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZhangSiyang</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

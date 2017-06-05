@@ -1,0 +1,766 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CS,Homework," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZhangSiyang 's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/ZhangSiyang_logo.png?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="实验目标: 掌握C#的基本用法实验人: ZhangSiyang实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20170305-今天的C#实验报告">
+<meta property="og:url" content="https://blog.zhangsy.me/2017/03/05/20170305-今天的C-实验报告/index.html">
+<meta property="og:site_name" content="ZhangSiyang 's Blog">
+<meta property="og:description" content="实验目标: 掌握C#的基本用法实验人: ZhangSiyang实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]">
+<meta property="og:image" content="https://i.imgur.com/MyufS4G.png">
+<meta property="og:image" content="https://i.imgur.com/XAHRLp2.png">
+<meta property="og:image" content="https://i.imgur.com/kKDPl9b.png">
+<meta property="og:image" content="https://i.imgur.com/5yr4Tpe.png">
+<meta property="og:updated_time" content="2017-03-24T12:57:42.581Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="20170305-今天的C#实验报告">
+<meta name="twitter:description" content="实验目标: 掌握C#的基本用法实验人: ZhangSiyang实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]">
+<meta name="twitter:image" content="https://i.imgur.com/MyufS4G.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/03/05/20170305-今天的C-实验报告/"/>
+
+
+
+
+
+  <title>20170305-今天的C#实验报告 | ZhangSiyang 's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZhangSiyang 's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.zhangsy.me/2017/03/05/20170305-今天的C-实验报告/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhangSiyang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/ZhangSiyang_logo_big.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZhangSiyang 's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">20170305-今天的C#实验报告</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-05T19:34:52+08:00">
+                2017-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>实验目标: 掌握C#的基本用法<br>实验人: ZhangSiyang<br>实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]<br><a id="more"></a></p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
+<li><a href="#C#特性演示">C#特性演示</a><ul>
+<li><a href="#代码">代码</a></li>
+<li><a href="#运行">运行</a></li>
+<li><a href="#编写思路与难题">编写思路与难题</a></li>
+<li><a href="#收获">收获</a></li>
+</ul>
+</li>
+<li><a href="#C#-冒泡排序">C#-冒泡排序</a><ul>
+<li><a href="#代码">代码</a></li>
+<li><a href="#运行">运行</a></li>
+<li><a href="#编写思路与难题">编写思路与难题</a></li>
+<li><a href="#收获">收获</a></li>
+</ul>
+</li>
+<li><a href="">多维数组相关操作</a><ul>
+<li><a href="#代码">代码</a></li>
+<li><a href="#运行">运行</a></li>
+<li><a href="#编写思路与难题">编写思路与难题</a></li>
+<li><a href="#收获">收获</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="C-特性演示"><a href="#C-特性演示" class="headerlink" title="C#特性演示"></a>C#特性演示</h2><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System;</div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">ConsoleApplication1</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">class</span> <span class="title">Program</span></div><div class="line">    &#123;</div><div class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></div><div class="line">        &#123;</div><div class="line">            Program n = <span class="keyword">new</span> Program();          <span class="comment">//写的方法，马马虎虎的，仅作试水</span></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示数字 A 与 B 的交换"</span>);</div><div class="line">            n.swap(<span class="number">3</span>, <span class="number">7</span>);</div><div class="line">            Console.ReadLine();</div><div class="line">            <span class="comment">//清屏</span></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示 串的输入与输出"</span>);</div><div class="line">            n.xingminghenianling();</div><div class="line">            Console.ReadLine();</div><div class="line"></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示 用 If 判断成绩"</span>);</div><div class="line">            n.panduanjige_if();</div><div class="line">            Console.ReadLine();</div><div class="line"></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示 用 Switch 判断成绩"</span>);</div><div class="line">            n.panduanjige_switch();</div><div class="line">            Console.ReadLine();</div><div class="line"></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示 用 Switch 判断该月天数"</span>);</div><div class="line">            n.panduantianshu();</div><div class="line">            Console.ReadLine();</div><div class="line"></div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"即将演示 分段函数"</span>);</div><div class="line">            n.fenduanhanshu();</div><div class="line">            Console.ReadLine();</div><div class="line">            Console.Write(<span class="string">"演示完成，按任意键以退出"</span>);</div><div class="line">            Console.Read();</div><div class="line"></div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">swap</span>(<span class="params"><span class="keyword">int</span> a, <span class="keyword">int</span> b</span>)</span></div><div class="line">        &#123;</div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"A IS: &#123;0&#125;, B IS: &#123;1&#125;."</span>, a, b);</div><div class="line">            a = a * b;          <span class="comment">//也可以交换，就是这两个数不能太大，b还不能为0</span></div><div class="line">            b = a / b;</div><div class="line">            a = a / b;</div><div class="line">            Console.WriteLine(<span class="string">"A IS: &#123;0&#125;, B IS: &#123;1&#125;."</span>, a, b);</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">xingminghenianling</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            Console.Write(<span class="string">"Please Input Your Name:"</span>);</div><div class="line">            <span class="keyword">string</span> xingming = Console.ReadLine();</div><div class="line">            Console.Write(<span class="string">"Please Input Your Eage:"</span>);</div><div class="line">            <span class="keyword">int</span> nianling = <span class="keyword">int</span>.Parse(Console.ReadLine());</div><div class="line">            Console.WriteLine(<span class="string">"Your Name Is:&#123;0&#125;,Eage Is:&#123;1&#125;"</span>, xingming, nianling);</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">fengefu</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            Console.WriteLine(<span class="string">"------------------------"</span>);  <span class="comment">//被弃用的分隔符</span></div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">panduanjige_if</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            Console.Write(<span class="string">"Please Input Your Score:"</span>);</div><div class="line">            <span class="keyword">double</span> <span class="keyword">get</span> = <span class="keyword">double</span>.Parse(Console.ReadLine());</div><div class="line">            <span class="keyword">int</span> score = <span class="number">-1</span>;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">get</span> &gt;= <span class="number">0</span> &amp;&amp; <span class="keyword">get</span> &lt;= <span class="number">100</span>)</div><div class="line">            &#123;</div><div class="line">                score = (<span class="keyword">int</span>)<span class="keyword">get</span> / <span class="number">10</span>;</div><div class="line">                <span class="keyword">if</span> (score &gt; <span class="number">8</span>)</div><div class="line">                    Console.WriteLine(<span class="string">"Nice!!!"</span>);</div><div class="line">                <span class="function"><span class="keyword">else</span> <span class="title">if</span> (<span class="params">score &gt; <span class="number">5</span></span>)</span></div><div class="line">                    Console.<span class="title">WriteLine</span>(<span class="params"><span class="string">"Good!!"</span></span>);</div><div class="line">                <span class="keyword">else</span></div><div class="line">                    Console.WriteLine(<span class="string">"It's Time To Learn."</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span></div><div class="line">                Console.WriteLine(<span class="string">"大哥你这不按套路出牌啊！"</span>);</div><div class="line">            <span class="keyword">return</span> score;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">panduanjige_switch</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            Console.Write(<span class="string">"Please Input Your Score:"</span>);</div><div class="line">            <span class="keyword">double</span> <span class="keyword">get</span> = <span class="keyword">double</span>.Parse(Console.ReadLine());</div><div class="line">            <span class="keyword">int</span> score = <span class="number">-1</span>;</div><div class="line">            <span class="keyword">string</span> flag;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">get</span> &gt;= <span class="number">0</span> &amp;&amp; <span class="keyword">get</span> &lt;= <span class="number">100</span>)</div><div class="line">            &#123;</div><div class="line">                score = (<span class="keyword">int</span>)<span class="keyword">get</span> / <span class="number">10</span>;</div><div class="line">                <span class="keyword">switch</span> (score)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">case</span> <span class="number">10</span>:</div><div class="line">                    <span class="keyword">case</span> <span class="number">9</span>: flag = <span class="string">"Nice!!!"</span>; <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="number">7</span>:</div><div class="line">                    <span class="keyword">case</span> <span class="number">8</span>:</div><div class="line">                    <span class="keyword">case</span> <span class="number">6</span>: flag = <span class="string">"Good!!"</span>; <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">default</span>: flag = <span class="string">"It's Time To Learn."</span>; <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span></div><div class="line">                flag = <span class="string">"大哥你这不按套路出牌啊！"</span>;</div><div class="line">            Console.WriteLine(flag);</div><div class="line">            <span class="keyword">return</span> score;</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">panduantianshu</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            <span class="keyword">int</span> mouth;</div><div class="line">            Console.WriteLine(<span class="string">"What time is it today?"</span>);</div><div class="line">            mouth = <span class="keyword">int</span>.Parse(Console.ReadLine());</div><div class="line">            <span class="keyword">string</span> flag;</div><div class="line">            <span class="keyword">switch</span> (mouth)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">3</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">5</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">7</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">8</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">10</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">12</span>: flag = <span class="string">"31"</span>; <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">case</span> <span class="number">4</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">6</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">9</span>:</div><div class="line">                <span class="keyword">case</span> <span class="number">11</span>: flag = <span class="string">"30"</span>; <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">case</span> <span class="number">2</span>: flag = <span class="string">"28 OR 29"</span>; <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">default</span>: flag = <span class="string">"你进入了异世界"</span>; <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">            Console.WriteLine(flag);</div><div class="line">            <span class="keyword">if</span> (flag == <span class="string">"28 OR 29"</span>)</div><div class="line">                flag = <span class="string">"28"</span>;</div><div class="line">            <span class="keyword">if</span> (flag == <span class="string">"你进入了异世界"</span>)</div><div class="line">                flag = <span class="string">"0"</span>;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">int</span>.Parse(flag);</div><div class="line">        &#125;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">fenduanhanshu</span>(<span class="params"></span>)</span></div><div class="line">        &#123;</div><div class="line">            <span class="keyword">double</span> x;</div><div class="line">            <span class="keyword">int</span> y;</div><div class="line">            Console.Write(<span class="string">"Please Input X:"</span>);</div><div class="line">            x = (<span class="keyword">int</span>)<span class="keyword">double</span>.Parse(Console.ReadLine());</div><div class="line">            <span class="keyword">if</span> (x &gt; <span class="number">0</span>)</div><div class="line">                y = <span class="number">1</span>;</div><div class="line">            <span class="function"><span class="keyword">else</span> <span class="title">if</span> (<span class="params">x == <span class="number">0</span></span>)</span></div><div class="line">                y = <span class="number">0</span>;</div><div class="line">            <span class="keyword">else</span></div><div class="line">                y = <span class="number">-1</span>;</div><div class="line">            Console.WriteLine(<span class="string">"&#123;0&#125;"</span>, y);</div><div class="line">            <span class="keyword">return</span> y;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p><img src="https://i.imgur.com/MyufS4G.png" alt="我们来做好朋友吧"><br><img src="https://i.imgur.com/XAHRLp2.png" alt="这种行为就不好了"></p>
+<h3 id="编写思路与难题"><a href="#编写思路与难题" class="headerlink" title="编写思路与难题"></a>编写思路与难题</h3><p>这道题是我写的第一个 C# 程序，再往前只有课上的纸上代码，不算是写程序。现在回头来但的话大概有一下几个特点：</p>
+<h5 id="分模块书写，制成方法体-体"><a href="#分模块书写，制成方法体-体" class="headerlink" title="分模块书写，制成方法体[体?]"></a>分模块书写，制成方法体[体?]</h5><p>一开始我也是打算写成一大坨代码的，写着写着感觉 C# 比 C 啰嗦多了，十四寸的本上翻页翻得我直着急。所以……当然是写成<del>函数</del>方法啦！还能以后再用，虽然不大可能……</p>
+<h5 id="更多的考虑到了意外情况"><a href="#更多的考虑到了意外情况" class="headerlink" title="更多的考虑到了意外情况"></a>更多的考虑到了意外情况</h5><p>其实之前我在编写 C 程序时也有这方面的考虑，但是写十行代码其中有九行都是数据检查未免太让人感觉尴尬了，代码也不够高效。但是最近又在想，现在电脑性能这么好，简单的程序错误却可能导致用户流失，我还是把心中所想放到代码之中吧。<del>心中没有想到的当然也就没有进行检查了</del></p>
+<blockquote>
+<p>想不到检查方法的也没有写，检查方法忒复杂的也没有写……  </p>
+</blockquote>
+<h4 id="编写时遇到的的困难"><a href="#编写时遇到的的困难" class="headerlink" title="编写时遇到的的困难"></a>编写时遇到的的困难</h4><ol>
+<li>写成的方法不知道怎么被 Main 调用; 这个在 Google 之后解决了，但也只是照猫画虎</li>
+<li><p>该怎么输入与存储成绩才好？一开始是用 <code>int score = int.Parse(Console.ReadLine()) / 10</code> 的，可那样无法解决带小数成绩的录入以及对数据合法性的判断。<br>为了带小数成绩我写出了 <code>int score = (int)double.Parse(Console.ReadLine())</code> 这样的方法，但这样还是无法解决数据合法性[ 102 居然是合法数据，你信吗？]，综合考虑之后，下面的解决方案诞生：</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">panduanjige_switch</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line">    Console.Write(<span class="string">"Please Input Your Score:"</span>);</div><div class="line">    <span class="keyword">double</span> <span class="keyword">get</span> = <span class="keyword">double</span>.Parse(Console.ReadLine());</div><div class="line">    <span class="keyword">int</span> score = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">string</span> flag;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">get</span> &gt;= <span class="number">0</span> &amp;&amp; <span class="keyword">get</span> &lt;= <span class="number">100</span>)</div><div class="line">    &#123;</div><div class="line">        score = (<span class="keyword">int</span>)<span class="keyword">get</span> / <span class="number">10</span>;</div><div class="line">        <span class="keyword">switch</span> (score)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">case</span> <span class="number">10</span>:</div><div class="line">            <span class="keyword">case</span> <span class="number">9</span>: flag = <span class="string">"Nice!!!"</span>; <span class="keyword">break</span>;</div><div class="line">            <span class="keyword">case</span> <span class="number">7</span>:</div><div class="line">            <span class="keyword">case</span> <span class="number">8</span>:</div><div class="line">            <span class="keyword">case</span> <span class="number">6</span>: flag = <span class="string">"Good!!"</span>; <span class="keyword">break</span>;</div><div class="line">            <span class="keyword">default</span>: flag = <span class="string">"It's Time To Learn."</span>; <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">        flag = <span class="string">"大哥你这不按套路出牌啊！"</span>;</div><div class="line">    Console.WriteLine(flag);</div><div class="line">    <span class="keyword">return</span> score;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>对！还有问题。我想把某一个月份含有的天数返回给主调函数，当遇上 2 月时，怎么办？！！！</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Console.WriteLine(flag);</div><div class="line"><span class="keyword">if</span> (flag == <span class="string">"28 OR 29"</span>)</div><div class="line">	flag = <span class="string">"28"</span>;</div><div class="line"><span class="keyword">if</span> (flag == <span class="string">"你进入了异世界"</span>)</div><div class="line">	flag = <span class="string">"0"</span>;</div><div class="line"><span class="keyword">return</span> <span class="keyword">int</span>.Parse(flag);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h3><ol>
+<li><code>Program n = new Program();</code></li>
+<li><code>Console.Clear</code></li>
+<li>有时候，把程序写的复杂点也不是什么什么坏事儿</li>
+</ol>
+<h2 id="C-冒泡排序"><a href="#C-冒泡排序" class="headerlink" title="C#-冒泡排序"></a>C#-冒泡排序</h2><h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System;</div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">Bubble_Sort</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">class</span> <span class="title">Program</span></div><div class="line">    &#123;</div><div class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></div><div class="line">        &#123;</div><div class="line">            Random rd = <span class="keyword">new</span> Random();   <span class="comment">//为随机赋值做准备[这个过程不知道叫什么]</span></div><div class="line"></div><div class="line">            <span class="keyword">int</span>[] box = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">27</span>];</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">27</span>; i++)</div><div class="line">            &#123;</div><div class="line">                box[i] = rd.Next(<span class="number">1000</span>); <span class="comment">//随机赋值</span></div><div class="line">            &#125;</div><div class="line">            <span class="keyword">int</span> s;                      <span class="comment">//交换用的空盒子</span></div><div class="line"></div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">27</span>; i++)</div><div class="line">            &#123;</div><div class="line">                Console.Write(<span class="string">"&#123;0:D3&#125;  "</span>, box[i]);  <span class="comment">//以宽度为三的格式输出</span></div><div class="line">                <span class="keyword">if</span> ((i + <span class="number">1</span>) % <span class="number">5</span> == <span class="number">0</span>)               <span class="comment">//逢五换行</span></div><div class="line">                    Console.Write(<span class="string">"\n"</span>);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            Console.WriteLine(<span class="string">"\n\n以上是初始数组，下面是排序之后的数组\n"</span>);</div><div class="line"></div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">26</span>;i++)      <span class="comment">//冒泡排序</span></div><div class="line">            &#123;</div><div class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;<span class="number">27</span>;j++)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">if</span>(box[j]&gt;box[i])</div><div class="line">                    &#123;</div><div class="line">                        s = box[i];         <span class="comment">//数值交换</span></div><div class="line">                        box[i] = box[j];    <span class="comment">//数值交换</span></div><div class="line">                        box[j] = s;         <span class="comment">//数值交换</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">27</span>; i++)    <span class="comment">//交换完成，输出</span></div><div class="line">            &#123;</div><div class="line">                Console.Write(<span class="string">"&#123;0:D3&#125;  "</span>, box[i]);</div><div class="line">                <span class="keyword">if</span> ((i+<span class="number">1</span>) % <span class="number">5</span> == <span class="number">0</span>)</div><div class="line">                    Console.Write(<span class="string">"\n"</span>);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            Console.Write(<span class="string">"\n按任意键以退出"</span>);</div><div class="line">            Console.ReadLine();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><img src="https://i.imgur.com/kKDPl9b.png" alt="Bubble_Sort"></p>
+<h3 id="编写思路与难题-1"><a href="#编写思路与难题-1" class="headerlink" title="编写思路与难题"></a>编写思路与难题</h3><p>写这道题的时候已经熟练了不少了，因此也没太多值得说的</p>
+<ol>
+<li>Random.Next() 返回的值随机性太差了，只能用来做范例</li>
+<li><p>换行这样做：</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> ((i + <span class="number">1</span>) % <span class="number">5</span> == <span class="number">0</span>)               <span class="comment">//逢五换行</span></div><div class="line">	Console.Write(<span class="string">"\n"</span>);</div></pre></td></tr></table></figure>
+<p> 大概没有更好的方法了吧</p>
+</li>
+<li>格式化表示法变了，有点不适应， Google 解决</li>
+<li>也许可以自制一个退出提示，为了命令提示符下运行的用户<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Console.Write(<span class="string">"\n按任意键以退出"</span>);</div><div class="line">	Console.ReadLine();</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h3><ol>
+<li>for 循环的效率比 foreach 高一点点</li>
+<li><code>Console.Write(&quot;{0:D3}  &quot;, box[i]);</code></li>
+<li><code>Console.Write(&quot;{0:000.000}  &quot;, box[i]);</code></li>
+</ol>
+<h2 id="多维数组相关操作"><a href="#多维数组相关操作" class="headerlink" title="多维数组相关操作"></a>多维数组相关操作</h2><h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System;</div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">ShuchuJuzhenZuidazhi</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">class</span> <span class="title">Program</span></div><div class="line">    &#123;</div><div class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></div><div class="line">        &#123;</div><div class="line">            Random rd = <span class="keyword">new</span> Random();</div><div class="line"></div><div class="line">            <span class="keyword">double</span>[,] box = <span class="keyword">new</span> <span class="keyword">double</span>[<span class="number">8</span>,<span class="number">8</span>];</div><div class="line">            <span class="keyword">int</span> <span class="keyword">add</span>;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> n = <span class="number">0</span>; n &lt; <span class="number">8</span>; n++)</div><div class="line">                    box[i,n] = rd.Next(<span class="number">1000</span>) / <span class="number">7.0</span>;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">add</span> = <span class="number">0</span>;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> n = <span class="number">0</span>; n &lt; <span class="number">8</span>; n++)</div><div class="line">                &#123;</div><div class="line">                    Console.Write(<span class="string">"&#123;0:000.000&#125;  \t"</span>, box[i, n]);</div><div class="line">                    <span class="keyword">if</span> (box[i, n] &gt; box[i, <span class="keyword">add</span>])</div><div class="line">                        <span class="keyword">add</span> = n;</div><div class="line">                &#125;</div><div class="line">                Console.WriteLine(<span class="string">"\t\t### MAX IS &#123;0:.000&#125;"</span>, box[i, <span class="keyword">add</span>]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="运行-2"><a href="#运行-2" class="headerlink" title="运行"></a>运行</h3><p><img src="https://i.imgur.com/5yr4Tpe.png" alt="数组相关"></p>
+<h3 id="编写思路与难题-2"><a href="#编写思路与难题-2" class="headerlink" title="编写思路与难题"></a>编写思路与难题</h3><ol>
+<li>定义多重数组，并为之赋值</li>
+<li>每行成员以及行内最大值的输出<br>困难：越到最后越是没有什么话说，这里主要遇到的是数组的声明及使用。嘛，也很简单 <code>box[i, n]</code><h3 id="收获-2"><a href="#收获-2" class="headerlink" title="收获"></a>收获</h3></li>
+<li>多多思考程序的界面设计，不要看起来一片模糊</li>
+<li><code>Console.Write(&quot;{0:000.000}  \t&quot;, box[i, n]);</code></li>
+<li><code>Console.WriteLine(&quot;\t\t### MAX IS {0:.000}&quot;, box[i, add]);</code></li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CS/" rel="tag"># CS</a>
+          
+            <a href="/tags/Homework/" rel="tag"># Homework</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/04/破事水-机房个性化工具/" rel="next" title="[破事水]机房个性化工具">
+                <i class="fa fa-chevron-left"></i> [破事水]机房个性化工具
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/22/20170321-简单-T-SQL-语句练习/" rel="prev" title="20170321-简单 T-SQL 语句练习">
+                20170321-简单 T-SQL 语句练习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/ZhangSiyang_logo_big.png"
+               alt="ZhangSiyang" />
+          <p class="site-author-name" itemprop="name">ZhangSiyang</p>
+           
+              <p class="site-description motion-element" itemprop="description">这里是张思扬的博客，写写日记，谢谢心得。更多的是吐槽与无理取闹。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-特性演示"><span class="nav-number"></span> <span class="nav-text">C#特性演示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number"></span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行"><span class="nav-number"></span> <span class="nav-text">运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写思路与难题"><span class="nav-number"></span> <span class="nav-text">编写思路与难题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分模块书写，制成方法体-体"><span class="nav-number">0.1.</span> <span class="nav-text">分模块书写，制成方法体[体?]</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更多的考虑到了意外情况"><span class="nav-number">0.2.</span> <span class="nav-text">更多的考虑到了意外情况</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编写时遇到的的困难"><span class="nav-number">1.</span> <span class="nav-text">编写时遇到的的困难</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收获"><span class="nav-number"></span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-冒泡排序"><span class="nav-number"></span> <span class="nav-text">C#-冒泡排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码-1"><span class="nav-number"></span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-1"><span class="nav-number"></span> <span class="nav-text">运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写思路与难题-1"><span class="nav-number"></span> <span class="nav-text">编写思路与难题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收获-1"><span class="nav-number"></span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多维数组相关操作"><span class="nav-number"></span> <span class="nav-text">多维数组相关操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码-2"><span class="nav-number"></span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-2"><span class="nav-number"></span> <span class="nav-text">运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写思路与难题-2"><span class="nav-number"></span> <span class="nav-text">编写思路与难题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收获-2"><span class="nav-number"></span> <span class="nav-text">收获</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZhangSiyang</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
