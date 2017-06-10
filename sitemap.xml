@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.zhangsy.me/2017/02/21/SQL-Server-2016-Developer-with-Service-Pack-1-%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5-Download-Link/</loc>
+    <loc>https://blog.zhangsy.me/abandoned/20170221-SQL-Server-2016-Developer-with-Service-Pack-1-%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5-Download-Link.html</loc>
     
     <lastmod>2017-06-10T10:12:38.464Z</lastmod>
     
@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84C-%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</loc>
-    
-    <lastmod>2017-03-24T12:57:42.581Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-T-SQL-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/</loc>
     
     <lastmod>2017-03-24T12:57:42.581Z</lastmod>
@@ -101,6 +94,13 @@
   
   <url>
     <loc>https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-Github/</loc>
+    
+    <lastmod>2017-03-24T12:57:42.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84C-%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</loc>
     
     <lastmod>2017-03-24T12:57:42.581Z</lastmod>
     
