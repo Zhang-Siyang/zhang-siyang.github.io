@@ -236,16 +236,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-about">
           <a href="/About.html" rel="section">
             
@@ -511,10 +501,14 @@
 
       
         
-          
-            <p>忽然发现，这是这一周一来唯一一篇博文。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">@echo off</div><div class="line">echo 当前盘符：%~d0</div><div class="line"></div><div class="line">::0. 显示文件后缀名</div><div class="line">reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD  /d 00000000</div><div class="line"></div><div class="line">::1. 壁纸</div><div class="line">set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop</div><div class="line">%regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f</div><div class="line">::0为居中，1为平铺</div><div class="line">%regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f</div><div class="line">%regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f</div><div class="line">::WallpaperStyle6为适应，2为拉伸，10为填充</div><div class="line">start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters</div><div class="line">::更换完成</div><div class="line"></div><div class="line">::2. Hosts</div><div class="line">xcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot;</div><div class="line">xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot;</div><div class="line">ipconfig /flushdns</div><div class="line"></div><div class="line">::3. 常用文件拷贝</div><div class="line">xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y</div><div class="line">xcopy %~dp0\stu\* /E D:\stu\ /Y</div><div class="line"></div><div class="line">echo 继续？</div><div class="line">pause</div><div class="line"></div><div class="line">::4. START Chrome</div><div class="line">&quot;%~d0\Mine\GFW\ChromeUpdater+6.1.5\chrome.exe&quot; https://www.google.com/ncr</div><div class="line"></div><div class="line">echo 继续？</div><div class="line">pause</div><div class="line"></div><div class="line">::5. 安装NPP</div><div class="line">&quot;%~d0\Mine\软件\程序开发\npp*Installer.exe&quot; /S</div><div class="line">::配置文件</div><div class="line"></div><div class="line">::6. 安装 RIME</div><div class="line">&quot;%~d0\Mine\软件\程序开发\weasel-0.9.30.0-installer.exe&quot; /S</div><div class="line">::配置文件</div></pre></td></tr></table></figure></p>
-
-          
+          <p>忽然发现，这是这一周一来唯一一篇博文。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/04/破事水-机房个性化工具/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -623,11 +617,7 @@
 
       
         
-          <h2 id="JDK-的安装"><a href="#JDK-的安装" class="headerlink" title="JDK 的安装"></a>JDK 的安装</h2><ol>
-<li>下载 JDK 安装包</li>
-</ol>
-<p>我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载<br><code>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</code></p>
-<p>选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】<br>
+          <p>总是被叫走装环境，干脆写篇博客算了<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/02/21/JDK-的安装与配置【For-Windows】/#more" rel="contents">
@@ -743,11 +733,14 @@
 
       
         
-          
-            <h1 id="SQL-Server-2016-Developer-with-Service-Pack-1-x64-DVD-Chinese-Simplified"><a href="#SQL-Server-2016-Developer-with-Service-Pack-1-x64-DVD-Chinese-Simplified" class="headerlink" title="SQL Server 2016 Developer with Service Pack 1 (x64) - DVD (Chinese-Simplified)"></a>SQL Server 2016 Developer with Service Pack 1 (x64) - DVD (Chinese-Simplified)</h1><p>文件名： cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso<br>发布日期： 2016/12/2<br>语言： Chinese - Simplified<br>SHA1：D4A73F491DF47AF46C933D711259EA099C1A8537</p>
-<p>Download Link:<br><code>ed2k://|file|cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso|2959722496|9D6964555409F8E4BBFD3439E15921E9|/</code></p>
-<h3 id="注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用"><a href="#注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用" class="headerlink" title="注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用"></a>注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用</h3>
-          
+          <p>asdfsao<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/21/SQL-Server-2016-Developer-with-Service-Pack-1-下载链接-Download-Link/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1037,6 +1030,12 @@
 
         
         
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
 
         
         
@@ -1117,10 +1116,9 @@
   
 
 
+  
 
 
-  
-  
 
 
 
@@ -1149,10 +1147,7 @@
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -1185,16 +1180,18 @@
 
   
 
+    
 
-
-
-
-
-
-
-
+    
 
   
+
+
+
+
+
+
+
 
 
 

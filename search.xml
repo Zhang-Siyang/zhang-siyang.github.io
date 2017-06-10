@@ -3,12 +3,12 @@
   <entry>
     <title><![CDATA[站点布局调整中]]></title>
     <url>%2F2017%2F06%2F05%2F%E7%AB%99%E7%82%B9%E5%B8%83%E5%B1%80%E8%B0%83%E6%95%B4%E4%B8%AD%2F</url>
-    <content type="text"><![CDATA[如题，这两天会尽享主题的更换与微小调整 更换主题过后，将会恢复长久以来停止的更新 谢谢各位的关注]]></content>
+    <content type="text"><![CDATA[如题，这两天会进行主题的更换与微小调整 更换主题过后，将会恢复长久以来停止的更新 谢谢各位的关注]]></content>
   </entry>
   <entry>
     <title><![CDATA[如何有效地提问 By王掌柜]]></title>
     <url>%2F2017%2F04%2F06%2F%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E5%9C%B0%E6%8F%90%E9%97%AE-By-%E7%8E%8B%E6%8E%8C%E6%9F%9C%2F</url>
-    <content type="text"><![CDATA[一个比较郁闷的事实是，大多数人不擅长提问，更不懂网络时代的社交礼仪。 常碰到网友留言：你好，在吗？ 这是毫无价值的沟通开场白，没有任何积极意义。对方的时间很宝贵，你要懂得尊重他人的时间财富。你永远不要在微信上说“你好，在吗”，你应当直接说出你要沟通的事情。 如果你是有教养的人，你当然可以保持这种开场白习惯，但建议在“你好，在吗”之后，直接有事说事，不要等着对方回应“在”后才发送真正要沟通的内容。 网络社交场景，不是去别人家门口敲门，问一句“在不在”。你在微信上发出去的消息，对方是可以收到的。 只有愿意或者不愿意回复的消息，没有收不到的消息。 至于如何跟别人提问，学问就更大了。我在《谁动了我的网络资产》图书里专门写了一个章节，来阐释有效提问的重要性。希望能让读者有微小的启发，改变过去不适宜的提问习惯。 可能吧的阿禅 Jason Ng 写了篇公众号文章，标题是：真的，再这样提问就没人理你了！ 阿禅总结得非常到位，精辟，值得所有人花五分钟时间认真研读一遍。 本文从王掌柜（极客电台播主）的博客上转载，如有侵权，还请与我联系（邮箱见左侧）. 别不把别人的时间当时间]]></content>
+    <content type="text"><![CDATA[当你不在乎我的时间时，我很生气 一个比较郁闷的事实是，大多数人不擅长提问，更不懂网络时代的社交礼仪。 常碰到网友留言：你好，在吗？ 这是毫无价值的沟通开场白，没有任何积极意义。对方的时间很宝贵，你要懂得尊重他人的时间财富。你永远不要在微信上说“你好，在吗”，你应当直接说出你要沟通的事情。 如果你是有教养的人，你当然可以保持这种开场白习惯，但建议在“你好，在吗”之后，直接有事说事，不要等着对方回应“在”后才发送真正要沟通的内容。 网络社交场景，不是去别人家门口敲门，问一句“在不在”。你在微信上发出去的消息，对方是可以收到的。 只有愿意或者不愿意回复的消息，没有收不到的消息。 至于如何跟别人提问，学问就更大了。我在《谁动了我的网络资产》图书里专门写了一个章节，来阐释有效提问的重要性。希望能让读者有微小的启发，改变过去不适宜的提问习惯。 可能吧的阿禅 Jason Ng 写了篇公众号文章，标题是：真的，再这样提问就没人理你了！ 阿禅总结得非常到位，精辟，值得所有人花五分钟时间认真研读一遍。 本文从王掌柜（极客电台播主）的博客上转载，如有侵权，还请与我联系（邮箱见左侧）. 别不把别人的时间当时间]]></content>
       <tags>
         <tag>提问</tag>
         <tag>礼仪</tag>
@@ -45,7 +45,7 @@
   <entry>
     <title><![CDATA[[破事水]机房个性化工具]]></title>
     <url>%2F2017%2F03%2F04%2F%E7%A0%B4%E4%BA%8B%E6%B0%B4-%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7%2F</url>
-    <content type="text"><![CDATA[忽然发现，这是这一周一来唯一一篇博文。1234567891011121314151617181920212223242526272829303132333435363738394041@echo offecho 当前盘符：%~d0::0. 显示文件后缀名reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD /d 00000000::1. 壁纸set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop%regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f::0为居中，1为平铺%regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f%regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f::WallpaperStyle6为适应，2为拉伸，10为填充start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters::更换完成::2. Hostsxcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot;xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot;ipconfig /flushdns::3. 常用文件拷贝xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Yxcopy %~dp0\stu\* /E D:\stu\ /Yecho 继续？pause::4. START Chrome&quot;%~d0\Mine\GFW\ChromeUpdater+6.1.5\chrome.exe&quot; https://www.google.com/ncrecho 继续？pause::5. 安装NPP&quot;%~d0\Mine\软件\程序开发\npp*Installer.exe&quot; /S::配置文件::6. 安装 RIME&quot;%~d0\Mine\软件\程序开发\weasel-0.9.30.0-installer.exe&quot; /S::配置文件]]></content>
+    <content type="text"><![CDATA[忽然发现，这是这一周一来唯一一篇博文。 1234567891011121314151617181920212223242526272829303132333435363738394041@echo offecho 当前盘符：%~d0::0. 显示文件后缀名reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD /d 00000000::1. 壁纸set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop%regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f::0为居中，1为平铺%regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f%regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f::WallpaperStyle6为适应，2为拉伸，10为填充start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters::更换完成::2. Hostsxcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot;xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot;ipconfig /flushdns::3. 常用文件拷贝xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Yxcopy %~dp0\stu\* /E D:\stu\ /Yecho 继续？pause::4. START Chrome&quot;%~d0\Mine\GFW\ChromeUpdater+6.1.5\chrome.exe&quot; https://www.google.com/ncrecho 继续？pause::5. 安装NPP&quot;%~d0\Mine\软件\程序开发\npp*Installer.exe&quot; /S::配置文件::6. 安装 RIME&quot;%~d0\Mine\软件\程序开发\weasel-0.9.30.0-installer.exe&quot; /S::配置文件]]></content>
       <tags>
         <tag>Tool</tag>
         <tag>.Bat</tag>
@@ -54,7 +54,7 @@
   <entry>
     <title><![CDATA[JDK 的安装与配置【For Windows】]]></title>
     <url>%2F2017%2F02%2F21%2FJDK-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE%E3%80%90For-Windows%E3%80%91%2F</url>
-    <content type="text"><![CDATA[JDK 的安装 下载 JDK 安装包 我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】 安装其实很简单，下一步 下一步 下一步就好了，如果已经安装过 JDK 或 JDE，最好卸载干净之后再安装新版 JDK。 JDK的配置 先寻找 JDK 安装到了哪里 一般都是安装到了 C:\Program Files\Java\jdk1.8.0_121 这样的路径文件夹下通常有以下文件：bin/ jre/ src.zip COPYRIGHT lib/ THIRDPARTYLICENSEREADME.txt db/ LICENSE THIRDPARTYLICENSEREADME-JAVAFX.txt include/ README.html javafx-src.zip release 复制这个路径 至此，安装完成，下一步配置 JDK 环境 Win + R 打开运行，输入 sysdm.cpl ，回车 切换到 高级 选项卡，点击环境变量按钮，可参考下图 新建变量，名为 JAVA_HOME ,路径为 C:\Program Files\Java\jdk1.8.0_121 【就是我们刚才找到的那个安装路径】 点击 Path ，点击编辑，点击 编辑文本 ，可参考下图 在出来的一串字符的最前面添加 %JAVA_HOME%/bin;%JAVA_HOME%/jre/bin; 保存退出。 3. 新建变量，名为 `CLASSPATH` ,路径为 `.;%JAVA_HOME%/lib/dt.jar;%JAVA_HOME%/lib/tools.jar` 【千万不要忽略前面的那个点】 4. 保存退出 至此，配置完成，下一步检测安装是否正确 Win + R 打开运行，输入 cmd ，回车 输入 java -version ，回车后出现如下内容即为正常 123java version &quot;1.8.0_121&quot;Java(TM) SE Runtime Environment (build 1.8.0_121-b13)Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode) 输入 javac -version ，回车后出现如下内容即为正常 1javac 1.8.0_121 至此，安装与配置过程结束 —-EOF–]]></content>
+    <content type="text"><![CDATA[总是被叫走装环境，干脆写篇博客算了 JDK 的安装 下载 JDK 安装包 我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】 安装其实很简单，下一步 下一步 下一步就好了，如果已经安装过 JDK 或 JDE，最好卸载干净之后再安装新版 JDK。 JDK的配置 先寻找 JDK 安装到了哪里 一般都是安装到了 C:\Program Files\Java\jdk1.8.0_121 这样的路径文件夹下通常有以下文件：bin/ jre/ src.zip COPYRIGHT lib/ THIRDPARTYLICENSEREADME.txt db/ LICENSE THIRDPARTYLICENSEREADME-JAVAFX.txt include/ README.html javafx-src.zip release 复制这个路径 至此，安装完成，下一步配置 JDK 环境 Win + R 打开运行，输入 sysdm.cpl ，回车 切换到 高级 选项卡，点击环境变量按钮，可参考下图 新建变量，名为 JAVA_HOME ,路径为 C:\Program Files\Java\jdk1.8.0_121 【就是我们刚才找到的那个安装路径】 点击 Path ，点击编辑，点击 编辑文本 ，可参考下图 在出来的一串字符的最前面添加 %JAVA_HOME%/bin;%JAVA_HOME%/jre/bin; 保存退出。 3. 新建变量，名为 `CLASSPATH` ,路径为 `.;%JAVA_HOME%/lib/dt.jar;%JAVA_HOME%/lib/tools.jar` 【千万不要忽略前面的那个点】 4. 保存退出 至此，配置完成，下一步检测安装是否正确 Win + R 打开运行，输入 cmd ，回车 输入 java -version ，回车后出现如下内容即为正常 123java version &quot;1.8.0_121&quot;Java(TM) SE Runtime Environment (build 1.8.0_121-b13)Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode) 输入 javac -version ，回车后出现如下内容即为正常 1javac 1.8.0_121 至此，安装与配置过程结束 —-EOF–]]></content>
       <tags>
         <tag>Guide</tag>
         <tag>JDK</tag>
@@ -64,7 +64,7 @@
   <entry>
     <title><![CDATA[SQL Server 2016 Developer with Service Pack 1 下载链接 [Download Link]]]></title>
     <url>%2F2017%2F02%2F21%2FSQL-Server-2016-Developer-with-Service-Pack-1-%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5-Download-Link%2F</url>
-    <content type="text"><![CDATA[SQL Server 2016 Developer with Service Pack 1 (x64) - DVD (Chinese-Simplified)文件名： cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso发布日期： 2016/12/2语言： Chinese - SimplifiedSHA1：D4A73F491DF47AF46C933D711259EA099C1A8537 Download Link:ed2k://|file|cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso|2959722496|9D6964555409F8E4BBFD3439E15921E9|/ 注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用]]></content>
+    <content type="text"><![CDATA[asdfsao SQL Server 2016 Developer with Service Pack 1 (x64) - DVD (Chinese-Simplified)文件名： cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso发布日期： 2016/12/2语言： Chinese - SimplifiedSHA1：D4A73F491DF47AF46C933D711259EA099C1A8537 Download Link:ed2k://|file|cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso|2959722496|9D6964555409F8E4BBFD3439E15921E9|/ 注：根据微软的授权，本版本对开发者的非商业用途进行免费授权使用]]></content>
       <tags>
         <tag>SQL</tag>
         <tag>Software</tag>
@@ -101,7 +101,7 @@
   <entry>
     <title><![CDATA[我在树莓派上都做了些什么]]></title>
     <url>%2F2017%2F02%2F07%2F%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88%2F</url>
-    <content type="text"><![CDATA[DDNS Vsftp Node.js Hexo NTP Nginx]]></content>
+    <content type="text"><![CDATA[DDNS Vsftp Hexo - Node.js NTP Nginx DNS &amp;&amp; GFW Hosts]]></content>
       <tags>
         <tag>随笔</tag>
         <tag>RPi</tag>
