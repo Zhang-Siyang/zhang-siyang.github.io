@@ -382,7 +382,7 @@
       
 
       
-        <p>最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。</p>
 <p>事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：<br><a id="more"></a><br>首先是大家都知道的 <code>sources.list</code> 源【这里选用了清华大学的源 ; 有时候我也想，我们学校怎么不弄个镜像呢？哈哈 呵呵】</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cat /etc/apt/sources.list</div><div class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div><div class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div></pre></td></tr></table></figure>
 <p>另一个源配置文件 <code>raspi.list</code> 就不是那么人人皆知了，但时间大都浪费在了这里</p>
