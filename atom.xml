@@ -827,7 +827,7 @@
     <link href="https://blog.zhangsy.me/2017/02/03/Note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-Bootload-%E9%94%81%E6%95%99%E7%A8%8B/"/>
     <id>https://blog.zhangsy.me/2017/02/03/Note3-强刷及强制解除-Bootload-锁教程/</id>
     <published>2017-02-03T12:50:53.000Z</published>
-    <updated>2017-06-10T09:25:46.563Z</updated>
+    <updated>2017-07-24T14:53:35.318Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。</p>
 <a id="more"></a>
@@ -845,13 +845,8 @@
 <li>将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式</li>
 <li>用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件</li>
 <li><p>在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁</p>
-<ul>
-<li><p><code>fastboot oem unlock-go</code></p>
-</li>
-<li><p><code>fastboot oem device-info</code></p>
-</li>
-</ul>
-<p>第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统<br><img src="https://p1.bqimg.com/1949/a8a8d483042116a7.png" alt="解锁成功"><br>若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项</p>
+<p> fastboot oem unlock-go<br> fastboot oem device-info</p>
+<p>第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统<br><img src="https://i.imgur.com/ydFqK7q.png" alt="解锁成功"><br>若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项</p>
 </li>
 </ol>
 <h2 id="所需文件"><a href="#所需文件" class="headerlink" title="所需文件"></a>所需文件</h2><blockquote>
