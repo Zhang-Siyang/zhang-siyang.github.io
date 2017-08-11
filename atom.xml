@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-07-21T07:21:07.078Z</updated>
+  <updated>2017-08-11T08:05:41.300Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纪录</title>
+    <link href="https://blog.zhangsy.me/2017/08/11/%E7%BA%AA%E5%BD%95/"/>
+    <id>https://blog.zhangsy.me/2017/08/11/纪录/</id>
+    <published>2017-08-11T08:03:29.000Z</published>
+    <updated>2017-08-11T08:05:41.300Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>早就想过，当我到了下一段时间里，我该如何对待往事？</p>
+<p>我选择将他们记录下来，以便纪念，谁对谁错，也都留到以后吧</p>
+<p><img src="https://i.imgur.com/Qydabfl.png" alt="知乎删问题"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;早就想过，当我到了下一段时间里，我该如何对待往事？&lt;/p&gt;
+&lt;p&gt;我选择将他们记录下来，以便纪念，谁对谁错，也都留到以后吧&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://
+    
+    </summary>
+    
+    
+      <category term="审查" scheme="https://blog.zhangsy.me/tags/%E5%AE%A1%E6%9F%A5/"/>
+    
+      <category term="纪录" scheme="https://blog.zhangsy.me/tags/%E7%BA%AA%E5%BD%95/"/>
+    
+      <category term="知乎" scheme="https://blog.zhangsy.me/tags/%E7%9F%A5%E4%B9%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>怎样把收藏的歌曲信息从 QQ 音乐转到网易云音乐？ | QQ 音乐歌单备份/导出</title>
