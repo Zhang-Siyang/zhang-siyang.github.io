@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-08-11T08:05:41.300Z</updated>
+  <updated>2017-08-11T08:15:10.447Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大学生活记录</title>
+    <link href="https://blog.zhangsy.me/2017/08/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <id>https://blog.zhangsy.me/2017/08/11/大学生活记录/</id>
+    <published>2017-08-11T08:10:30.000Z</published>
+    <updated>2017-08-11T08:15:10.447Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i.imgur.com/BVclYca.jpg" alt="2017‎年‎4‎月‎26‎日，‏‎21:32:56"></p>
+<p><img src="https://i.imgur.com/K2epa3L.jpg" alt="‎2017‎年‎4‎月‎27‎日，‏‎16:48:44"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BVclYca.jpg&quot; alt=&quot;2017‎年‎4‎月‎26‎日，‏‎21:32:56&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;im
+    
+    </summary>
+    
+    
+      <category term="摄影" scheme="https://blog.zhangsy.me/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="大学" scheme="https://blog.zhangsy.me/tags/%E5%A4%A7%E5%AD%A6/"/>
+    
+      <category term="键盘" scheme="https://blog.zhangsy.me/tags/%E9%94%AE%E7%9B%98/"/>
+    
+      <category term="舍友" scheme="https://blog.zhangsy.me/tags/%E8%88%8D%E5%8F%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>纪录</title>
@@ -848,59 +877,6 @@
       <category term="随笔" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="RPi" scheme="https://blog.zhangsy.me/tags/RPi/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>红米Note3 强刷及强制解除 Bootload 锁教程</title>
-    <link href="https://blog.zhangsy.me/2017/02/03/Note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-Bootload-%E9%94%81%E6%95%99%E7%A8%8B/"/>
-    <id>https://blog.zhangsy.me/2017/02/03/Note3-强刷及强制解除-Bootload-锁教程/</id>
-    <published>2017-02-03T12:50:53.000Z</published>
-    <updated>2017-07-24T15:17:20.676Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。</p>
-<a id="more"></a>
-<blockquote>
-<p>闲话：一直以来都比较喜欢小米公司，觉得很合我的心，年轻、爱发烧，但最近我发现去官网找个文件都找不到，“产能不足”也很严重。是小米急躁了吗？</p>
-</blockquote>
-<h2 id="进入9008强刷模式"><a href="#进入9008强刷模式" class="headerlink" title="进入9008强刷模式"></a>进入9008强刷模式</h2><ol>
-<li>解压附件”fastboot_edl.7z”并进入解压出的文件夹，你应该能看到几个文件</li>
-<li>重启你的手机到 fastboot 模式（按住“音量下”与“电源键”），将之连接电脑</li>
-<li>双击文件夹中的 edl.cmd</li>
-<li>手机震动之后，就代表已经从 900E 模式暂时跳转到 9008 模式了，手机会亮起红色呼吸灯，具体可进入设备管理器确认</li>
-<li>进入设备管理器，安装附件中的高通驱动</li>
-</ol>
-<h2 id="强行解锁bootloader"><a href="#强行解锁bootloader" class="headerlink" title="强行解锁bootloader"></a>强行解锁bootloader</h2><ol>
-<li>将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式</li>
-<li>用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件</li>
-<li>在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁  </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">fastboot oem unlock-go</div><div class="line">fastboot oem device-info</div></pre></td></tr></table></figure>
-<p>第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统<br><img src="https://i.imgur.com/ydFqK7q.png" alt="解锁成功"><br>若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项</p>
-<h2 id="所需文件"><a href="#所需文件" class="headerlink" title="所需文件"></a>所需文件</h2><blockquote>
-<p><em>Name:</em>【刷机工具】<em>MiPhone20151028.exe</em><br>-<br>Size:26.0 MB (27,305,815 字节)<br>CRC32: 47962DD3<br>MD5: 64A2B6F5620DB2BF249DAC0CE2017428<br>SHA-1: 7FA20958DA2A4061DAFA5A007D3575895927EED7<br>Download:<a href="http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe" target="_blank" rel="external">http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe</a><br><em>Name:</em>【高通驱动】<em>Qualcomm_Driver.7z</em><br>-<br>Download:<a href="https://www.dropbox.com/s/owqq8f5385j2c5n/Qualcomm_Driver.7z?dl=1" target="_blank" rel="external">https://www.dropbox.com/s/owqq8f5385j2c5n/Qualcomm_Driver.7z?dl=1</a><br>Size:339 KB (347,919 字节)<br>CRC32: 37EB2F65<br>MD5: 50C8020099D6DE5F8DD92F485CA95A9B<br>SHA-1: A906552770CB6286A50A2016EC639D01B2D33EA9<br><em>Name:</em>【原线刷包】<em>kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz</em><br>-<br>Size:1.26 GB (1,356,148,824 字节)<br>CRC32: 334B0B9A<br>MD5: 9706E1256126FCB74F373BCAB6848E9E<br>SHA-1: B7D9FC7C80ADF0D94002A0BFF8B3A16ADDA8C14D<br>Download:<a href="http://obigota.d.miui.com/V7.1.8.0.LHOMICL/kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz" target="_blank" rel="external">http://obigota.d.miui.com/V7.1.8.0.LHOMICL/kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz</a><br><em>Name:fastboot_edl.7z</em><br>-<br>Size:135 KB (138,259 字节)<br>Download:<a href="https://www.dropbox.com/s/p6noweo7yl21d5g/fastboot_edl.7z?dl=1" target="_blank" rel="external">https://www.dropbox.com/s/p6noweo7yl21d5g/fastboot_edl.7z?dl=1</a><br>CRC32: E79A4C7F<br>MD5: BD5DB3C6DDA08910312849CF39EE3F18<br>SHA-1: 7A9FE43E254A4C7B22BB7A2890903F7D029B9378<br><em>Name:Unlocked_Bootloader.zip</em><br>-<br>Size:212 KB (217,205 字节)<br>Download:<a href="https://www.dropbox.com/s/vw3nf1zbvvco44h/Unlocked_Bootloader.zip?dl=1" target="_blank" rel="external">https://www.dropbox.com/s/vw3nf1zbvvco44h/Unlocked_Bootloader.zip?dl=1</a><br>CRC32: D2CCA8C7<br>MD5: F69EEB321FB63C4CCAC51CBEF7545B87<br>SHA-1: 51CBFD17C177841A1786095BFFEABFC53E536EE6</p>
-</blockquote>
-<p>注：如以上文件的下载链接失效，请发送邮件至CE.BB.CAT(at)GMAIL.COM。特别地，线刷包【可能】可以用其他线刷包替代。</p>
-<p>原文【By:emuzychenko】：<a href="https://forum.xda-developers.com/android/software-hacking/guide-how-to-reboot-to-edl-fastboot-t3394292" target="_blank" rel="external">https://forum.xda-developers.com/android/software-hacking/guide-how-to-reboot-to-edl-fastboot-t3394292</a></p>
-<p>本文基于译文【By:clawneo】：<a href="http://bbs.zhiyoo.com/forum.php?mod=viewthread&amp;tid=12591147" target="_blank" rel="external">http://bbs.zhiyoo.com/forum.php?mod=viewthread&amp;tid=12591147</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="XiaoMi" scheme="https://blog.zhangsy.me/tags/XiaoMi/"/>
-    
-      <category term="RedMi Note3" scheme="https://blog.zhangsy.me/tags/RedMi-Note3/"/>
-    
-      <category term="Guide" scheme="https://blog.zhangsy.me/tags/Guide/"/>
-    
-      <category term="Unlock" scheme="https://blog.zhangsy.me/tags/Unlock/"/>
-    
-      <category term="Flash" scheme="https://blog.zhangsy.me/tags/Flash/"/>
     
   </entry>
   
