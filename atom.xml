@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-08-11T08:15:10.447Z</updated>
+  <updated>2017-08-13T07:00:10.926Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian/Ubuntu 单独安装 ab 命令</title>
+    <link href="https://blog.zhangsy.me/2017/08/13/Debian-Ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://blog.zhangsy.me/2017/08/13/Debian-Ubuntu-单独安装-ab-命令/</id>
+    <published>2017-08-13T06:39:18.000Z</published>
+    <updated>2017-08-13T07:00:10.926Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2-utils</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+    
+    </summary>
+    
+    
+      <category term="随手一记" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E6%89%8B%E4%B8%80%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>大学生活记录</title>
@@ -109,7 +130,7 @@
     <link href="https://blog.zhangsy.me/2017/07/13/Kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F%EF%BC%9F/"/>
     <id>https://blog.zhangsy.me/2017/07/13/Kindle-邮箱支持哪些格式？/</id>
     <published>2017-07-12T18:01:14.000Z</published>
-    <updated>2017-07-12T18:29:21.527Z</updated>
+    <updated>2017-08-13T06:59:35.586Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><a id="more"></a>
 <p>Kindle个人文档服务与以下设备兼容：</p>
@@ -153,6 +174,8 @@
     </summary>
     
     
+      <category term="Kindle" scheme="https://blog.zhangsy.me/tags/Kindle/"/>
+    
   </entry>
   
   <entry>
@@ -160,7 +183,7 @@
     <link href="https://blog.zhangsy.me/2017/07/10/C-%E5%B0%8F%E8%AE%A1-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/"/>
     <id>https://blog.zhangsy.me/2017/07/10/C-小计-参数的传入/</id>
     <published>2017-07-10T09:17:56.000Z</published>
-    <updated>2017-07-10T09:18:21.690Z</updated>
+    <updated>2017-08-13T06:59:13.146Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> * argv [] )</span> </span>&#123;</div><div class="line">    <span class="built_in">printf</span>( <span class="string">"argc = %d\n"</span>, argc );</div><div class="line">    <span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">0</span>; i &lt; argc; ++i ) &#123;</div><div class="line">        <span class="built_in">printf</span>( <span class="string">"argv[ %d ] = %s\n"</span>, i, argv[ i ] );</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
@@ -172,6 +195,10 @@
     </summary>
     
     
+      <category term="小计" scheme="https://blog.zhangsy.me/tags/%E5%B0%8F%E8%AE%A1/"/>
+    
+      <category term="C" scheme="https://blog.zhangsy.me/tags/C/"/>
+    
   </entry>
   
   <entry>
@@ -179,7 +206,7 @@
     <link href="https://blog.zhangsy.me/2017/07/08/%E8%A7%86%E9%A2%91%E8%BD%AC%E8%BD%BD-HowFun-%E6%88%91%E5%80%91%E7%95%A2%E5%85%B8%E4%B9%8B%E5%BE%8C%E8%A6%81%E5%81%9A%E4%BB%80%E9%BA%BC/"/>
     <id>https://blog.zhangsy.me/2017/07/08/视频转载-HowFun-我們畢典之後要做什麼/</id>
     <published>2017-07-08T11:20:54.000Z</published>
-    <updated>2017-07-08T12:00:33.317Z</updated>
+    <updated>2017-08-13T06:58:21.616Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i.imgur.com/0u7Nqr8.png" alt="封面"><br><a id="more"></a></p>
 <p>用系统浏览器打开，效果更佳<br><img src="https://i.imgur.com/DS7LpQK.png" alt=""></p>
@@ -203,6 +230,12 @@
     </summary>
     
     
+      <category term="转载" scheme="https://blog.zhangsy.me/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="HowFun" scheme="https://blog.zhangsy.me/tags/HowFun/"/>
+    
+      <category term="毕业" scheme="https://blog.zhangsy.me/tags/%E6%AF%95%E4%B8%9A/"/>
+    
   </entry>
   
   <entry>
@@ -210,7 +243,7 @@
     <link href="https://blog.zhangsy.me/2017/07/08/%E9%9E%8B%E5%B8%A6%C2%B7%E8%88%9E%E8%80%85/"/>
     <id>https://blog.zhangsy.me/2017/07/08/鞋带·舞者/</id>
     <published>2017-07-08T02:47:47.000Z</published>
-    <updated>2017-07-08T11:39:21.391Z</updated>
+    <updated>2017-08-13T06:58:49.016Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     
@@ -221,6 +254,10 @@
     </summary>
     
     
+      <category term="加密文章" scheme="https://blog.zhangsy.me/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="待完成" scheme="https://blog.zhangsy.me/tags/%E5%BE%85%E5%AE%8C%E6%88%90/"/>
+    
   </entry>
   
   <entry>
@@ -228,7 +265,7 @@
     <link href="https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/"/>
     <id>https://blog.zhangsy.me/2017/06/11/那些个平民化的云/</id>
     <published>2017-06-10T20:14:28.000Z</published>
-    <updated>2017-06-11T09:43:43.909Z</updated>
+    <updated>2017-08-13T06:57:36.326Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card<br><a id="more"></a></p>
 <ul>
@@ -250,6 +287,12 @@
     </summary>
     
     
+      <category term="推荐" scheme="https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="云" scheme="https://blog.zhangsy.me/tags/%E4%BA%91/"/>
+    
+      <category term="墙" scheme="https://blog.zhangsy.me/tags/%E5%A2%99/"/>
+    
   </entry>
   
   <entry>
@@ -257,7 +300,7 @@
     <link href="https://blog.zhangsy.me/2017/06/05/%E7%AB%99%E7%82%B9%E5%B8%83%E5%B1%80%E8%B0%83%E6%95%B4%E4%B8%AD/"/>
     <id>https://blog.zhangsy.me/2017/06/05/站点布局调整中/</id>
     <published>2017-06-05T14:09:28.000Z</published>
-    <updated>2017-06-11T08:13:41.274Z</updated>
+    <updated>2017-08-13T06:57:02.757Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>如题，这两天会进行主题的更换与微小调整<br><a id="more"></a></p>
 <p>更换主题过后，将会恢复长久以来停止的更新</p>
@@ -270,6 +313,8 @@
     
     </summary>
     
+    
+      <category term="站点" scheme="https://blog.zhangsy.me/tags/%E7%AB%99%E7%82%B9/"/>
     
   </entry>
   
@@ -313,7 +358,7 @@
     <link href="https://blog.zhangsy.me/2017/04/01/20170401-T-SQL-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/"/>
     <id>https://blog.zhangsy.me/2017/04/01/20170401-T-SQL-语句实训作业/</id>
     <published>2017-03-31T16:30:46.000Z</published>
-    <updated>2017-03-31T17:41:48.937Z</updated>
+    <updated>2017-08-13T06:56:22.897Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>实验目标: 进一步熟悉 T-SQL 语句<br>实验人: ZhangSiyang<br>实验内容: 完成老师给出十四道题，详细见下</p>
 <a id="more"></a>
@@ -414,6 +459,8 @@
     </summary>
     
     
+      <category term="Homework" scheme="https://blog.zhangsy.me/tags/Homework/"/>
+    
   </entry>
   
   <entry>
@@ -457,7 +504,7 @@
     <link href="https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-T-SQL-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/"/>
     <id>https://blog.zhangsy.me/2017/03/22/20170321-简单-T-SQL-语句练习/</id>
     <published>2017-03-22T12:03:06.000Z</published>
-    <updated>2017-03-24T12:57:42.581Z</updated>
+    <updated>2017-08-13T06:55:57.807Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>本篇文章记录 20170321 交的 SQL 语句实训报告</p>
 <p>实验目标: 掌握 T-SQL 的基本用法<br><a id="more"></a><br>实验人: ZhangSiyang</p>
@@ -518,6 +565,8 @@
     
     </summary>
     
+    
+      <category term="Homework" scheme="https://blog.zhangsy.me/tags/Homework/"/>
     
   </entry>
   
@@ -841,42 +890,6 @@
       <category term="Github" scheme="https://blog.zhangsy.me/tags/Github/"/>
     
       <category term="Howto" scheme="https://blog.zhangsy.me/tags/Howto/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我在树莓派上都做了些什么</title>
-    <link href="https://blog.zhangsy.me/2017/02/07/%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/"/>
-    <id>https://blog.zhangsy.me/2017/02/07/我在树莓派上都做了些什么/</id>
-    <published>2017-02-07T05:54:35.000Z</published>
-    <updated>2017-06-10T09:26:46.773Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><ul>
-<li>DDNS</li>
-<li>Vsftp</li>
-<li>Hexo - Node.js</li>
-<li>NTP</li>
-<li>Nginx</li>
-<li>DNS &amp;&amp; GFW Hosts</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;ul&gt;
-&lt;li&gt;DDNS&lt;/li&gt;
-&lt;li&gt;Vsftp&lt;/li&gt;
-&lt;li&gt;Hexo - Node.js&lt;/li&gt;
-&lt;li&gt;NTP&lt;/li&gt;
-&lt;li&gt;Nginx&lt;/li&gt;
-&lt;li&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="RPi" scheme="https://blog.zhangsy.me/tags/RPi/"/>
     
   </entry>
   
