@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[K2 A2 自定义灯光]]></title>
+    <url>%2F2017%2F08%2F15%2FK2-A2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89%2F</url>
+    <content type="text"><![CDATA[123456789Usage : mtk_gpio -d &lt;type&gt; &lt;bool&gt; type: Red : 8 Blue : 10 Yellow : 11 bool: Open: : 1 Close : 0 Example : mtk_gpio -d 8 1 &amp;&amp; mtk_gpio -d 11 1 /*Orange*/]]></content>
+      <tags>
+        <tag>K2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Debian/Ubuntu 单独安装 ab 命令]]></title>
     <url>%2F2017%2F08%2F13%2FDebian-Ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[1sudo apt-get install apache2-utils]]></content>
