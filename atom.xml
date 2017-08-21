@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-08-15T03:25:12.790Z</updated>
+  <updated>2017-08-21T06:06:08.968Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>请停用 No-IP 的 DDNS 产品，否则有密码泄露的风险</title>
+    <link href="https://blog.zhangsy.me/2017/08/21/%E8%AF%B7%E5%81%9C%E7%94%A8-NOIP-%E7%9A%84-DDNS-%E4%BA%A7%E5%93%81%EF%BC%8C%E5%90%A6%E5%88%99%E6%9C%89%E5%AF%86%E7%A0%81%E6%B3%84%E9%9C%B2%E7%9A%84%E9%A3%8E%E9%99%A9/"/>
+    <id>https://blog.zhangsy.me/2017/08/21/请停用-NOIP-的-DDNS-产品，否则有密码泄露的风险/</id>
+    <published>2017-08-21T05:55:15.000Z</published>
+    <updated>2017-08-21T06:06:08.968Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>就像标题中提及的那样，在一次次的配置之失败后，我打开了 noip2 (V 2.1.9) 的 调试模式(-d) ，猛然发现他们仅将用户名与密码 Base64 编码后就传送至服务器，关键是他们使用了 http 协议，途径的所有路由皆能获取你的密码，如果您的所在地不是美国，那还需要经过国际出口</p>
+<p><img src="有黑块覆盖" alt="https://i.imgur.com/njmnSWy.png"></p>
+<p>上图中，我对敏感信息进行了遮盖</p>
+<p>我会继续寻找安全免费的 DDNS 服务，但我自己有域名，所以我大概只会贴出来试用中比较好的，并不会实际使用</p>
+<blockquote>
+<p>我会使用我自己的域名和安全的 NS 服务商提供的 API，如果条件允许，请你也这么做</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;就像标题中提及的那样，在一次次的配置之失败后，我打开了 noip2 (V 2.1.9) 的 调试模式(-d) ，猛然发现他们仅将用户名与密码 Base64 编码后就传送至服务
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Base64Encoding 演示代码[JavaScript]</title>
+    <link href="https://blog.zhangsy.me/2017/08/20/Base64Encoding-%E6%BC%94%E7%A4%BA%E4%BB%A3%E7%A0%81-JavaScript/"/>
+    <id>https://blog.zhangsy.me/2017/08/20/Base64Encoding-演示代码-JavaScript/</id>
+    <published>2017-08-20T09:11:46.000Z</published>
+    <updated>2017-08-20T09:13:35.025Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>很简单的代码，用来做算法示范再好不过了，来自 <a href="https://www.92ez.com/?action=show&amp;id=23380" target="_blank" rel="external">一只猿</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Base64Encoding</span>(<span class="params">input</span>) </span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">var</span> keyStr = <span class="string">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="</span>;</div><div class="line">	<span class="keyword">var</span> output = <span class="string">""</span>;</div><div class="line">	<span class="keyword">var</span> chr1, chr2, chr3, enc1, enc2, enc3, enc4;</div><div class="line">	<span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line"></div><div class="line">	input = utf8_encode(input);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> (i &lt; input.length) </div><div class="line">	&#123;</div><div class="line"></div><div class="line">		chr1 = input.charCodeAt(i++);</div><div class="line">		chr2 = input.charCodeAt(i++);</div><div class="line">		chr3 = input.charCodeAt(i++);</div><div class="line"></div><div class="line">		enc1 = chr1 &gt;&gt; <span class="number">2</span>;</div><div class="line">		enc2 = ((chr1 &amp; <span class="number">3</span>) &lt;&lt; <span class="number">4</span>) | (chr2 &gt;&gt; <span class="number">4</span>);</div><div class="line">		enc3 = ((chr2 &amp; <span class="number">15</span>) &lt;&lt; <span class="number">2</span>) | (chr3 &gt;&gt; <span class="number">6</span>);</div><div class="line">		enc4 = chr3 &amp; <span class="number">63</span>;</div><div class="line"></div><div class="line">		<span class="keyword">if</span> (<span class="built_in">isNaN</span>(chr2)) &#123;</div><div class="line">			enc3 = enc4 = <span class="number">64</span>;</div><div class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">isNaN</span>(chr3)) &#123;</div><div class="line">			enc4 = <span class="number">64</span>;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		output = output +</div><div class="line">		keyStr.charAt(enc1) + keyStr.charAt(enc2) +</div><div class="line">		keyStr.charAt(enc3) + keyStr.charAt(enc4);</div><div class="line"></div><div class="line">	&#125;</div><div class="line"> </div><div class="line">	<span class="keyword">return</span> output;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;很简单的代码，用来做算法示范再好不过了，来自 &lt;a href=&quot;https://www.92ez.com/?action=show&amp;amp;id=23380&quot; target=
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>K2 A2 自定义灯光</title>
@@ -783,77 +828,6 @@
       <category term="JDK" scheme="https://blog.zhangsy.me/tags/JDK/"/>
     
       <category term="Java" scheme="https://blog.zhangsy.me/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，世界！</title>
-    <link href="https://blog.zhangsy.me/2017/02/20/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%EF%BC%81/"/>
-    <id>https://blog.zhangsy.me/2017/02/20/你好，世界！/</id>
-    <published>2017-02-20T13:54:23.000Z</published>
-    <updated>2017-04-16T03:48:19.384Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>今天是开学第一天，昨晚看过课表之后竟有种 二上大一上 的感觉，上午高数讲了好多图形相关的，感觉蛮适合我这种学渣，英语依然是 LiuYuran 老师，很欢快嘛。<br><a id="more"></a></p>
-<script>
-    if("输入错误"==prompt("请输入密码"))
-    {
-        alert("输入正确");
-    }
-    else
-    {
-        alert("输入错误");
-        location="https://blog.zhangsy.me"; 
-    }
-</script>
-
-<p><del>BTW, 数学课上迟到好多人，很同情高数老师， 对了！迟到的同学正好碰上查教室人数的老师……</del></p>
-<p>令人眼前一亮的是下午的数据库，老师很严厉，听说是传说中的上学期 3/4 班的 C 老师，希望这学期数据库也可以学习得比较好吧，毕竟我是要写大软件的男人～～</p>
-<p>流水账写完了，综合来看还是没什么劲的，至于毛概课， 我就不提了。</p>
-<p>回见了您呐！</p>
-<p><del>文章本来被我误删了，又从 .save 文件恢复了，开心！</del></p>
-<p>今天想写一条命令上来：ssh-keygen -t rsa -b 4096 -C “your_email@example.com”</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天是开学第一天，昨晚看过课表之后竟有种 二上大一上 的感觉，上午高数讲了好多图形相关的，感觉蛮适合我这种学渣，英语依然是 LiuYuran 老师，很欢快嘛。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一种更棒的树莓派换源思路</title>
-    <link href="https://blog.zhangsy.me/2017/02/16/%E4%B8%80%E7%A7%8D%E6%9B%B4%E6%A3%92%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90%E6%80%9D%E8%B7%AF/"/>
-    <id>https://blog.zhangsy.me/2017/02/16/一种更棒的树莓派换源思路/</id>
-    <published>2017-02-16T11:55:02.000Z</published>
-    <updated>2017-03-24T12:57:42.581Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。</p>
-<p>事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：<br><a id="more"></a><br>首先是大家都知道的 <code>sources.list</code> 源【这里选用了清华大学的源 ; 有时候我也想，我们学校怎么不弄个镜像呢？哈哈 呵呵】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cat /etc/apt/sources.list</div><div class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div><div class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div></pre></td></tr></table></figure>
-<p>另一个源配置文件 <code>raspi.list</code> 就不是那么人人皆知了，但时间大都浪费在了这里</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cat /etc/apt/sources.list.d/raspi.list</div><div class="line">#deb http://archive.raspberrypi.org/debian/ jessie main ui</div><div class="line"># Uncomment line below then &apos;apt-get update&apos; to enable &apos;apt-get source&apos;</div><div class="line">#deb-src http://archive.raspberrypi.org/debian/ jessie main ui</div><div class="line"></div><div class="line"># use Ustc mirror:</div><div class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ jessie main ui</div></pre></td></tr></table></figure>
-<p><del>事后我又发现，<code>apt-get upgrade</code> 对 HTTPS 的支持并不好，不知道原因</del><br>试用 Https 连接方式却发现系统不支持【见下面的代码】 ; 根据系统出错信息，apt-get install 装个 apt-transport-https 就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">E: 无法找到获取软件包的渠道 /usr/lib/apt/methods/https 所需的驱动程序。</div><div class="line">N: 请检查是否安装了 apt-transport-https 软件包</div></pre></td></tr></table></figure></p>
-<p>附：下面这种情况运行一下<code>apt-get update</code>就好了，原因未知，等待调查<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">pi@RaspberryPi-2B:sudo apt-get install apt-transport-https</div><div class="line">正在读取软件包列表... 完成</div><div class="line">正在分析软件包的依赖关系树</div><div class="line">正在读取状态信息... 完成</div><div class="line">下列【新】软件包将被安装：</div><div class="line">  apt-transport-https</div><div class="line">升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 6 个软件包未被升级。</div><div class="line">需要下载 134 kB 的软件包。</div><div class="line">解压缩后会消耗掉 185 kB 的额外空间。</div><div class="line">【警告】：下列软件包不能通过验证！</div><div class="line">  apt-transport-https</div><div class="line">不经验证就安装这些软件包吗？ [y/N] n</div><div class="line">E: 有些软件包不能通过验证</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。&lt;/p&gt;
-&lt;p&gt;事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Guide" scheme="https://blog.zhangsy.me/tags/Guide/"/>
-    
-      <category term="RPi" scheme="https://blog.zhangsy.me/tags/RPi/"/>
-    
-      <category term="Think" scheme="https://blog.zhangsy.me/tags/Think/"/>
     
   </entry>
   
