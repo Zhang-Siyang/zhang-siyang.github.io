@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-08-21T06:21:20.914Z</updated>
+  <updated>2017-08-27T22:10:55.576Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nano 中，将默认的 [TAB] -&gt; 	 换为 [TAB] -&gt; &#39; &#39;*4</title>
+    <link href="https://blog.zhangsy.me/2017/08/29/Nano-%E4%B8%AD%EF%BC%8C%E5%B0%86%E9%BB%98%E8%AE%A4%E7%9A%84-TAB-t-%E6%8D%A2%E4%B8%BA-TAB-4/"/>
+    <id>https://blog.zhangsy.me/2017/08/29/Nano-中，将默认的-TAB-t-换为-TAB-4/</id>
+    <published>2017-08-29T04:15:19.000Z</published>
+    <updated>2017-08-27T22:10:55.576Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>If you use nano with a language like python (as in your example) it’s also a good idea to convert tabs to spaces.</p>
+<p>Edit your ~/.nanorc file (or create it) and add:</p>
+<pre><code>set tabsize 4
+set tabstospaces
+</code></pre><p>If you already got a file with tabs and want to convert them to spaces i recommend the expandcommand (shell):</p>
+<pre><code>expand -4 input.py &gt; output.py
+</code></pre><p>From: <a href="https://stackoverflow.com/a/15364505" target="_blank" rel="external">How to make the tab character 4 spaces instead of 8 spaces in nano?@Sven Rojek</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;If you use nano with a language like python (as in your example) it’s also a good idea 
+    
+    </summary>
+    
+    
+      <category term="小记" scheme="https://blog.zhangsy.me/tags/%E5%B0%8F%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>请停用 No-IP 的 DDNS 产品，否则有密码泄露的风险</title>
@@ -249,11 +276,11 @@
   </entry>
   
   <entry>
-    <title>C-小计-参数的传入</title>
+    <title>C-小记-参数的传入</title>
     <link href="https://blog.zhangsy.me/2017/07/10/C-%E5%B0%8F%E8%AE%A1-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/"/>
     <id>https://blog.zhangsy.me/2017/07/10/C-小计-参数的传入/</id>
     <published>2017-07-10T09:17:56.000Z</published>
-    <updated>2017-08-13T06:59:13.146Z</updated>
+    <updated>2017-08-27T22:11:28.826Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> * argv [] )</span> </span>&#123;</div><div class="line">    <span class="built_in">printf</span>( <span class="string">"argc = %d\n"</span>, argc );</div><div class="line">    <span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">0</span>; i &lt; argc; ++i ) &#123;</div><div class="line">        <span class="built_in">printf</span>( <span class="string">"argv[ %d ] = %s\n"</span>, i, argv[ i ] );</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
@@ -265,7 +292,7 @@
     </summary>
     
     
-      <category term="小计" scheme="https://blog.zhangsy.me/tags/%E5%B0%8F%E8%AE%A1/"/>
+      <category term="小记" scheme="https://blog.zhangsy.me/tags/%E5%B0%8F%E8%AE%B0/"/>
     
       <category term="C" scheme="https://blog.zhangsy.me/tags/C/"/>
     
@@ -757,81 +784,6 @@
       <category term="Tool" scheme="https://blog.zhangsy.me/tags/Tool/"/>
     
       <category term=".Bat" scheme="https://blog.zhangsy.me/tags/Bat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK 的安装与配置【For Windows】</title>
-    <link href="https://blog.zhangsy.me/2017/02/21/JDK-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE%E3%80%90For-Windows%E3%80%91/"/>
-    <id>https://blog.zhangsy.me/2017/02/21/JDK-的安装与配置【For-Windows】/</id>
-    <published>2017-02-21T15:15:17.000Z</published>
-    <updated>2017-06-10T10:06:25.284Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>总是被叫走装环境，干脆写篇博客算了<br><a id="more"></a></p>
-<h2 id="JDK-的安装"><a href="#JDK-的安装" class="headerlink" title="JDK 的安装"></a>JDK 的安装</h2><ol>
-<li>下载 JDK 安装包</li>
-</ol>
-<p>我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载<br><code>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</code></p>
-<p>选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】<br><!--more--><br><img src="https://i.imgur.com/yoy2QX0.png" alt="Java 官网下载界面"></p>
-<ol>
-<li>安装其实很简单，下一步 下一步 下一步就好了，如果已经安装过 JDK 或 JDE，最好卸载干净之后再安装新版 JDK。</li>
-</ol>
-<h2 id="JDK的配置"><a href="#JDK的配置" class="headerlink" title="JDK的配置"></a>JDK的配置</h2><ol>
-<li><p>先寻找 JDK 安装到了哪里</p>
-<ol>
-<li>一般都是安装到了 <code>C:\Program Files\Java\jdk1.8.0_121</code> 这样的路径<br>文件夹下通常有以下文件：<img src="https://i.imgur.com/ccqQ6ae.png" alt="文件夹概览"><br><code>bin/ jre/ src.zip COPYRIGHT lib/ THIRDPARTYLICENSEREADME.txt db/ LICENSE THIRDPARTYLICENSEREADME-JAVAFX.txt include/ README.html javafx-src.zip release</code></li>
-<li>复制这个路径 </li>
-</ol>
-</li>
-</ol>
-<p>至此，安装完成，下一步配置 JDK 环境  </p>
-<ol>
-<li><p><code>Win</code> + <code>R</code> 打开运行，输入 <code>sysdm.cpl</code> ，回车 </p>
-<ol>
-<li><p>切换到 <code>高级</code> 选项卡，点击环境变量按钮，可参考下图<br><img src="https://i.imgur.com/NxhRSVS.png" alt="切换到 `高级` 选项卡，点击环境变量">  </p>
-<ol>
-<li><p>新建变量，名为 <code>JAVA_HOME</code> ,路径为 <code>C:\Program Files\Java\jdk1.8.0_121</code> 【就是我们刚才找到的那个安装路径】<br><img src="https://i.imgur.com/vGn95lT.png" alt="各个按钮的位置"></p>
-</li>
-<li><p>点击 Path ，点击编辑，点击 编辑文本 ，可参考下图<br><img src="https://i.imgur.com/lTMyMwM.png" alt="编辑文本按钮的位置"></p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<p>在出来的一串字符的最前面添加 <code>%JAVA_HOME%/bin;%JAVA_HOME%/jre/bin;</code> 保存退出。</p>
-<pre><code>3.  新建变量，名为 `CLASSPATH` ,路径为 `.;%JAVA_HOME%/lib/dt.jar;%JAVA_HOME%/lib/tools.jar` 【千万不要忽略前面的那个点】
-
-4. 保存退出
-</code></pre><p>至此，配置完成，下一步检测安装是否正确</p>
-<ol>
-<li><p><code>Win</code> + <code>R</code> 打开运行，输入 <code>cmd</code> ，回车</p>
-<ol>
-<li><p>输入 <code>java -version</code> ，回车后出现如下内容即为正常</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">java version &quot;1.8.0_121&quot;</div><div class="line">Java(TM) SE Runtime Environment (build 1.8.0_121-b13)</div><div class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)</div></pre></td></tr></table></figure>
-</li>
-<li><p>输入 <code>javac -version</code> ，回车后出现如下内容即为正常</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javac 1.8.0_121</div></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-</ol>
-<p>至此，安装与配置过程结束</p>
-<p>—-EOF–</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;总是被叫走装环境，干脆写篇博客算了&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Guide" scheme="https://blog.zhangsy.me/tags/Guide/"/>
-    
-      <category term="JDK" scheme="https://blog.zhangsy.me/tags/JDK/"/>
-    
-      <category term="Java" scheme="https://blog.zhangsy.me/tags/Java/"/>
     
   </entry>
   
