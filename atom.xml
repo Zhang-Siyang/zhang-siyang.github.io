@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-08-31T15:37:39.597Z</updated>
+  <updated>2017-09-05T13:24:11.546Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windwos 10 开机黑屏解决方案</title>
+    <link href="https://blog.zhangsy.me/2017/09/05/Windwos-10-%E5%BC%80%E6%9C%BA%E9%BB%91%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://blog.zhangsy.me/2017/09/05/Windwos-10-开机黑屏解决方案/</id>
+    <published>2017-09-05T12:11:56.000Z</published>
+    <updated>2017-09-05T13:24:11.546Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>方案来自网络，作者未知，进行了重写 <del>与配图</del>[配图既麻烦又无必要，暂时不上]</p>
+</blockquote>
+<ol>
+<li>按下<code>Ctrl</code>+<code>Shift</code>+<code>ESC</code>组合键，打开任务管理器[配图一]</li>
+<li>[若已经开启，请跳过这一步骤]点击左下角的 详细信息 ，以显示全部内容[配图四]</li>
+<li>点击窗口左上角的 文件 -&gt; 运行新任务[配图三]</li>
+<li>在新打开的 新建任务 中输入 explorer.exe ，注意不要输错[配图四]</li>
+<li>应该已经能够正常显示桌面</li>
+</ol>
+<blockquote>
+<p>仅为临时方案，且原因未知，若您知道这是为什么，请告诉我，谢谢您</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;方案来自网络，作者未知，进行了重写 &lt;del&gt;与配图&lt;/del&gt;[配图既麻烦又无必要，暂时不上]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;l
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>SSD 数据恢复 —— 来自 SanDisk 的推荐</title>
@@ -649,77 +684,6 @@ set tabstospaces
     
     
       <category term="随笔" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20170321-简单 T-SQL 语句练习</title>
-    <link href="https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-T-SQL-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/"/>
-    <id>https://blog.zhangsy.me/2017/03/22/20170321-简单-T-SQL-语句练习/</id>
-    <published>2017-03-22T12:03:06.000Z</published>
-    <updated>2017-08-13T06:55:57.807Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>本篇文章记录 20170321 交的 SQL 语句实训报告</p>
-<p>实验目标: 掌握 T-SQL 的基本用法<br><a id="more"></a><br>实验人: ZhangSiyang</p>
-<h2 id="1-创建名为stuDB的数据库，属性都取默认值"><a href="#1-创建名为stuDB的数据库，属性都取默认值" class="headerlink" title="1. 创建名为stuDB的数据库，属性都取默认值"></a>1. 创建名为stuDB的数据库，属性都取默认值</h2><pre><code>1)创建名为stuDB的数据库，属性都取默认值。
-</code></pre><h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> stuDB;</div></pre></td></tr></table></figure>
-<h5 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h5><p>创建数据库：<code>create database NAME</code>，未指定的参数取默认值</p>
-<h2 id="2-删除数据库stuDB"><a href="#2-删除数据库stuDB" class="headerlink" title="2. 删除数据库stuDB"></a>2. 删除数据库stuDB</h2><h5 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h5><pre><code>2)删除数据库stuDB。
-</code></pre><h5 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">drop</span> <span class="keyword">database</span> stuDB;</div></pre></td></tr></table></figure>
-<h5 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h5><p>删除数据库：<code>drop database NAME</code></p>
-<h2 id="3-创建满足如下要求的数据库"><a href="#3-创建满足如下要求的数据库" class="headerlink" title="3. 创建满足如下要求的数据库"></a>3. 创建满足如下要求的数据库</h2><h5 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h5><pre><code>3)创建满足如下要求的数据库：
-   数据库名称stuDB(存储位置D:\SQL),包含两个数据文件和两个日志文件：
-   第一个数据文件stuDB_data1初始大小为50MB，文件的最大大小不受限制，文件的增长率为10%；
-   第二个数据文件stuDB_data2初始大小为50MB，文件的最大大小200MB，文件的增长率为10MB；
-   日志文件stuDB_log1初始大小为10MB，文件的最大大小为100MB，文件的增长率为10MB；
-   日志文件stuDB_log2初始大小为10MB，文件的最大大小为100MB，文件的增长率为10%。
-</code></pre><h5 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> stuDB</div><div class="line">	<span class="keyword">ON</span> ( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data1,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_data1.MDF'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>% ) , </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data2, </div><div class="line">		FILENAME=<span class="string">'D:\stuDB_data2.mdf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>%,</div><div class="line">		<span class="keyword">MAXSIZE</span> = <span class="keyword">UNLIMITED</span> ) </div><div class="line"></div><div class="line">	<span class="keyword">LOG</span> <span class="keyword">ON</span> ( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_log1,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_log1.ldf'</span>, </div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>, </div><div class="line">		<span class="keyword">MAXSIZE</span> = <span class="number">100</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span> ), </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_log2,</div><div class="line">		FILENAME=<span class="string">'D:\stuDB_log2.ldf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>,</div><div class="line">		<span class="keyword">MAXSIZE</span>=<span class="number">100</span>, </div><div class="line">		FILEGROWTH = <span class="number">10</span>% </div><div class="line">		);</div></pre></td></tr></table></figure>
-<h5 id="收获-2"><a href="#收获-2" class="headerlink" title="收获"></a>收获</h5><ol>
-<li>NAME 与 FILENAME 都是必须指出的，单位为mb时，可写可不写</li>
-<li>格式见上</li>
-</ol>
-<h2 id="4-在stuDB数据库中添加数据文件stuDB-data3-初……"><a href="#4-在stuDB数据库中添加数据文件stuDB-data3-初……" class="headerlink" title="4. 在stuDB数据库中添加数据文件stuDB_data3,初……"></a>4. 在stuDB数据库中添加数据文件stuDB_data3,初……</h2><h5 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h5><pre><code>4)在stuDB数据库中添加数据文件stuDB_data3,初始大小为20MB，增长增量为15%，最大大小100MB；
-</code></pre><h5 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> <span class="keyword">file</span> (</div><div class="line">	<span class="keyword">name</span> = stuDB_data3,</div><div class="line">	filename=<span class="string">'D:\stuDB_data3.MDF'</span>,</div><div class="line">	<span class="keyword">size</span> =<span class="number">20</span>,</div><div class="line">	filegrowth = <span class="number">15</span>%,</div><div class="line">	<span class="keyword">maxsize</span>=<span class="number">100</span>);</div></pre></td></tr></table></figure>
-<h5 id="收获-3"><a href="#收获-3" class="headerlink" title="收获"></a>收获</h5><p>添加文件只需三步：1. 进入相应数据库 2. 添加文件 3. 执行</p>
-<h2 id="5-将数据文件stuDB-data3的最大大小改为不受限制"><a href="#5-将数据文件stuDB-data3的最大大小改为不受限制" class="headerlink" title="5. 将数据文件stuDB_data3的最大大小改为不受限制"></a>5. 将数据文件stuDB_data3的最大大小改为不受限制</h2><h5 id="题目-3"><a href="#题目-3" class="headerlink" title="题目"></a>题目</h5><pre><code>5)修改数据库stuDB的属性，将数据文件stuDB_data3的最大大小改为不受限制；
-</code></pre><h5 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">modify</span> <span class="keyword">file</span>(</div><div class="line">	<span class="keyword">name</span> =stuDB_data3,</div><div class="line">	<span class="keyword">maxsize</span> = <span class="keyword">unlimited</span></div><div class="line">);</div></pre></td></tr></table></figure>
-<h5 id="收获-4"><a href="#收获-4" class="headerlink" title="收获"></a>收获</h5><p>主要是学习到这个格式，别的……没有</p>
-<h2 id="6-删除日志文件stuDB-log2"><a href="#6-删除日志文件stuDB-log2" class="headerlink" title="6. 删除日志文件stuDB_log2"></a>6. 删除日志文件stuDB_log2</h2><h5 id="题目-4"><a href="#题目-4" class="headerlink" title="题目"></a>题目</h5><pre><code>6)将日志文件stuDB_log2删除；
-</code></pre><h5 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line">REMOVE <span class="keyword">file</span> stuDB_log2;</div></pre></td></tr></table></figure>
-<h5 id="收获-5"><a href="#收获-5" class="headerlink" title="收获"></a>收获</h5><p>REMOVE file FILENAME</p>
-<h2 id="7-创建自定义文件组second"><a href="#7-创建自定义文件组second" class="headerlink" title="7. 创建自定义文件组second"></a>7. 创建自定义文件组second</h2><h5 id="题目-5"><a href="#题目-5" class="headerlink" title="题目"></a>题目</h5><pre><code>7)创建自定义文件组second；
-</code></pre><h5 id="代码-6"><a href="#代码-6" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
-<h2 id="8-添加数据文件stuDB-data4到文件组second"><a href="#8-添加数据文件stuDB-data4到文件组second" class="headerlink" title="8. 添加数据文件stuDB_data4到文件组second"></a>8. 添加数据文件stuDB_data4到文件组second</h2><h5 id="题目-6"><a href="#题目-6" class="headerlink" title="题目"></a>题目</h5><pre><code>8)添加数据文件stuDB_data4到文件组second,初始大小为20MB，增长增量为10MB，最大大小100MB；
-</code></pre><h5 id="代码-7"><a href="#代码-7" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">add</span> <span class="keyword">file</span> (</div><div class="line">	<span class="keyword">name</span>=stuDB_data4,</div><div class="line">	filename=<span class="string">'D:\stuDB_data4.MDF'</span>,</div><div class="line">	<span class="keyword">size</span>=<span class="number">20</span>,</div><div class="line">	filegrowth=<span class="number">10</span>,</div><div class="line">	<span class="keyword">maxsize</span>=<span class="number">100</span></div><div class="line">)<span class="keyword">to</span> filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
-<h5 id="收获-6"><a href="#收获-6" class="headerlink" title="收获"></a>收获</h5><p>…to filegroup second;</p>
-<h2 id="9-删除文件组second"><a href="#9-删除文件组second" class="headerlink" title="9. 删除文件组second"></a>9. 删除文件组second</h2><h5 id="题目-7"><a href="#题目-7" class="headerlink" title="题目"></a>题目</h5><pre><code>9)删除文件组second；
-</code></pre><h5 id="代码-8"><a href="#代码-8" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line">REMOVE <span class="keyword">file</span> stuDB_data4</div><div class="line">REMOVE filegroup <span class="keyword">second</span>;</div></pre></td></tr></table></figure>
-<h5 id="收获-7"><a href="#收获-7" class="headerlink" title="收获"></a>收获</h5><p>删除文件组时，文件组内必须没有文件</p>
-<h2 id="10-将数据库stuDB重命名为studentDB"><a href="#10-将数据库stuDB重命名为studentDB" class="headerlink" title="10. 将数据库stuDB重命名为studentDB"></a>10. 将数据库stuDB重命名为studentDB</h2><h5 id="题目-8"><a href="#题目-8" class="headerlink" title="题目"></a>题目</h5><pre><code>10)将数据库stuDB重命名为studentDB；
-</code></pre><h5 id="代码-9"><a href="#代码-9" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alter</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">modify</span> <span class="keyword">name</span> = studentDB;</div></pre></td></tr></table></figure>
-<h2 id="11-按如下要求创建数据库"><a href="#11-按如下要求创建数据库" class="headerlink" title="11. 按如下要求创建数据库"></a>11. 按如下要求创建数据库</h2><h5 id="题目-9"><a href="#题目-9" class="headerlink" title="题目"></a>题目</h5><pre><code>11)按如下要求创建数据库：
-        数据库名称studentDB(存储位置D:\SQL，要求判断该服务器上是否已有同名数据库,若有,将其删除),
-        包含三个数据文件和一个日志文件：
-        第一个数据文件stuDB_data1放在主文件组PRIMARY,初始大小为50MB,其他属性默认；
-        第二个数据文件stuDB_data2放在SECOND文件组，初始大小为50MB，其他属性默认；
-        第三个数据文件stuDB_data3放在SECOND文件组，初始大小为50MB，其他属性默认；
-    日志文件stuDB_log初始大小为10MB，文件的最大大小为100MB。
-</code></pre><h5 id="代码-10"><a href="#代码-10" class="headerlink" title="代码"></a>代码</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> sysdatabases</div><div class="line">		<span class="keyword">where</span> <span class="keyword">name</span> = <span class="string">'stuDB'</span>)	</div><div class="line">	<span class="keyword">drop</span> <span class="keyword">database</span> stuDB</div><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> studentDB</div><div class="line">	<span class="keyword">on</span>	(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_data1,</div><div class="line">		FILENAME = <span class="string">'D:\SQL\stuDB_data1.MDF'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup PRIMARY , </div><div class="line">		( </div><div class="line">		<span class="keyword">NAME</span> = stuDB_data2, </div><div class="line">		FILENAME = <span class="string">'D:\SQL\stuDB_data2.mdf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup <span class="keyword">SECOND</span> ,</div><div class="line">		(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_data3,</div><div class="line">                FILENAME = <span class="string">'D:\SQL\stuDB_data3.mdf'</span>,</div><div class="line">                <span class="keyword">SIZE</span> = <span class="number">50</span> )<span class="keyword">to</span> filegroup <span class="keyword">SECOND</span></div><div class="line">	<span class="keyword">log</span> <span class="keyword">on</span>	(</div><div class="line">		<span class="keyword">NAME</span> = stuDB_log,</div><div class="line">		FILENAME = <span class="string">'stuDB_log.ldf'</span>,</div><div class="line">		<span class="keyword">SIZE</span> = <span class="number">10</span>,</div><div class="line">		<span class="keyword">MAXSIZE</span> =<span class="number">100</span>);</div></pre></td></tr></table></figure>
-<h5 id="收获-8"><a href="#收获-8" class="headerlink" title="收获"></a>收获</h5><pre><code>if exists(select * from sysdatabases
-                where name = &apos;stuDB&apos;)
-        drop database stuDB
-</code></pre><p>文中所述代码均已开源 : &lt; TODO &gt;</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本篇文章记录 20170321 交的 SQL 语句实训报告&lt;/p&gt;
-&lt;p&gt;实验目标: 掌握 T-SQL 的基本用法&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Homework" scheme="https://blog.zhangsy.me/tags/Homework/"/>
     
   </entry>
   
