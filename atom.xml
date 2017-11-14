@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-11-12T15:13:30.769Z</updated>
+  <updated>2017-11-14T15:42:03.952Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -16,15 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>笔记-如何在 textarea 内通过代码来换行？</title>
+    <link href="https://blog.zhangsy.me/2017/11/14/%E7%AC%94%E8%AE%B0-%E5%A6%82%E4%BD%95%E5%9C%A8-textarea-%E5%86%85%E9%80%9A%E8%BF%87%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%8D%A2%E8%A1%8C%EF%BC%9F/"/>
+    <id>https://blog.zhangsy.me/2017/11/14/笔记-如何在-textarea-内通过代码来换行？/</id>
+    <published>2017-11-14T15:40:59.000Z</published>
+    <updated>2017-11-14T15:42:03.952Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>使用 <code>&amp;#13;&amp;#10</code> 即可</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;使用 &lt;code&gt;&amp;amp;#13;&amp;amp;#10&lt;/code&gt; 即可&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Windows 10 为微软拼音添加自定义短语 | 时间-变量</title>
     <link href="https://blog.zhangsy.me/2017/10/25/Windows-10-%E4%B8%BA%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%AD%E8%AF%AD-%E6%97%B6%E9%97%B4-%E5%8F%98%E9%87%8F/"/>
     <id>https://blog.zhangsy.me/2017/10/25/Windows-10-为微软拼音添加自定义短语-时间-变量/</id>
     <published>2017-10-25T13:30:57.000Z</published>
-    <updated>2017-11-12T15:13:30.769Z</updated>
+    <updated>2017-11-12T15:43:14.875Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：<code>&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;</code>，取而代之的居然是：<code>&#39;sj&#39;:&#39;13点28分&#39;</code> ！</p>
 <p>简单贴一下解决办法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]`</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]</div></pre></td></tr></table></figure>
 <p><img src="https://i.imgur.com/nsZGNAj.png" alt="添加示例"></p>
 <p>点击添加即可</p>
 ]]></content>
@@ -591,29 +611,6 @@ set tabstospaces
       <category term="云" scheme="https://blog.zhangsy.me/tags/%E4%BA%91/"/>
     
       <category term="墙" scheme="https://blog.zhangsy.me/tags/%E5%A2%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>站点布局调整中</title>
-    <link href="https://blog.zhangsy.me/2017/06/05/%E7%AB%99%E7%82%B9%E5%B8%83%E5%B1%80%E8%B0%83%E6%95%B4%E4%B8%AD/"/>
-    <id>https://blog.zhangsy.me/2017/06/05/站点布局调整中/</id>
-    <published>2017-06-05T14:09:28.000Z</published>
-    <updated>2017-08-13T06:57:02.757Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>如题，这两天会进行主题的更换与微小调整<br><a id="more"></a></p>
-<p>更换主题过后，将会恢复长久以来停止的更新</p>
-<p>谢谢各位的关注</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如题，这两天会进行主题的更换与微小调整&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="站点" scheme="https://blog.zhangsy.me/tags/%E7%AB%99%E7%82%B9/"/>
     
   </entry>
   

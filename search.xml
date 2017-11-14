@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[笔记-如何在 textarea 内通过代码来换行？]]></title>
+    <url>%2F2017%2F11%2F14%2F%E7%AC%94%E8%AE%B0-%E5%A6%82%E4%BD%95%E5%9C%A8-textarea-%E5%86%85%E9%80%9A%E8%BF%87%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%8D%A2%E8%A1%8C%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[使用 &amp;#13;&amp;#10 即可]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Windows 10 为微软拼音添加自定义短语 | 时间-变量]]></title>
     <url>%2F2017%2F10%2F25%2FWindows-10-%E4%B8%BA%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%AD%E8%AF%AD-%E6%97%B6%E9%97%B4-%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;，取而代之的居然是：&#39;sj&#39;:&#39;13点28分&#39; ！ 简单贴一下解决办法： 1设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]` 点击添加即可]]></content>
+    <content type="text"><![CDATA[在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;，取而代之的居然是：&#39;sj&#39;:&#39;13点28分&#39; ！ 简单贴一下解决办法： 1设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%] 点击添加即可]]></content>
   </entry>
   <entry>
     <title><![CDATA[Linux 使用 iptables 进行 Shadowsocks 流量统计]]></title>
