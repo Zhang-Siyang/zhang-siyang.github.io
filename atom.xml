@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-11-14T15:42:03.952Z</updated>
+  <updated>2017-11-16T06:13:02.716Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>说实话,这样的推广我也是蛮喜欢的</title>
+    <link href="https://blog.zhangsy.me/2017/11/16/%E8%AF%B4%E5%AE%9E%E8%AF%9D-%E8%BF%99%E6%A0%B7%E7%9A%84%E6%8E%A8%E5%B9%BF%E6%88%91%E4%B9%9F%E6%98%AF%E8%9B%AE%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
+    <id>https://blog.zhangsy.me/2017/11/16/说实话-这样的推广我也是蛮喜欢的/</id>
+    <published>2017-11-16T06:09:33.000Z</published>
+    <updated>2017-11-16T06:13:02.716Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>发到 V2 屡屡失败, 原因是站点在大多数节点的发主题帖都要验证手机, 而我并不想</p>
+</blockquote>
+<p>Title:对这个团体有更多好感了</p>
+<p><img src="https://ww1.sinaimg.cn/large/0060lm7Tly1fljw0thr8pj31kw0w0qv9.jpg" alt=""></p>
+<p>你看看这贴的</p>
+<p>居中&amp;靠边</p>
+<p>要是小广告都照顾一下墙面排版, 那我会乐意看一会</p>
+<p>//# 既然是水一帖,就发到 水 节点吧</p>
+<p>补充:发到水节点要验证手机……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;发到 V2 屡屡失败, 原因是站点在大多数节点的发主题帖都要验证手机, 而我并不想&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Title:对这个团体
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>笔记-如何在 textarea 内通过代码来换行？</title>
@@ -576,41 +607,6 @@ set tabstospaces
       <category term="加密文章" scheme="https://blog.zhangsy.me/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
     
       <category term="待完成" scheme="https://blog.zhangsy.me/tags/%E5%BE%85%E5%AE%8C%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>那些个平民化的云</title>
-    <link href="https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/"/>
-    <id>https://blog.zhangsy.me/2017/06/11/那些个平民化的云/</id>
-    <published>2017-06-10T20:14:28.000Z</published>
-    <updated>2017-08-13T06:57:36.326Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card<br><a id="more"></a></p>
-<ul>
-<li>Syncthing</li>
-<li>G Suite</li>
-<li>OneDrive</li>
-<li>rixCloud</li>
-<li>iCloud</li>
-<li>Dropbox</li>
-<li>Google Drive</li>
-<li>坚果云</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="推荐" scheme="https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/"/>
-    
-      <category term="云" scheme="https://blog.zhangsy.me/tags/%E4%BA%91/"/>
-    
-      <category term="墙" scheme="https://blog.zhangsy.me/tags/%E5%A2%99/"/>
     
   </entry>
   
