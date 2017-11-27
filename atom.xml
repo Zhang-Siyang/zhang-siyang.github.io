@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-11-16T06:13:02.716Z</updated>
+  <updated>2017-11-27T13:42:08.188Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>K2 常用网址 - 备忘</title>
+    <link href="https://blog.zhangsy.me/2017/11/27/K2-%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80-%E5%A4%87%E5%BF%98/"/>
+    <id>https://blog.zhangsy.me/2017/11/27/K2-常用网址-备忘/</id>
+    <published>2017-11-27T13:24:52.000Z</published>
+    <updated>2017-11-27T13:42:08.188Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Breed : https://breed.hackpascal.net</div><div class="line">Padavan : http://opt.cn2qq.com/padavan/</div><div class="line">    MD5 : http://opt.cn2qq.com/padavan/MD5.txt</div><div class="line">    Forum : http://www.right.com.cn/forum/thread-161324-1-1.html</div><div class="line">PandoraBox : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/</div><div class="line">    SHA256 : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/sha256sums</div><div class="line">Tomato-Phoenix : http://dl.tomato.org.cn/mt7620/V105/</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>说实话,这样的推广我也是蛮喜欢的</title>
@@ -585,28 +604,6 @@ set tabstospaces
       <category term="HowFun" scheme="https://blog.zhangsy.me/tags/HowFun/"/>
     
       <category term="毕业" scheme="https://blog.zhangsy.me/tags/%E6%AF%95%E4%B8%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>鞋带·舞者</title>
-    <link href="https://blog.zhangsy.me/2017/07/08/%E9%9E%8B%E5%B8%A6%C2%B7%E8%88%9E%E8%80%85/"/>
-    <id>https://blog.zhangsy.me/2017/07/08/鞋带·舞者/</id>
-    <published>2017-07-08T02:47:47.000Z</published>
-    <updated>2017-08-13T06:58:49.016Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
-    
-    </summary>
-    
-    
-      <category term="加密文章" scheme="https://blog.zhangsy.me/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
-    
-      <category term="待完成" scheme="https://blog.zhangsy.me/tags/%E5%BE%85%E5%AE%8C%E6%88%90/"/>
     
   </entry>
   
