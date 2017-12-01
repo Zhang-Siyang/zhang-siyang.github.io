@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-11-30T12:40:16.916Z</updated>
+  <updated>2017-12-01T06:27:57.157Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>On the Internet, nobody knows you&#39;re a dog</title>
+    <link href="https://blog.zhangsy.me/2017/12/01/On-the-Internet-nobody-knows-you-re-a-dog/"/>
+    <id>https://blog.zhangsy.me/2017/12/01/On-the-Internet-nobody-knows-you-re-a-dog/</id>
+    <published>2017-12-01T06:23:00.000Z</published>
+    <updated>2017-12-01T06:27:57.157Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-internet-by-peter-steiner.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>我看不一定 </p>
+</blockquote>
+<p><a href="https://ww1.sinaimg.cn/large/0060lm7Tly1fm191hpdc2j319u1ac0xx.jpg" target="_blank" rel="external">Pic Backup</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-inter
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>冬天里的迷迷茫茫</title>
@@ -546,59 +568,6 @@ set tabstospaces
       <category term="分享" scheme="https://blog.zhangsy.me/tags/%E5%88%86%E4%BA%AB/"/>
     
       <category term="教程" scheme="https://blog.zhangsy.me/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kindle 邮箱支持哪些格式？</title>
-    <link href="https://blog.zhangsy.me/2017/07/13/Kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F%EF%BC%9F/"/>
-    <id>https://blog.zhangsy.me/2017/07/13/Kindle-邮箱支持哪些格式？/</id>
-    <published>2017-07-12T18:01:14.000Z</published>
-    <updated>2017-08-13T06:59:35.586Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><a id="more"></a>
-<p>Kindle个人文档服务与以下设备兼容：</p>
-<ul>
-<li>Fire平板电脑</li>
-<li>Kindle电子书阅读器</li>
-<li>Kindle iPhone/iPad/iPod touch阅读软件</li>
-<li>Kindle安卓阅读软件</li>
-</ul>
-<p>通过将文档发送至您的〖发送至Kindle〗电子邮箱，您可将其发送至兼容设备。〖发送至Kindle〗电子邮箱是系统在您注册兼容设备时为您分配的唯一电子邮箱。有关〖发送至Kindle〗电子邮箱的详细信息，请参阅使用您的〖发送至Kindle〗电子邮箱。</p>
-<p>Kindle个人文档服务支持以下文件类型：</p>
-<ul>
-<li>[x] Kindle格式（.MOBI、.AZW）</li>
-<li>[x] Microsoft Word（.DOC、.DOCX）</li>
-<li>[x] HTML（.HTML、.HTM）</li>
-<li>[x] RTF (.RTF)</li>
-<li>[x] Text (.TXT) (Kindle X 咪咕电子书阅读器不支持)</li>
-<li>[x] JPEG（.JPEG、.JPG）</li>
-<li>[x] GIF (.GIF)</li>
-<li>[x] PNG (.PNG)</li>
-<li>[x] BMP (.BMP)  </li>
-<li>[x] PDF (.PDF)</li>
-</ul>
-<p>Kindle个人文档服务 <strong>不支持</strong> 以下文件类型：</p>
-<ul>
-<li>[x] Electronic Publication (.EPUB)</li>
-</ul>
-<p>重要： 建议您在发送文件之前将文件名改成英文（包括ZIP压缩文件和文件夹中的文件名）。我们可能会限制通过Kindle个人文档服务发送或存储的文档数量。详情请参阅Kindle个人文档服务使用条件 。</p>
-<p>来自 <a href="https://www.amazon.cn/gp/help/customer/display.html?nodeId=200767340" target="_blank" rel="external">Kindle个人文档服务</a> , 缓存时间：2017-07-13</p>
-<p>PS “- [x] “（复选框列表） 好像不能正常渲染，先这样吧</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;Kindle个人文档服务与以下设备兼容：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fire平板电脑&lt;/li&gt;
-&lt;li&gt;Kindle电子书阅读器&lt;/li&gt;
-    
-    </summary>
-    
-    
-      <category term="Kindle" scheme="https://blog.zhangsy.me/tags/Kindle/"/>
     
   </entry>
   
