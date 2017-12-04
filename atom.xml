@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-12-01T06:27:57.157Z</updated>
+  <updated>2017-12-04T15:29:39.692Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome 62 新功能！自带原生截图！</title>
+    <link href="https://blog.zhangsy.me/2017/12/04/Chrome-62-%E6%96%B0%E5%8A%9F%E8%83%BD%EF%BC%81%E8%87%AA%E5%B8%A6%E5%8E%9F%E7%94%9F%E6%88%AA%E5%9B%BE%EF%BC%81/"/>
+    <id>https://blog.zhangsy.me/2017/12/04/Chrome-62-新功能！自带原生截图！/</id>
+    <published>2017-12-04T15:06:46.000Z</published>
+    <updated>2017-12-04T15:29:39.692Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>介绍了 区域截图、全页面截图、可视范围截图、页面元素按块截图 四种方法，应该够用了<br><a id="more"></a></p>
+<p>区域截图 :</p>
+<ol>
+<li>Ctrl/Command + Shift + C 调出界面选择器</li>
+<li>Ctrl/Command + 鼠标左键 选择希望的范围</li>
+<li>截图将以文件的形式自动下载</li>
+</ol>
+<p>全页面截图 :</p>
+<ol>
+<li>Ctrl/Command + Shift + C 调出开发者工具</li>
+<li>Ctrl/Command + Shift + J 调出命令菜单</li>
+<li>输入 screenshot，在自动筛选出的结果里选择 Capture full size screenshot</li>
+</ol>
+<p>可视范围截图 :</p>
+<ol>
+<li>Ctrl/Command + Shift + C 调出开发者工具</li>
+<li>Ctrl/Command + Shift + J 调出命令菜单</li>
+<li>输入 screenshot，在自动筛选出的结果里选择 Capture screenshot</li>
+</ol>
+<p>[For dev]页面元素按块截图 :</p>
+<ol>
+<li>Ctrl/Command + Shift + C 调出界面选择器</li>
+<li>鼠标左键 选择希望的范围，会以高亮标识</li>
+<li>Ctrl/Command + Shift + J 调出命令菜单</li>
+<li>输入 screenshot，在自动筛选出的结果里选择 Capture node screenshot</li>
+</ol>
+<p>参见 <a href="https://developers.google.com/web/updates/2017/08/devtools-release-notes" target="_blank" rel="external">What’s New In DevTools (Chrome 62)</a><br>感谢 <a href="https://www.v2ex.com/t/411918?p=1#r_5045453" target="_blank" rel="external">zenxds@V2EX</a> 告知这一操作</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;介绍了 区域截图、全页面截图、可视范围截图、页面元素按块截图 四种方法，应该够用了&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>On the Internet, nobody knows you&#39;re a dog</title>
@@ -537,37 +582,6 @@ set tabstospaces
       <category term="纪录" scheme="https://blog.zhangsy.me/tags/%E7%BA%AA%E5%BD%95/"/>
     
       <category term="知乎" scheme="https://blog.zhangsy.me/tags/%E7%9F%A5%E4%B9%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>怎样把收藏的歌曲信息从 QQ 音乐转到网易云音乐？ | QQ 音乐歌单备份/导出</title>
-    <link href="https://blog.zhangsy.me/2017/07/21/%E6%80%8E%E6%A0%B7%E6%8A%8A%E6%94%B6%E8%97%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%E4%BB%8E-QQ-%E9%9F%B3%E4%B9%90%E8%BD%AC%E5%88%B0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%EF%BC%9F/"/>
-    <id>https://blog.zhangsy.me/2017/07/21/怎样把收藏的歌曲信息从-QQ-音乐转到网易云音乐？/</id>
-    <published>2017-07-21T06:38:08.000Z</published>
-    <updated>2017-07-21T07:21:07.078Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i.imgur.com/EDNDYhZ.png" alt="预览"></p>
-<p>昨天帮老妈（其实是我想）把常用音乐软件从 QQ 音乐转到网易云音乐，但是老妈建了好多个歌单，又有好多是收费音乐，没办法用下载 -&gt; 识别的方式收藏，一番搜寻过后找到了<a href="http://144.48.7.239:5000/convert.html?zhangsy.me" target="_blank" rel="external">这个</a>，他可以帮你把QQ音乐的所有歌单转制为 酷我播放列表格式 ，进而在网易云里一键导入  </p>
-<blockquote>
-<p>上面的链接有我自作主张添加的小尾巴哦，是想帮助那个同学识别来源啦，不喜欢的话，可以用<a href="http://144.48.7.239:5000/convert.html" target="_blank" rel="external">这个没有识别信息的</a><br>话说没有 https 诶</p>
-</blockquote>
-<p><img src="https://i.imgur.com/K3A9OsS.png" alt="复制链接"><br>就这样复制一下，粘到转换工具里就好了</p>
-<p><del>网易云怎么导入就不教了吧?</del><br><strong>登陆</strong> 后打开<a href="https://music.163.com/#/import/kuwo" target="_blank" rel="external">云导入界面</a>，就很简单了</p>
-<p><del>可是人家想要自己搭一个可找到<a href="https://github.com/comwrg/xMusicWeb" target="_blank" rel="external">仓库地址</a>也不会架，就很气</del></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EDNDYhZ.png&quot; alt=&quot;预览&quot;&gt;&lt;/p&gt;
-&lt;p&gt;昨天帮老妈（其实是我想）把常用音乐软件从 QQ 音乐转
-    
-    </summary>
-    
-    
-      <category term="分享" scheme="https://blog.zhangsy.me/tags/%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="教程" scheme="https://blog.zhangsy.me/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
