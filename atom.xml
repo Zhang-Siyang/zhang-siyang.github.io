@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-12-09T04:41:06.214Z</updated>
+  <updated>2017-12-21T09:57:46.383Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 小计</title>
+    <link href="https://blog.zhangsy.me/2017/12/17/Linux-%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://blog.zhangsy.me/2017/12/17/Linux-小计/</id>
+    <published>2017-12-17T07:25:39.000Z</published>
+    <updated>2017-12-21T09:57:46.383Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><code>systemctl</code> 中可执行文件要使用绝对路径, 像 <code>systemd</code> 就要使用 <code>/lib/systemd/systemd</code> (不然会在 <code>systemctl status $name</code> 中报 <code>Executable path is not absolute</code> )</p>
+<p>查看进程的可执行文件路径可以在 <code>/proc/$PID</code> 中查看 exe 指向何处来确定</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;code&gt;systemctl&lt;/code&gt; 中可执行文件要使用绝对路径, 像 &lt;code&gt;systemd&lt;/code&gt; 就要使用 &lt;code&gt;/lib/systemd/sy
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Nginx 反代 Google 之类网站 也太简单了点[还有HTTPS]</title>
@@ -553,35 +573,6 @@ set tabstospaces
     
     
       <category term="随手一记" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E6%89%8B%E4%B8%80%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大学生活记录</title>
-    <link href="https://blog.zhangsy.me/2017/08/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    <id>https://blog.zhangsy.me/2017/08/11/大学生活记录/</id>
-    <published>2017-08-11T08:10:30.000Z</published>
-    <updated>2017-08-11T08:15:10.447Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i.imgur.com/BVclYca.jpg" alt="2017‎年‎4‎月‎26‎日，‏‎21:32:56"></p>
-<p><img src="https://i.imgur.com/K2epa3L.jpg" alt="‎2017‎年‎4‎月‎27‎日，‏‎16:48:44"></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BVclYca.jpg&quot; alt=&quot;2017‎年‎4‎月‎26‎日，‏‎21:32:56&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;im
-    
-    </summary>
-    
-    
-      <category term="摄影" scheme="https://blog.zhangsy.me/tags/%E6%91%84%E5%BD%B1/"/>
-    
-      <category term="大学" scheme="https://blog.zhangsy.me/tags/%E5%A4%A7%E5%AD%A6/"/>
-    
-      <category term="键盘" scheme="https://blog.zhangsy.me/tags/%E9%94%AE%E7%9B%98/"/>
-    
-      <category term="舍友" scheme="https://blog.zhangsy.me/tags/%E8%88%8D%E5%8F%8B/"/>
     
   </entry>
   

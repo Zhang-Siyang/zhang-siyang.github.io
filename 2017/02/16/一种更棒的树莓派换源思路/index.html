@@ -51,7 +51,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Guide,RPi,Think," />
+  <meta name="keywords" content="Guide,RPi," />
 
 
 
@@ -70,13 +70,13 @@
 
 
 <meta name="description" content="最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。 事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：">
-<meta name="keywords" content="Guide,RPi,Think">
+<meta name="keywords" content="Guide,RPi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一种更棒的树莓派换源思路">
 <meta property="og:url" content="https://blog.zhangsy.me/2017/02/16/一种更棒的树莓派换源思路/index.html">
 <meta property="og:site_name" content="ZhangSiyang &#39;s Blog">
 <meta property="og:description" content="最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。 事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：">
-<meta property="og:updated_time" content="2017-03-24T12:57:42.581Z">
+<meta property="og:updated_time" content="2017-12-21T09:56:59.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一种更棒的树莓派换源思路">
 <meta name="twitter:description" content="最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。 事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：">
@@ -352,11 +352,13 @@
       
         <script src="/assets/js/APlayer.min.js"> </script><p>最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。</p>
 <p>事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：<br><a id="more"></a><br>首先是大家都知道的 <code>sources.list</code> 源【这里选用了清华大学的源 ; 有时候我也想，我们学校怎么不弄个镜像呢？哈哈 呵呵】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cat /etc/apt/sources.list</div><div class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div><div class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</div></pre></td></tr></table></figure>
-<p>另一个源配置文件 <code>raspi.list</code> 就不是那么人人皆知了，但时间大都浪费在了这里</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cat /etc/apt/sources.list.d/raspi.list</div><div class="line">#deb http://archive.raspberrypi.org/debian/ jessie main ui</div><div class="line"># Uncomment line below then &apos;apt-get update&apos; to enable &apos;apt-get source&apos;</div><div class="line">#deb-src http://archive.raspberrypi.org/debian/ jessie main ui</div><div class="line"></div><div class="line"># use Ustc mirror:</div><div class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ jessie main ui</div></pre></td></tr></table></figure>
-<p><del>事后我又发现，<code>apt-get upgrade</code> 对 HTTPS 的支持并不好，不知道原因</del><br>试用 Https 连接方式却发现系统不支持【见下面的代码】 ; 根据系统出错信息，apt-get install 装个 apt-transport-https 就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">E: 无法找到获取软件包的渠道 /usr/lib/apt/methods/https 所需的驱动程序。</div><div class="line">N: 请检查是否安装了 apt-transport-https 软件包</div></pre></td></tr></table></figure></p>
-<p>附：下面这种情况运行一下<code>apt-get update</code>就好了，原因未知，等待调查<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">pi@RaspberryPi-2B:sudo apt-get install apt-transport-https</div><div class="line">正在读取软件包列表... 完成</div><div class="line">正在分析软件包的依赖关系树</div><div class="line">正在读取状态信息... 完成</div><div class="line">下列【新】软件包将被安装：</div><div class="line">  apt-transport-https</div><div class="line">升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 6 个软件包未被升级。</div><div class="line">需要下载 134 kB 的软件包。</div><div class="line">解压缩后会消耗掉 185 kB 的额外空间。</div><div class="line">【警告】：下列软件包不能通过验证！</div><div class="line">  apt-transport-https</div><div class="line">不经验证就安装这些软件包吗？ [y/N] n</div><div class="line">E: 有些软件包不能通过验证</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cat /etc/apt/sources.list</div><div class="line">deb https://mirrors.neusoft.edu.cn/raspbian/raspbian/ stretch main non-free contrib</div><div class="line">deb-src https://mirrors.neusoft.edu.cn/raspbian/raspbian/ stretch main non-free contrib</div></pre></td></tr></table></figure>
+<p>另一个源配置文件 <code>raspi.list</code> 就不是那么人人皆知了，也因此浪费了许多时间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cat /etc/apt/sources.list.d/raspi.list</div><div class="line">deb https://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui</div><div class="line">deb-src https://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui</div></pre></td></tr></table></figure>
+<p><del>事后我又发现，<code>apt-get upgrade</code> 对 HTTPS 的支持并不好，不知道原因</del><br>试用 Https 连接方式却发现系统不支持【见下】 ; 根据系统出错信息，apt-get install 装个 apt-transport-https 就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">E: 无法找到获取软件包的渠道 /usr/lib/apt/methods/https 所需的驱动程序。</div><div class="line">N: 请检查是否安装了 apt-transport-https 软件包</div></pre></td></tr></table></figure></p>
+<p>附：下面这种情况运行一下<code>apt-get update</code>就好了，原因未知，等待调查</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install apt-transport-https</div><div class="line">正在读取软件包列表... 完成</div><div class="line">正在分析软件包的依赖关系树</div><div class="line">正在读取状态信息... 完成</div><div class="line">下列【新】软件包将被安装：</div><div class="line">  apt-transport-https</div><div class="line">升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 6 个软件包未被升级。</div><div class="line">需要下载 134 kB 的软件包。</div><div class="line">解压缩后会消耗掉 185 kB 的额外空间。</div><div class="line">【警告】：下列软件包不能通过验证！</div><div class="line">  apt-transport-https</div><div class="line">不经验证就安装这些软件包吗？ [y/N] n</div><div class="line">E: 有些软件包不能通过验证</div></pre></td></tr></table></figure>
+<p>2017-12-21 更新:<br>    跟进 Raspbian 8 -&gt; 9 的更新 </p>
 
       
     </div>
@@ -389,8 +391,6 @@
             <a href="/tags/Guide/" rel="tag"># Guide</a>
           
             <a href="/tags/RPi/" rel="tag"># RPi</a>
-          
-            <a href="/tags/Think/" rel="tag"># Think</a>
           
         </div>
       
@@ -485,7 +485,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">40</span>
+                <span class="site-state-item-count">41</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -498,7 +498,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">50</span>
+                <span class="site-state-item-count">49</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
