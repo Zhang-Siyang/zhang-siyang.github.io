@@ -69,16 +69,16 @@
 
 
 
-<meta name="description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nginx -s reload  配置稍后贴上来">
+<meta name="description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nano /etc/nginx/google.conf nginx -s reload  本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了 博主很菜, 请多多指正, 多谢">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx 反代 Google 之类网站 也太简单了点[还有HTTPS]">
 <meta property="og:url" content="https://blog.zhangsy.me/2017/12/09/Nginx-反代-Google-之类网站-也太简单了点-还有HTTPS/index.html">
 <meta property="og:site_name" content="ZhangSiyang &#39;s Blog">
-<meta property="og:description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nginx -s reload  配置稍后贴上来">
-<meta property="og:updated_time" content="2017-12-09T04:41:06.214Z">
+<meta property="og:description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nano /etc/nginx/google.conf nginx -s reload  本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了 博主很菜, 请多多指正, 多谢">
+<meta property="og:updated_time" content="2017-12-28T01:53:16.468Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx 反代 Google 之类网站 也太简单了点[还有HTTPS]">
-<meta name="twitter:description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nginx -s reload  配置稍后贴上来">
+<meta name="twitter:description" content="反代一个网站实在简单：  apt install nginx nano /etc/nginx/nginx.conf nano /etc/nginx/google.conf nginx -s reload  本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了 博主很菜, 请多多指正, 多谢">
 
 
 
@@ -353,9 +353,16 @@
 <ol>
 <li>apt install nginx</li>
 <li>nano /etc/nginx/nginx.conf</li>
+<li>nano /etc/nginx/google.conf</li>
 <li>nginx -s reload</li>
 </ol>
-<p>配置稍后贴上来</p>
+<p>本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了</p>
+<p>博主很菜, 请多多指正, 多谢!<br><a id="more"></a></p>
+<h3 id="Apt-install-nginx"><a href="#Apt-install-nginx" class="headerlink" title="Apt install nginx"></a>Apt install nginx</h3><p>不需多言, <code>apt install nginx</code></p>
+<h3 id="Nano-etc-nginx-nginx-conf"><a href="#Nano-etc-nginx-nginx-conf" class="headerlink" title="Nano /etc/nginx/nginx.conf"></a>Nano /etc/nginx/nginx.conf</h3><p>在 http 段中加入 <code>include /etc/nginx/google.conf;</code> 这样才便于管理嘛</p>
+<h3 id="Nano-etc-nginx-google-conf"><a href="#Nano-etc-nginx-google-conf" class="headerlink" title="Nano /etc/nginx/google.conf"></a>Nano /etc/nginx/google.conf</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="section">server</span></div><div class="line">    &#123;</div><div class="line">        <span class="attribute">listen</span> <span class="number">80</span>;</div><div class="line">        <span class="attribute">listen</span> <span class="number">443</span> ssl;</div><div class="line"></div><div class="line">        <span class="attribute">access_log</span> /var/log/nginx/google.access.log;</div><div class="line">        <span class="attribute">error_log</span> /var/log/nginx/google.<span class="literal">error</span>.log;</div><div class="line"></div><div class="line">        <span class="attribute">ssl</span> <span class="literal">on</span>;</div><div class="line">        <span class="attribute">ssl_certificate</span> <span class="variable">$path</span> ;         <span class="comment">#证书的绝对路径</span></div><div class="line">        <span class="attribute">ssl_certificate_key</span> <span class="variable">$path</span> ;     <span class="comment">#私钥的绝对路径</span></div><div class="line">        <span class="attribute">ssl_session_cache</span> shared:SSL:<span class="number">10m</span>;</div><div class="line">        <span class="attribute">ssl_session_timeout</span>  <span class="number">10m</span>;</div><div class="line">        <span class="attribute">server_name</span> google.domain.com;  <span class="comment">#将 google.domain.com 换为你的域名</span></div><div class="line">        <span class="attribute">add_header</span> Strict-Transport-Security <span class="string">"max-age=31536000"</span>;    <span class="comment">#设置长度为一年的 HSTS</span></div><div class="line">        </div><div class="line">        <span class="attribute">if</span> ( <span class="variable">$scheme</span> = http )&#123;</div><div class="line">            <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$server_name</span><span class="variable">$request_uri</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="attribute">if</span> (<span class="variable">$http_user_agent</span> <span class="regexp">~* (baiduspider|360spider|haosouspider|googlebot|soso|bing|sogou|yahoo|sohu-search|yodao|YoudaoBot|robozilla|msnbot|MJ12bot|NHN|Twiceler))</span> &#123;</div><div class="line">            <span class="attribute">return</span>  <span class="number">403</span>;</div><div class="line">        &#125;</div><div class="line">  </div><div class="line">        <span class="attribute">location</span> / &#123;</div><div class="line"></div><div class="line">        <span class="attribute">subs_filter_types</span> text/css text/xml text/javascript;</div><div class="line">                <span class="attribute">subs_filter</span> www.google.com google.domain.com;       <span class="comment">#同样地,将 google.domain.com 换为你的域名</span></div><div class="line">                <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</div><div class="line"></div><div class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> Referer https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Host www.google.com;</div><div class="line">        <span class="attribute">proxy_pass</span> https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Accept-Encoding <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面的 Nginx 配置文件是我 Google 出的结果, 能凑合着用, 要是有不对的地方还请告知我喔!</p>
+<h3 id="Nginx-s-reload"><a href="#Nginx-s-reload" class="headerlink" title="Nginx -s reload"></a>Nginx -s reload</h3><p>输入 <code>nginx -s reload</code> 不出意外的话, 你的反向代理就会开始工作啦!</p>
 
       
     </div>
@@ -458,8 +465,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/ZhangSiyang_logo_big.png"
@@ -595,6 +611,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apt-install-nginx"><span class="nav-number">1.</span> <span class="nav-text">Apt install nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nano-etc-nginx-nginx-conf"><span class="nav-number">2.</span> <span class="nav-text">Nano /etc/nginx/nginx.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nano-etc-nginx-google-conf"><span class="nav-number">3.</span> <span class="nav-text">Nano /etc/nginx/google.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx-s-reload"><span class="nav-number">4.</span> <span class="nav-text">Nginx -s reload</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
