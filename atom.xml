@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2017-12-21T09:57:46.383Z</updated>
+  <updated>2018-01-26T06:49:21.355Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux SSH 提示 Permission denied (publickey). 但密码和密钥都是正确的?</title>
+    <link href="https://blog.zhangsy.me/2018/01/26/Linux-SSH-%E6%8F%90%E7%A4%BA-Permission-denied-publickey-%E4%BD%86%E5%AF%86%E7%A0%81%E5%92%8C%E5%AF%86%E9%92%A5%E9%83%BD%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84/"/>
+    <id>https://blog.zhangsy.me/2018/01/26/Linux-SSH-提示-Permission-denied-publickey-但密码和密钥都是正确的/</id>
+    <published>2018-01-26T06:47:48.000Z</published>
+    <updated>2018-01-26T06:49:21.355Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>先记上：chsh username -s zsh -&gt; chsh username -s /bin/zsh 以后完善</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;先记上：chsh username -s zsh -&amp;gt; chsh username -s /bin/zsh 以后完善&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Zsh 显示当前主机和用户名</title>
+    <link href="https://blog.zhangsy.me/2018/01/10/Zsh-%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E4%B8%BB%E6%9C%BA%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/"/>
+    <id>https://blog.zhangsy.me/2018/01/10/Zsh-显示当前主机和用户名/</id>
+    <published>2018-01-10T03:44:25.000Z</published>
+    <updated>2018-01-10T03:44:25.424Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux 小计</title>
@@ -542,48 +580,6 @@ set tabstospaces
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>K2 A2 自定义灯光</title>
-    <link href="https://blog.zhangsy.me/2017/08/15/K2-A2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89/"/>
-    <id>https://blog.zhangsy.me/2017/08/15/K2-A2-自定义灯光/</id>
-    <published>2017-08-15T03:16:35.000Z</published>
-    <updated>2017-08-15T03:25:12.790Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Usage : mtk_gpio -d &lt;type&gt; &lt;bool&gt;</div><div class="line">	type:</div><div class="line">		Red 	: 8</div><div class="line">		Blue	: 10</div><div class="line">		Yellow	: 11</div><div class="line">	bool:	</div><div class="line">		Open:	: 1</div><div class="line">		Close	: 0</div><div class="line">	Example	: mtk_gpio -d 8 1 &amp;&amp; mtk_gpio -d 11 1 /*Orange*/</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
-    
-    </summary>
-    
-    
-      <category term="K2" scheme="https://blog.zhangsy.me/tags/K2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Debian/Ubuntu 单独安装 ab 命令</title>
-    <link href="https://blog.zhangsy.me/2017/08/13/Debian-Ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/"/>
-    <id>https://blog.zhangsy.me/2017/08/13/Debian-Ubuntu-单独安装-ab-命令/</id>
-    <published>2017-08-13T06:39:18.000Z</published>
-    <updated>2017-08-13T07:00:10.926Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2-utils</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
-    
-    </summary>
-    
-    
-      <category term="随手一记" scheme="https://blog.zhangsy.me/tags/%E9%9A%8F%E6%89%8B%E4%B8%80%E8%AE%B0/"/>
     
   </entry>
   

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux SSH 提示 Permission denied (publickey). 但密码和密钥都是正确的?]]></title>
+    <url>%2F2018%2F01%2F26%2FLinux-SSH-%E6%8F%90%E7%A4%BA-Permission-denied-publickey-%E4%BD%86%E5%AF%86%E7%A0%81%E5%92%8C%E5%AF%86%E9%92%A5%E9%83%BD%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84%2F</url>
+    <content type="text"><![CDATA[先记上：chsh username -s zsh -&gt; chsh username -s /bin/zsh 以后完善]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Zsh 显示当前主机和用户名]]></title>
+    <url>%2F2018%2F01%2F10%2FZsh-%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E4%B8%BB%E6%9C%BA%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Linux 小计]]></title>
     <url>%2F2017%2F12%2F17%2FLinux-%E5%B0%8F%E8%AE%A1%2F</url>
     <content type="text"><![CDATA[systemctl 中可执行文件要使用绝对路径, 像 systemd 就要使用 /lib/systemd/systemd (不然会在 systemctl status $name 中报 Executable path is not absolute ) 查看进程的可执行文件路径可以在 /proc/$PID 中查看 exe 指向何处来确定]]></content>
