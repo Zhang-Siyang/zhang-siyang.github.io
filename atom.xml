@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-01-26T06:49:21.355Z</updated>
+  <updated>2018-02-10T07:44:09.830Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 安装镜像下载[备忘]</title>
+    <link href="https://blog.zhangsy.me/2018/02/10/Ubuntu-%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD-%E5%A4%87%E5%BF%98/"/>
+    <id>https://blog.zhangsy.me/2018/02/10/Ubuntu-安装镜像下载-备忘/</id>
+    <published>2018-02-10T07:37:58.000Z</published>
+    <updated>2018-02-10T07:44:09.830Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="https://mirrors.aliyun.com/ubuntu-releases/" target="_blank" rel="external">https://mirrors.aliyun.com/ubuntu-releases/</a><br><a href="https://mirrors.ustc.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.ustc.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.zju.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.zju.edu.cn/ubuntu-releases/</a><br><a href="https://ftp.sjtu.edu.cn/ubuntu-cd/" target="_blank" rel="external">https://ftp.sjtu.edu.cn/ubuntu-cd/</a><br><a href="https://mirrors.neusoft.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.neusoft.edu.cn/ubuntu-releases/</a><br><a href="http://mirrors.163.com/ubuntu-releases/" target="_blank" rel="external">http://mirrors.163.com/ubuntu-releases/</a></p>
+<p>猪厂(163) 的镜像服务器是唯一不支持 Https 的……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://mirrors.aliyun.com/ubuntu-releases/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ht
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux SSH 提示 Permission denied (publickey). 但密码和密钥都是正确的?</title>
@@ -557,26 +577,6 @@ set tabstospaces
     <summary type="html">
     
       &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;就像标题中提及的那样，在一次次的配置之失败后，我打开了 noip2 (V 2.1.9) 的 调试模式(-d) ，猛然发现他们仅将用户名与密码 Base64 编码后就传送至服务
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Base64Encoding 演示代码[JavaScript]</title>
-    <link href="https://blog.zhangsy.me/2017/08/20/Base64Encoding-%E6%BC%94%E7%A4%BA%E4%BB%A3%E7%A0%81-JavaScript/"/>
-    <id>https://blog.zhangsy.me/2017/08/20/Base64Encoding-演示代码-JavaScript/</id>
-    <published>2017-08-20T09:11:46.000Z</published>
-    <updated>2017-08-20T09:13:35.025Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>很简单的代码，用来做算法示范再好不过了，来自 <a href="https://www.92ez.com/?action=show&amp;id=23380" target="_blank" rel="external">一只猿</a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Base64Encoding</span>(<span class="params">input</span>) </span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">var</span> keyStr = <span class="string">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="</span>;</div><div class="line">	<span class="keyword">var</span> output = <span class="string">""</span>;</div><div class="line">	<span class="keyword">var</span> chr1, chr2, chr3, enc1, enc2, enc3, enc4;</div><div class="line">	<span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line"></div><div class="line">	input = utf8_encode(input);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> (i &lt; input.length) </div><div class="line">	&#123;</div><div class="line"></div><div class="line">		chr1 = input.charCodeAt(i++);</div><div class="line">		chr2 = input.charCodeAt(i++);</div><div class="line">		chr3 = input.charCodeAt(i++);</div><div class="line"></div><div class="line">		enc1 = chr1 &gt;&gt; <span class="number">2</span>;</div><div class="line">		enc2 = ((chr1 &amp; <span class="number">3</span>) &lt;&lt; <span class="number">4</span>) | (chr2 &gt;&gt; <span class="number">4</span>);</div><div class="line">		enc3 = ((chr2 &amp; <span class="number">15</span>) &lt;&lt; <span class="number">2</span>) | (chr3 &gt;&gt; <span class="number">6</span>);</div><div class="line">		enc4 = chr3 &amp; <span class="number">63</span>;</div><div class="line"></div><div class="line">		<span class="keyword">if</span> (<span class="built_in">isNaN</span>(chr2)) &#123;</div><div class="line">			enc3 = enc4 = <span class="number">64</span>;</div><div class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">isNaN</span>(chr3)) &#123;</div><div class="line">			enc4 = <span class="number">64</span>;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		output = output +</div><div class="line">		keyStr.charAt(enc1) + keyStr.charAt(enc2) +</div><div class="line">		keyStr.charAt(enc3) + keyStr.charAt(enc4);</div><div class="line"></div><div class="line">	&#125;</div><div class="line"> </div><div class="line">	<span class="keyword">return</span> output;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;很简单的代码，用来做算法示范再好不过了，来自 &lt;a href=&quot;https://www.92ez.com/?action=show&amp;amp;id=23380&quot; target=
     
     </summary>
     

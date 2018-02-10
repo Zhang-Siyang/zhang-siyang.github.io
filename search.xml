@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ubuntu 安装镜像下载[备忘]]]></title>
+    <url>%2F2018%2F02%2F10%2FUbuntu-%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD-%E5%A4%87%E5%BF%98%2F</url>
+    <content type="text"><![CDATA[https://mirrors.aliyun.com/ubuntu-releases/https://mirrors.ustc.edu.cn/ubuntu-releases/https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/https://mirrors.zju.edu.cn/ubuntu-releases/https://ftp.sjtu.edu.cn/ubuntu-cd/https://mirrors.neusoft.edu.cn/ubuntu-releases/http://mirrors.163.com/ubuntu-releases/ 猪厂(163) 的镜像服务器是唯一不支持 Https 的……]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Linux SSH 提示 Permission denied (publickey). 但密码和密钥都是正确的?]]></title>
     <url>%2F2018%2F01%2F26%2FLinux-SSH-%E6%8F%90%E7%A4%BA-Permission-denied-publickey-%E4%BD%86%E5%AF%86%E7%A0%81%E5%92%8C%E5%AF%86%E9%92%A5%E9%83%BD%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84%2F</url>
     <content type="text"><![CDATA[先记上：chsh username -s zsh -&gt; chsh username -s /bin/zsh 以后完善]]></content>
