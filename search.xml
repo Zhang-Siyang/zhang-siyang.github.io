@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[解决Linux 与 Windows的时间冲突，让Windows也使用硬件时钟]]></title>
+    <url>%2F2018%2F03%2F31%2F%E8%A7%A3%E5%86%B3Linux-%E4%B8%8E-Windows%E7%9A%84%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%EF%BC%8C%E8%AE%A9Windows%E4%B9%9F%E4%BD%BF%E7%94%A8%E7%A1%AC%E4%BB%B6%E6%97%B6%E9%92%9F%2F</url>
+    <content type="text"><![CDATA[非常简单，设置一下注册表即可： 1234Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]&quot;RealTimeIsUniversal&quot;=dword:00000001 保存为 .reg 文件，双击导入系统注册表即可]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Ubuntu 安装镜像下载[备忘]]]></title>
     <url>%2F2018%2F02%2F10%2FUbuntu-%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD-%E5%A4%87%E5%BF%98%2F</url>
     <content type="text"><![CDATA[https://mirrors.aliyun.com/ubuntu-releases/https://mirrors.ustc.edu.cn/ubuntu-releases/https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/https://mirrors.zju.edu.cn/ubuntu-releases/https://ftp.sjtu.edu.cn/ubuntu-cd/https://mirrors.neusoft.edu.cn/ubuntu-releases/http://mirrors.163.com/ubuntu-releases/ 猪厂(163) 的镜像服务器是唯一不支持 Https 的……]]></content>
