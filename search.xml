@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[雷柏 Rapoo V500 系列键盘灯调整方法]]></title>
+    <url>%2F2018%2F05%2F04%2F%E9%9B%B7%E6%9F%8F-Rapoo-V500-%E7%B3%BB%E5%88%97%E9%94%AE%E7%9B%98%E7%81%AF%E8%B0%83%E6%95%B4%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[半☀键为呼吸模式切换；全☀键为调节亮度 这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被骂还是太少。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[文摘]]></title>
+    <url>%2F2018%2F04%2F17%2F%E6%96%87%E6%91%98%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[解决Linux 与 Windows的时间冲突，让Windows也使用硬件时钟]]></title>
     <url>%2F2018%2F03%2F31%2F%E8%A7%A3%E5%86%B3Linux-%E4%B8%8E-Windows%E7%9A%84%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%EF%BC%8C%E8%AE%A9Windows%E4%B9%9F%E4%BD%BF%E7%94%A8%E7%A1%AC%E4%BB%B6%E6%97%B6%E9%92%9F%2F</url>
     <content type="text"><![CDATA[非常简单，设置一下注册表即可： 1234Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]&quot;RealTimeIsUniversal&quot;=dword:00000001 保存为 .reg 文件，双击导入系统注册表即可]]></content>

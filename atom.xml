@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-03-31T05:04:29.116Z</updated>
+  <updated>2018-05-04T02:55:07.877Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>雷柏 Rapoo V500 系列键盘灯调整方法</title>
+    <link href="https://blog.zhangsy.me/2018/05/04/%E9%9B%B7%E6%9F%8F-Rapoo-V500-%E7%B3%BB%E5%88%97%E9%94%AE%E7%9B%98%E7%81%AF%E8%B0%83%E6%95%B4%E6%96%B9%E6%B3%95/"/>
+    <id>https://blog.zhangsy.me/2018/05/04/雷柏-Rapoo-V500-系列键盘灯调整方法/</id>
+    <published>2018-05-04T02:50:30.000Z</published>
+    <updated>2018-05-04T02:55:07.877Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>半☀键为呼吸模式切换；全☀键为调节亮度</p>
+<blockquote>
+<p>这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被骂还是太少。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;半☀键为呼吸模式切换；全☀键为调节亮度&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文摘</title>
+    <link href="https://blog.zhangsy.me/2018/04/17/%E6%96%87%E6%91%98/"/>
+    <id>https://blog.zhangsy.me/2018/04/17/文摘/</id>
+    <published>2018-04-17T13:21:12.000Z</published>
+    <updated>2018-04-17T13:21:12.522Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>解决Linux 与 Windows的时间冲突，让Windows也使用硬件时钟</title>
@@ -518,61 +560,6 @@
       <category term="推荐" scheme="https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/"/>
     
       <category term="SSD" scheme="https://blog.zhangsy.me/tags/SSD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>真是个万丈高 qiang 拔地起的时代</title>
-    <link href="https://blog.zhangsy.me/2017/08/30/%E7%9C%9F%E6%98%AF%E4%B8%AA%E4%B8%87%E4%B8%88%E9%AB%98-qiang-%E6%8B%94%E5%9C%B0%E8%B5%B7%E7%9A%84%E6%97%B6%E4%BB%A3/"/>
-    <id>https://blog.zhangsy.me/2017/08/30/真是个万丈高-qiang-拔地起的时代/</id>
-    <published>2017-08-30T14:51:12.000Z</published>
-    <updated>2017-08-31T10:50:38.464Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在淘宝众筹发现一个很有趣的产品，在手机端复制链接发进了微信群里，群友说打不开，我这才猛地想起来淘宝系的链接都无法在微信内打开，得用淘口令分享！可我是从浏览器里看到的网址，上哪找淘口令去？还好淘宝开放了 API ，又有善人写出网页端的实现，就是每天只有100次的公用有点可怜了，有能力了我写个 2^8 次的网页端吧。</p>
-<p>产品：<a href="https://izhongchou.taobao.com/dreamdetail.htm?id=20066827" target="_blank" rel="external">https://izhongchou.taobao.com/dreamdetail.htm?id=20066827</a><br>淘口令生成：<a href="http://tool.taokemiao.com/" target="_blank" rel="external">http://tool.taokemiao.com/</a></p>
-<blockquote>
-<p>给大老爷们的(对微信用户友好的)那款产品的淘口令：复制这条信息，打开「手机淘宝」领券下单 《OeVF0WEsAqu《</p>
-<p>（其实也有别的次数多点的，我看这个页面比较好看）</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;在淘宝众筹发现一个很有趣的产品，在手机端复制链接发进了微信群里，群友说打不开，我这才猛地想起来淘宝系的链接都无法在微信内打开，得用淘口令分享！可我是从浏览器里看到的网址，上哪
-    
-    </summary>
-    
-    
-      <category term="吐槽" scheme="https://blog.zhangsy.me/tags/%E5%90%90%E6%A7%BD/"/>
-    
-      <category term="淘宝，巨头相争" scheme="https://blog.zhangsy.me/tags/%E6%B7%98%E5%AE%9D%EF%BC%8C%E5%B7%A8%E5%A4%B4%E7%9B%B8%E4%BA%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nano 中，将默认的 [TAB] -&gt; 	 换为 [TAB] -&gt; &#39; &#39;*4</title>
-    <link href="https://blog.zhangsy.me/2017/08/29/Nano-%E4%B8%AD%EF%BC%8C%E5%B0%86%E9%BB%98%E8%AE%A4%E7%9A%84-TAB-t-%E6%8D%A2%E4%B8%BA-TAB-4/"/>
-    <id>https://blog.zhangsy.me/2017/08/29/Nano-中，将默认的-TAB-t-换为-TAB-4/</id>
-    <published>2017-08-29T04:15:19.000Z</published>
-    <updated>2017-08-27T22:10:55.576Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>If you use nano with a language like python (as in your example) it’s also a good idea to convert tabs to spaces.</p>
-<p>Edit your ~/.nanorc file (or create it) and add:</p>
-<pre><code>set tabsize 4
-set tabstospaces
-</code></pre><p>If you already got a file with tabs and want to convert them to spaces i recommend the expandcommand (shell):</p>
-<pre><code>expand -4 input.py &gt; output.py
-</code></pre><p>From: <a href="https://stackoverflow.com/a/15364505" target="_blank" rel="external">How to make the tab character 4 spaces instead of 8 spaces in nano?@Sven Rojek</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;If you use nano with a language like python (as in your example) it’s also a good idea 
-    
-    </summary>
-    
-    
-      <category term="小记" scheme="https://blog.zhangsy.me/tags/%E5%B0%8F%E8%AE%B0/"/>
     
   </entry>
   
