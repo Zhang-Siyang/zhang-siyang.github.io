@@ -2,10 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ZhangSiyang &#39;s Blog</title>
   
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-05-04T02:55:07.877Z</updated>
+  <updated>2018-06-01T13:13:09.768Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -16,23 +17,68 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你的树莓派有足够的电力供应吗？</title>
+    <link href="https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97%EF%BC%9F/"/>
+    <id>https://blog.zhangsy.me/2018/06/01/你的树莓派有足够的电力供应吗？/</id>
+    <published>2018-06-01T12:23:48.000Z</published>
+    <updated>2018-06-01T13:13:09.768Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>读到 <a href="https://raspberrypi.stackexchange.com/a/51616" target="_blank" rel="noopener">Power Requirement of the Pi - Milliways 的回答</a>。文末的技术细节提供了这两条指令来检查电源供给情况：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ~ vcgencmd get_throttled#应该是 throttled=0x0</div><div class="line">$ ~ cat /sys/class/leds/led1/brightness#应该是255</div></pre></td></tr></table></figure><blockquote><p>好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。</p><pre><code>Working on it – Fitz</code></pre></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;读到 &lt;a href=&quot;https://raspberrypi.stackexchange.com/a/51616&quot; target=&quot;_blank&quot; rel=&quot;noopene
+      
+    
+    </summary>
+    
+    
+      <category term="RPi" scheme="https://blog.zhangsy.me/tags/RPi/"/>
+    
+      <category term="Raspbian" scheme="https://blog.zhangsy.me/tags/Raspbian/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>事情是不可能做完的，不要幻想</title>
+    <link href="https://blog.zhangsy.me/2018/05/05/%E4%BA%8B%E6%83%85%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%AE%8C%E7%9A%84%EF%BC%8C%E4%B8%8D%E8%A6%81%E5%B9%BB%E6%83%B3/"/>
+    <id>https://blog.zhangsy.me/2018/05/05/事情是不可能做完的，不要幻想/</id>
+    <published>2018-05-05T09:15:40.000Z</published>
+    <updated>2018-05-05T09:15:40.517Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>雷柏 Rapoo V500 系列键盘灯调整方法</title>
     <link href="https://blog.zhangsy.me/2018/05/04/%E9%9B%B7%E6%9F%8F-Rapoo-V500-%E7%B3%BB%E5%88%97%E9%94%AE%E7%9B%98%E7%81%AF%E8%B0%83%E6%95%B4%E6%96%B9%E6%B3%95/"/>
     <id>https://blog.zhangsy.me/2018/05/04/雷柏-Rapoo-V500-系列键盘灯调整方法/</id>
     <published>2018-05-04T02:50:30.000Z</published>
-    <updated>2018-05-04T02:55:07.877Z</updated>
+    <updated>2018-05-04T02:55:07.878Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>半☀键为呼吸模式切换；全☀键为调节亮度</p>
-<blockquote>
-<p>这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被骂还是太少。</p>
-</blockquote>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>半☀键为呼吸模式切换；全☀键为调节亮度</p><blockquote><p>这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被骂还是太少。</p></blockquote>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;半☀键为呼吸模式切换；全☀键为调节亮度&lt;/p&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;半☀键为呼吸模式切换；全☀键为调节亮度&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被
+      
     
     </summary>
     
@@ -44,13 +90,16 @@
     <link href="https://blog.zhangsy.me/2018/04/17/%E6%96%87%E6%91%98/"/>
     <id>https://blog.zhangsy.me/2018/04/17/文摘/</id>
     <published>2018-04-17T13:21:12.000Z</published>
-    <updated>2018-04-17T13:21:12.522Z</updated>
+    <updated>2018-04-17T13:21:12.523Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
     
     </summary>
     
@@ -64,15 +113,15 @@
     <published>2018-03-31T05:02:30.000Z</published>
     <updated>2018-03-31T05:04:29.116Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>非常简单，设置一下注册表即可：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line"></div><div class="line">[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]</div><div class="line">&quot;RealTimeIsUniversal&quot;=dword:00000001</div></pre></td></tr></table></figure>
-<p>保存为 .reg 文件，双击导入系统注册表即可</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>非常简单，设置一下注册表即可：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line"></div><div class="line">[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]</div><div class="line">&quot;RealTimeIsUniversal&quot;=dword:00000001</div></pre></td></tr></table></figure><p>保存为 .reg 文件，双击导入系统注册表即可</p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;非常简单，设置一下注册表即可：&lt;/p&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;非常简单，设置一下注册表即可：&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+      
     
     </summary>
     
@@ -86,13 +135,14 @@
     <published>2018-02-10T07:37:58.000Z</published>
     <updated>2018-02-10T07:44:09.830Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="https://mirrors.aliyun.com/ubuntu-releases/" target="_blank" rel="external">https://mirrors.aliyun.com/ubuntu-releases/</a><br><a href="https://mirrors.ustc.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.ustc.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.zju.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.zju.edu.cn/ubuntu-releases/</a><br><a href="https://ftp.sjtu.edu.cn/ubuntu-cd/" target="_blank" rel="external">https://ftp.sjtu.edu.cn/ubuntu-cd/</a><br><a href="https://mirrors.neusoft.edu.cn/ubuntu-releases/" target="_blank" rel="external">https://mirrors.neusoft.edu.cn/ubuntu-releases/</a><br><a href="http://mirrors.163.com/ubuntu-releases/" target="_blank" rel="external">http://mirrors.163.com/ubuntu-releases/</a></p>
-<p>猪厂(163) 的镜像服务器是唯一不支持 Https 的……</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="https://mirrors.aliyun.com/ubuntu-releases/" target="_blank" rel="noopener">https://mirrors.aliyun.com/ubuntu-releases/</a><br><a href="https://mirrors.ustc.edu.cn/ubuntu-releases/" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/</a><br><a href="https://mirrors.zju.edu.cn/ubuntu-releases/" target="_blank" rel="noopener">https://mirrors.zju.edu.cn/ubuntu-releases/</a><br><a href="https://ftp.sjtu.edu.cn/ubuntu-cd/" target="_blank" rel="noopener">https://ftp.sjtu.edu.cn/ubuntu-cd/</a><br><a href="https://mirrors.neusoft.edu.cn/ubuntu-releases/" target="_blank" rel="noopener">https://mirrors.neusoft.edu.cn/ubuntu-releases/</a><br><a href="http://mirrors.163.com/ubuntu-releases/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu-releases/</a></p><p>猪厂(163) 的镜像服务器是唯一不支持 Https 的……</p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://mirrors.aliyun.com/ubuntu-releases/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ht
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://mirrors.aliyun.com/ubuntu-releases/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ht
+      
     
     </summary>
     
@@ -106,13 +156,15 @@
     <published>2018-01-26T06:47:48.000Z</published>
     <updated>2018-01-26T06:49:21.355Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>先记上：chsh username -s zsh -&gt; chsh username -s /bin/zsh 以后完善</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>先记上：chsh username -s zsh -&gt; chsh username -s /bin/zsh 以后完善</p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;先记上：chsh username -s zsh -&amp;gt; chsh username -s /bin/zsh 以后完善&lt;/p&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;先记上：chsh username -s zsh -&amp;gt; chsh username -s /bin/zsh 以后完善&lt;/p&gt;
 
+      
     
     </summary>
     
@@ -130,7 +182,10 @@
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
     
     </summary>
     
@@ -142,15 +197,16 @@
     <link href="https://blog.zhangsy.me/2017/12/17/Linux-%E5%B0%8F%E8%AE%A1/"/>
     <id>https://blog.zhangsy.me/2017/12/17/Linux-小计/</id>
     <published>2017-12-17T07:25:39.000Z</published>
-    <updated>2017-12-21T09:57:46.383Z</updated>
+    <updated>2017-12-21T09:57:46.384Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><code>systemctl</code> 中可执行文件要使用绝对路径, 像 <code>systemd</code> 就要使用 <code>/lib/systemd/systemd</code> (不然会在 <code>systemctl status $name</code> 中报 <code>Executable path is not absolute</code> )</p>
-<p>查看进程的可执行文件路径可以在 <code>/proc/$PID</code> 中查看 exe 指向何处来确定</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><code>systemctl</code> 中可执行文件要使用绝对路径, 像 <code>systemd</code> 就要使用 <code>/lib/systemd/systemd</code> (不然会在 <code>systemctl status $name</code> 中报 <code>Executable path is not absolute</code> )</p><p>查看进程的可执行文件路径可以在 <code>/proc/$PID</code> 中查看 exe 指向何处来确定</p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;code&gt;systemctl&lt;/code&gt; 中可执行文件要使用绝对路径, 像 &lt;code&gt;systemd&lt;/code&gt; 就要使用 &lt;code&gt;/lib/systemd/sy
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;code&gt;systemctl&lt;/code&gt; 中可执行文件要使用绝对路径, 像 &lt;code&gt;systemd&lt;/code&gt; 就要使用 &lt;code&gt;/lib/systemd/sy
+      
     
     </summary>
     
@@ -164,21 +220,7 @@
     <published>2017-12-09T04:38:53.000Z</published>
     <updated>2017-12-28T01:53:16.468Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>反代一个网站实在简单：</p>
-<ol>
-<li>apt install nginx</li>
-<li>nano /etc/nginx/nginx.conf</li>
-<li>nano /etc/nginx/google.conf</li>
-<li>nginx -s reload</li>
-</ol>
-<p>本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了</p>
-<p>博主很菜, 请多多指正, 多谢!<br><a id="more"></a></p>
-<h3 id="Apt-install-nginx"><a href="#Apt-install-nginx" class="headerlink" title="Apt install nginx"></a>Apt install nginx</h3><p>不需多言, <code>apt install nginx</code></p>
-<h3 id="Nano-etc-nginx-nginx-conf"><a href="#Nano-etc-nginx-nginx-conf" class="headerlink" title="Nano /etc/nginx/nginx.conf"></a>Nano /etc/nginx/nginx.conf</h3><p>在 http 段中加入 <code>include /etc/nginx/google.conf;</code> 这样才便于管理嘛</p>
-<h3 id="Nano-etc-nginx-google-conf"><a href="#Nano-etc-nginx-google-conf" class="headerlink" title="Nano /etc/nginx/google.conf"></a>Nano /etc/nginx/google.conf</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="section">server</span></div><div class="line">    &#123;</div><div class="line">        <span class="attribute">listen</span> <span class="number">80</span>;</div><div class="line">        <span class="attribute">listen</span> <span class="number">443</span> ssl;</div><div class="line"></div><div class="line">        <span class="attribute">access_log</span> /var/log/nginx/google.access.log;</div><div class="line">        <span class="attribute">error_log</span> /var/log/nginx/google.<span class="literal">error</span>.log;</div><div class="line"></div><div class="line">        <span class="attribute">ssl</span> <span class="literal">on</span>;</div><div class="line">        <span class="attribute">ssl_certificate</span> <span class="variable">$path</span> ;         <span class="comment">#证书的绝对路径</span></div><div class="line">        <span class="attribute">ssl_certificate_key</span> <span class="variable">$path</span> ;     <span class="comment">#私钥的绝对路径</span></div><div class="line">        <span class="attribute">ssl_session_cache</span> shared:SSL:<span class="number">10m</span>;</div><div class="line">        <span class="attribute">ssl_session_timeout</span>  <span class="number">10m</span>;</div><div class="line">        <span class="attribute">server_name</span> google.domain.com;  <span class="comment">#将 google.domain.com 换为你的域名</span></div><div class="line">        <span class="attribute">add_header</span> Strict-Transport-Security <span class="string">"max-age=31536000"</span>;    <span class="comment">#设置长度为一年的 HSTS</span></div><div class="line">        </div><div class="line">        <span class="attribute">if</span> ( <span class="variable">$scheme</span> = http )&#123;</div><div class="line">            <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$server_name</span><span class="variable">$request_uri</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="attribute">if</span> (<span class="variable">$http_user_agent</span> <span class="regexp">~* (baiduspider|360spider|haosouspider|googlebot|soso|bing|sogou|yahoo|sohu-search|yodao|YoudaoBot|robozilla|msnbot|MJ12bot|NHN|Twiceler))</span> &#123;</div><div class="line">            <span class="attribute">return</span>  <span class="number">403</span>;</div><div class="line">        &#125;</div><div class="line">  </div><div class="line">        <span class="attribute">location</span> / &#123;</div><div class="line"></div><div class="line">        <span class="attribute">subs_filter_types</span> text/css text/xml text/javascript;</div><div class="line">                <span class="attribute">subs_filter</span> www.google.com google.domain.com;       <span class="comment">#同样地,将 google.domain.com 换为你的域名</span></div><div class="line">                <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</div><div class="line"></div><div class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> Referer https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Host www.google.com;</div><div class="line">        <span class="attribute">proxy_pass</span> https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Accept-Encoding <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面的 Nginx 配置文件是我 Google 出的结果, 能凑合着用, 要是有不对的地方还请告知我喔!</p>
-<h3 id="Nginx-s-reload"><a href="#Nginx-s-reload" class="headerlink" title="Nginx -s reload"></a>Nginx -s reload</h3><p>输入 <code>nginx -s reload</code> 不出意外的话, 你的反向代理就会开始工作啦!</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>反代一个网站实在简单：</p><ol><li>apt install nginx</li><li>nano /etc/nginx/nginx.conf</li><li>nano /etc/nginx/google.conf</li><li>nginx -s reload</li></ol><p>本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let’s Encrypt 就够了</p><p>博主很菜, 请多多指正, 多谢!<br><a id="more"></a></p><h3 id="Apt-install-nginx"><a href="#Apt-install-nginx" class="headerlink" title="Apt install nginx"></a>Apt install nginx</h3><p>不需多言, <code>apt install nginx</code></p><h3 id="Nano-etc-nginx-nginx-conf"><a href="#Nano-etc-nginx-nginx-conf" class="headerlink" title="Nano /etc/nginx/nginx.conf"></a>Nano /etc/nginx/nginx.conf</h3><p>在 http 段中加入 <code>include /etc/nginx/google.conf;</code> 这样才便于管理嘛</p><h3 id="Nano-etc-nginx-google-conf"><a href="#Nano-etc-nginx-google-conf" class="headerlink" title="Nano /etc/nginx/google.conf"></a>Nano /etc/nginx/google.conf</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="section">server</span></div><div class="line">    &#123;</div><div class="line">        <span class="attribute">listen</span> <span class="number">80</span>;</div><div class="line">        <span class="attribute">listen</span> <span class="number">443</span> ssl;</div><div class="line"></div><div class="line">        <span class="attribute">access_log</span> /var/log/nginx/google.access.log;</div><div class="line">        <span class="attribute">error_log</span> /var/log/nginx/google.<span class="literal">error</span>.log;</div><div class="line"></div><div class="line">        <span class="attribute">ssl</span> <span class="literal">on</span>;</div><div class="line">        <span class="attribute">ssl_certificate</span> <span class="variable">$path</span> ;         <span class="comment">#证书的绝对路径</span></div><div class="line">        <span class="attribute">ssl_certificate_key</span> <span class="variable">$path</span> ;     <span class="comment">#私钥的绝对路径</span></div><div class="line">        <span class="attribute">ssl_session_cache</span> shared:SSL:<span class="number">10m</span>;</div><div class="line">        <span class="attribute">ssl_session_timeout</span>  <span class="number">10m</span>;</div><div class="line">        <span class="attribute">server_name</span> google.domain.com;  <span class="comment">#将 google.domain.com 换为你的域名</span></div><div class="line">        <span class="attribute">add_header</span> Strict-Transport-Security <span class="string">"max-age=31536000"</span>;    <span class="comment">#设置长度为一年的 HSTS</span></div><div class="line">        </div><div class="line">        <span class="attribute">if</span> ( <span class="variable">$scheme</span> = http )&#123;</div><div class="line">            <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$server_name</span><span class="variable">$request_uri</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="attribute">if</span> (<span class="variable">$http_user_agent</span> <span class="regexp">~* (baiduspider|360spider|haosouspider|googlebot|soso|bing|sogou|yahoo|sohu-search|yodao|YoudaoBot|robozilla|msnbot|MJ12bot|NHN|Twiceler))</span> &#123;</div><div class="line">            <span class="attribute">return</span>  <span class="number">403</span>;</div><div class="line">        &#125;</div><div class="line">  </div><div class="line">        <span class="attribute">location</span> / &#123;</div><div class="line"></div><div class="line">        <span class="attribute">subs_filter_types</span> text/css text/xml text/javascript;</div><div class="line">                <span class="attribute">subs_filter</span> www.google.com google.domain.com;       <span class="comment">#同样地,将 google.domain.com 换为你的域名</span></div><div class="line">                <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</div><div class="line"></div><div class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</div><div class="line">        <span class="attribute">proxy_set_header</span> Referer https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Host www.google.com;</div><div class="line">        <span class="attribute">proxy_pass</span> https://www.google.com;</div><div class="line">        <span class="attribute">proxy_set_header</span> Accept-Encoding <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>上面的 Nginx 配置文件是我 Google 出的结果, 能凑合着用, 要是有不对的地方还请告知我喔!</p><h3 id="Nginx-s-reload"><a href="#Nginx-s-reload" class="headerlink" title="Nginx -s reload"></a>Nginx -s reload</h3><p>输入 <code>nginx -s reload</code> 不出意外的话, 你的反向代理就会开始工作啦!</p>]]></content>
     
     <summary type="html">
     
@@ -202,36 +244,9 @@
     <link href="https://blog.zhangsy.me/2017/12/04/Chrome-62-%E6%96%B0%E5%8A%9F%E8%83%BD%EF%BC%81%E8%87%AA%E5%B8%A6%E5%8E%9F%E7%94%9F%E6%88%AA%E5%9B%BE%EF%BC%81/"/>
     <id>https://blog.zhangsy.me/2017/12/04/Chrome-62-新功能！自带原生截图！/</id>
     <published>2017-12-04T15:06:46.000Z</published>
-    <updated>2017-12-05T09:41:26.200Z</updated>
+    <updated>2017-12-05T09:41:26.201Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>介绍了 区域截图、全页面截图、可视范围截图、页面元素按块截图 四种方法，应该够用了<br><a id="more"></a></p>
-<p>区域截图 :</p>
-<ol>
-<li>Ctrl/Command + Shift + C 调出界面选择器</li>
-<li>Ctrl/Command + 鼠标左键 选择希望的范围</li>
-<li>截图将以文件的形式自动下载</li>
-</ol>
-<p>全页面截图 :</p>
-<ol>
-<li>Ctrl/Command + Shift + C 调出开发者工具</li>
-<li>Ctrl/Command + Shift + P 调出命令菜单</li>
-<li>输入 screenshot，在自动筛选出的结果里选择 Capture full size screenshot</li>
-</ol>
-<p>可视范围截图 :</p>
-<ol>
-<li>Ctrl/Command + Shift + C 调出开发者工具</li>
-<li>Ctrl/Command + Shift + P 调出命令菜单</li>
-<li>输入 screenshot，在自动筛选出的结果里选择 Capture screenshot</li>
-</ol>
-<p>[For dev]页面元素按块截图 :</p>
-<ol>
-<li>Ctrl/Command + Shift + C 调出界面选择器</li>
-<li>鼠标左键 选择希望的范围，会以高亮标识</li>
-<li>Ctrl/Command + Shift + P 调出命令菜单</li>
-<li>输入 screenshot，在自动筛选出的结果里选择 Capture node screenshot</li>
-</ol>
-<p>参见 <a href="https://developers.google.com/web/updates/2017/08/devtools-release-notes" target="_blank" rel="external">What’s New In DevTools (Chrome 62)</a><br>感谢 <a href="https://www.v2ex.com/t/411918?p=1#r_5045453" target="_blank" rel="external">zenxds@V2EX</a> 告知这一操作</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>介绍了 区域截图、全页面截图、可视范围截图、页面元素按块截图 四种方法，应该够用了<br><a id="more"></a></p><p>区域截图 :</p><ol><li>Ctrl/Command + Shift + C 调出界面选择器</li><li>Ctrl/Command + 鼠标左键 选择希望的范围</li><li>截图将以文件的形式自动下载</li></ol><p>全页面截图 :</p><ol><li>Ctrl/Command + Shift + C 调出开发者工具</li><li>Ctrl/Command + Shift + P 调出命令菜单</li><li>输入 screenshot，在自动筛选出的结果里选择 Capture full size screenshot</li></ol><p>可视范围截图 :</p><ol><li>Ctrl/Command + Shift + C 调出开发者工具</li><li>Ctrl/Command + Shift + P 调出命令菜单</li><li>输入 screenshot，在自动筛选出的结果里选择 Capture screenshot</li></ol><p>[For dev]页面元素按块截图 :</p><ol><li>Ctrl/Command + Shift + C 调出界面选择器</li><li>鼠标左键 选择希望的范围，会以高亮标识</li><li>Ctrl/Command + Shift + P 调出命令菜单</li><li>输入 screenshot，在自动筛选出的结果里选择 Capture node screenshot</li></ol><p>参见 <a href="https://developers.google.com/web/updates/2017/08/devtools-release-notes" target="_blank" rel="noopener">What’s New In DevTools (Chrome 62)</a><br>感谢 <a href="https://www.v2ex.com/t/411918?p=1#r_5045453" target="_blank" rel="noopener">zenxds@V2EX</a> 告知这一操作</p>]]></content>
     
     <summary type="html">
     
@@ -247,17 +262,16 @@
     <link href="https://blog.zhangsy.me/2017/12/01/On-the-Internet-nobody-knows-you-re-a-dog/"/>
     <id>https://blog.zhangsy.me/2017/12/01/On-the-Internet-nobody-knows-you-re-a-dog/</id>
     <published>2017-12-01T06:23:00.000Z</published>
-    <updated>2017-12-01T06:27:57.157Z</updated>
+    <updated>2017-12-01T06:27:57.158Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-internet-by-peter-steiner.jpg" alt=""></p>
-<blockquote class="blockquote-center"><p>我看不一定 </p>
-</blockquote>
-<p><a href="https://ww1.sinaimg.cn/large/0060lm7Tly1fm191hpdc2j319u1ac0xx.jpg" target="_blank" rel="external">Pic Backup</a></p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-internet-by-peter-steiner.jpg" alt=""></p><blockquote class="blockquote-center"><p>我看不一定 </p></blockquote><p><a href="https://ww1.sinaimg.cn/large/0060lm7Tly1fm191hpdc2j319u1ac0xx.jpg" target="_blank" rel="noopener">Pic Backup</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-inter
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/thainetizen.org/wp-content/uploads/2015/01/dog-on-the-inter
+      
     
     </summary>
     
@@ -271,24 +285,7 @@
     <published>2017-11-30T07:47:39.000Z</published>
     <updated>2017-11-30T12:40:16.916Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>这篇日志写一写冬天里的慌张<br><a id="more"></a></p>
-<p>似乎自从进入大一下学期我就开始了自由学习, 课上的当然也要听一听, 但我更多的是在网际上无意识的漫游, 这之间当然不能说是毫无成就,我当然还用 100~200 行 C# 写了一个 Google Translate Desktop, 但我自己也越发无法忍受这种沉沦, 更多的是安于现状, 而且不能安排足够的基本时间于课业学习.</p>
-<p>其实关于这个问题我思考的并不是很多, 这大概也是我这学期仍然没有好好学习的原因吧, 哈哈</p>
-<p>使我开始意识到这种境况的是不久前开始的轮滑学习, 我也不知道怎么的, 看了 Tim Pan 的一期电动滑板视频后就想起了轮滑的事情, 并终于在几日之后从友人哪里收到一双二手鞋, 我觉得那双鞋还是蛮新的;</p>
-<p>磕磕绊绊就上了路(雾,其实是训练场地,到地穿鞋,要走脱鞋), 然后听了那么一些播客, 也因期末考试的临近、室友慵懒无所事事一心求活样子的恶心、其他优秀同学带来的心理压力, 就这么地</p>
-<blockquote><p>王上了路</p>
-</blockquote>
-<p>接下来,我会尝试</p>
-<ul>
-<li>突破舒适区</li>
-<li>GTD</li>
-<li>刻意练习</li>
-</ul>
-<p>看到这里的小伙伴们, 我请求你, 留下你的建议与鼓励;</p>
-<p>最近还想出来这么一句话:</p>
-<blockquote class="blockquote-center"><p>我希望当他们孤单一人时能多被鼓励, 而由嫉妒带来的嘲讽能少一点 </p>
-</blockquote>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>这篇日志写一写冬天里的慌张<br><a id="more"></a></p><p>似乎自从进入大一下学期我就开始了自由学习, 课上的当然也要听一听, 但我更多的是在网际上无意识的漫游, 这之间当然不能说是毫无成就,我当然还用 100~200 行 C# 写了一个 Google Translate Desktop, 但我自己也越发无法忍受这种沉沦, 更多的是安于现状, 而且不能安排足够的基本时间于课业学习.</p><p>其实关于这个问题我思考的并不是很多, 这大概也是我这学期仍然没有好好学习的原因吧, 哈哈</p><p>使我开始意识到这种境况的是不久前开始的轮滑学习, 我也不知道怎么的, 看了 Tim Pan 的一期电动滑板视频后就想起了轮滑的事情, 并终于在几日之后从友人哪里收到一双二手鞋, 我觉得那双鞋还是蛮新的;</p><p>磕磕绊绊就上了路(雾,其实是训练场地,到地穿鞋,要走脱鞋), 然后听了那么一些播客, 也因期末考试的临近、室友慵懒无所事事一心求活样子的恶心、其他优秀同学带来的心理压力, 就这么地</p><blockquote><p>王上了路</p></blockquote><p>接下来,我会尝试</p><ul><li>突破舒适区</li><li>GTD</li><li>刻意练习</li></ul><p>看到这里的小伙伴们, 我请求你, 留下你的建议与鼓励;</p><p>最近还想出来这么一句话:</p><blockquote class="blockquote-center"><p>我希望当他们孤单一人时能多被鼓励, 而由嫉妒带来的嘲讽能少一点 </p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -306,13 +303,14 @@
     <published>2017-11-27T16:08:22.000Z</published>
     <updated>2017-11-30T06:27:29.926Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ sudo locale-gen &quot;en_US.UTF-8&quot;</div><div class="line">Generating locales...</div><div class="line">  en_US.UTF-8... done</div><div class="line">Generation complete.</div><div class="line"></div><div class="line">$ sudo dpkg-reconfigure locales</div><div class="line">Generating locales...</div><div class="line">  en_US.UTF-8... up-to-date</div><div class="line">Generation complete.</div></pre></td></tr></table></figure>
-<p>From : <a href="https://askubuntu.com/a/227513" target="_blank" rel="external">https://askubuntu.com/a/227513</a></p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ sudo locale-gen &quot;en_US.UTF-8&quot;</div><div class="line">Generating locales...</div><div class="line">  en_US.UTF-8... done</div><div class="line">Generation complete.</div><div class="line"></div><div class="line">$ sudo dpkg-reconfigure locales</div><div class="line">Generating locales...</div><div class="line">  en_US.UTF-8... up-to-date</div><div class="line">Generation complete.</div></pre></td></tr></table></figure><p>From : <a href="https://askubuntu.com/a/227513" target="_blank" rel="noopener">https://askubuntu.com/a/227513</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+      
     
     </summary>
     
@@ -326,12 +324,14 @@
     <published>2017-11-27T13:24:52.000Z</published>
     <updated>2017-11-27T13:42:08.188Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Breed : https://breed.hackpascal.net</div><div class="line">Padavan : http://opt.cn2qq.com/padavan/</div><div class="line">    MD5 : http://opt.cn2qq.com/padavan/MD5.txt</div><div class="line">    Forum : http://www.right.com.cn/forum/thread-161324-1-1.html</div><div class="line">PandoraBox : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/</div><div class="line">    SHA256 : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/sha256sums</div><div class="line">Tomato-Phoenix : http://dl.tomato.org.cn/mt7620/V105/</div></pre></td></tr></table></figure>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Breed : https://breed.hackpascal.net</div><div class="line">Padavan : http://opt.cn2qq.com/padavan/</div><div class="line">    MD5 : http://opt.cn2qq.com/padavan/MD5.txt</div><div class="line">    Forum : http://www.right.com.cn/forum/thread-161324-1-1.html</div><div class="line">PandoraBox : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/</div><div class="line">    SHA256 : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/sha256sums</div><div class="line">Tomato-Phoenix : http://dl.tomato.org.cn/mt7620/V105/</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/di
+      
     
     </summary>
     
@@ -343,18 +343,9 @@
     <link href="https://blog.zhangsy.me/2017/11/16/%E8%AF%B4%E5%AE%9E%E8%AF%9D-%E8%BF%99%E6%A0%B7%E7%9A%84%E6%8E%A8%E5%B9%BF%E6%88%91%E4%B9%9F%E6%98%AF%E8%9B%AE%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
     <id>https://blog.zhangsy.me/2017/11/16/说实话-这样的推广我也是蛮喜欢的/</id>
     <published>2017-11-16T06:09:33.000Z</published>
-    <updated>2017-11-30T12:28:27.901Z</updated>
+    <updated>2017-11-30T12:28:27.902Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
-<p>发到 V2 屡屡失败, 原因是站点在大多数节点的发主题帖都要验证手机, 而我并不想<br><a id="more"></a><br>Title:对这个团体有更多好感了</p>
-</blockquote>
-<p><img src="https://ww1.sinaimg.cn/large/0060lm7Tly1fljw0thr8pj31kw0w0qv9.jpg" alt=""></p>
-<p>你看看这贴的</p>
-<p>居中&amp;靠边</p>
-<p>要是小广告都照顾一下墙面排版, 那我会乐意看一会</p>
-<p>//# 既然是水一帖,就发到 水 节点吧</p>
-<p>补充:发到水节点要验证手机……</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote><p>发到 V2 屡屡失败, 原因是站点在大多数节点的发主题帖都要验证手机, 而我并不想<br><a id="more"></a><br>Title:对这个团体有更多好感了</p></blockquote><p><img src="https://ww1.sinaimg.cn/large/0060lm7Tly1fljw0thr8pj31kw0w0qv9.jpg" alt=""></p><p>你看看这贴的</p><p>居中&amp;靠边</p><p>要是小广告都照顾一下墙面排版, 那我会乐意看一会</p><p>//# 既然是水一帖,就发到 水 节点吧</p><p>补充:发到水节点要验证手机……</p>]]></content>
     
     <summary type="html">
     
@@ -371,15 +362,17 @@
     <link href="https://blog.zhangsy.me/2017/11/14/%E7%AC%94%E8%AE%B0-%E5%A6%82%E4%BD%95%E5%9C%A8-textarea-%E5%86%85%E9%80%9A%E8%BF%87%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%8D%A2%E8%A1%8C%EF%BC%9F/"/>
     <id>https://blog.zhangsy.me/2017/11/14/笔记-如何在-textarea-内通过代码来换行？/</id>
     <published>2017-11-14T15:40:59.000Z</published>
-    <updated>2017-11-30T07:46:11.172Z</updated>
+    <updated>2017-11-30T07:46:11.173Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>快使用 <code>&amp;#13;&amp;#10</code> !</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>快使用 <code>&amp;#13;&amp;#10</code> !</p>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;快使用 &lt;code&gt;&amp;amp;#13;&amp;amp;#10&lt;/code&gt; !&lt;/p&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;快使用 &lt;code&gt;&amp;amp;#13;&amp;amp;#10&lt;/code&gt; !&lt;/p&gt;
 
+      
     
     </summary>
     
@@ -393,13 +386,7 @@
     <published>2017-10-25T13:30:57.000Z</published>
     <updated>2017-11-30T12:29:05.261Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：<code>&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;</code>，取而代之的居然是：<code>&#39;sj&#39;:&#39;13点28分&#39;</code> ！</p>
-<p>简单贴一下解决办法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><img src="https://i.imgur.com/nsZGNAj.png" alt="添加示例"></p>
-<p>点击添加即可</p>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：<code>&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;</code>，取而代之的居然是：<code>&#39;sj&#39;:&#39;13点28分&#39;</code> ！</p><p>简单贴一下解决办法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]</div></pre></td></tr></table></figure><a id="more"></a><p><img src="https://i.imgur.com/nsZGNAj.png" alt="添加示例"></p><p>点击添加即可</p>]]></content>
     
     <summary type="html">
     
@@ -417,33 +404,9 @@
     <link href="https://blog.zhangsy.me/2017/10/15/Linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-Shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
     <id>https://blog.zhangsy.me/2017/10/15/Linux-使用-iptables-进行-Shadowsocks-流量统计/</id>
     <published>2017-10-15T05:07:21.000Z</published>
-    <updated>2017-10-15T05:30:39.143Z</updated>
+    <updated>2017-10-15T05:30:39.144Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables</p>
-<p>通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量</p>
-<p>Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的</p>
-<p>只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量</p>
-<a id="more"></a>
-<p>统计5902端口上的出网流量（这里统计的是用户下载流量）:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p tcp --sport 5902</div></pre></td></tr></table></figure>
-<blockquote>
-<p> -A OUTPUT  表示在OUTPUT上增加一条规则<br> -D OUTPUT  表示在OUTPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –sport 5902  表示出网的端口号为5902</p>
-</blockquote>
-<p>统计5902端口上的进网流量（这里统计的是用户上传流量）:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 5902</div></pre></td></tr></table></figure>
-<blockquote>
-<p> -A INPUT表示在INPUT上增加一条规则<br> -D INPUT表示在INPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –dport 5902  表示入网的端口号为5902</p>
-</blockquote>
-<p>添加完成之后就可以通过下面命令查看流量信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">iptables -vnL  </div><div class="line">iptables -vnL&gt;/home/iptables.log  #输出内容到文件</div></pre></td></tr></table></figure>
-<p>在INPUT下面的就是入网流量，OUTPUT里面的是出网流量，默认是使用易读的单位，也就是自动转化成M，G。如过需要Bytes做单位，则增加一个-x参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -n -v -L -t filter -x</div></pre></td></tr></table></figure>
-<p>流量信息自添加规则之后开始统计，无法显示之前的流量信息。 重启防火墙，流量统计数据将会被重置</p>
-<p>pkts 一列是包的数量 bytes 一列是流量统计结果</p>
-<p>最后：</p>
-<p>一般重启后iptables规则会丢失，因此需要进行保存操作。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save  #保存防火墙配置  </div><div class="line">vi /etc/sysconfig/iptables  #编辑防火墙配置  </div><div class="line">service iptables restart  #重启防火墙</div></pre></td></tr></table></figure>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables</p><p>通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量</p><p>Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的</p><p>只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量</p><a id="more"></a><p>统计5902端口上的出网流量（这里统计的是用户下载流量）:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p tcp --sport 5902</div></pre></td></tr></table></figure><blockquote><p> -A OUTPUT  表示在OUTPUT上增加一条规则<br> -D OUTPUT  表示在OUTPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –sport 5902  表示出网的端口号为5902</p></blockquote><p>统计5902端口上的进网流量（这里统计的是用户上传流量）:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 5902</div></pre></td></tr></table></figure><blockquote><p> -A INPUT表示在INPUT上增加一条规则<br> -D INPUT表示在INPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –dport 5902  表示入网的端口号为5902</p></blockquote><p>添加完成之后就可以通过下面命令查看流量信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">iptables -vnL  </div><div class="line">iptables -vnL&gt;/home/iptables.log  #输出内容到文件</div></pre></td></tr></table></figure><p>在INPUT下面的就是入网流量，OUTPUT里面的是出网流量，默认是使用易读的单位，也就是自动转化成M，G。如过需要Bytes做单位，则增加一个-x参数：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -n -v -L -t filter -x</div></pre></td></tr></table></figure><p>流量信息自添加规则之后开始统计，无法显示之前的流量信息。 重启防火墙，流量统计数据将会被重置</p><p>pkts 一列是包的数量 bytes 一列是流量统计结果</p><p>最后：</p><p>一般重启后iptables规则会丢失，因此需要进行保存操作。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save  #保存防火墙配置  </div><div class="line">vi /etc/sysconfig/iptables  #编辑防火墙配置  </div><div class="line">service iptables restart  #重启防火墙</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -470,24 +433,9 @@
     <link href="https://blog.zhangsy.me/2017/09/21/Windwos-%E8%BD%AF%E6%95%85%E9%9A%9C%E5%88%9D%E7%AD%9B/"/>
     <id>https://blog.zhangsy.me/2017/09/21/Windwos-软故障初筛/</id>
     <published>2017-09-21T13:44:34.000Z</published>
-    <updated>2017-09-21T15:17:48.618Z</updated>
+    <updated>2017-09-21T15:17:48.619Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>震惊吧？没想到我还会写这种无营养的东西<br><a id="more"></a></p>
-<p>这是从 <a href="https://answers.microsoft.com/zh-hans/windows/forum/windows8_1-performance/%E6%88%91%E7%9A%84windows81%E8%93%9D%E5%B1%8F/44c59f81-d369-404e-a76f-7dc07be26877?auth=1" target="_blank" rel="external">Windows 技术支持</a> 获得的，作者可能是 <a href="https://answers.microsoft.com/zh-hans/profile/32b2a57c-dff7-468f-bacc-88ffbebac373" target="_blank" rel="external">Johns Wu</a></p>
-<h3 id="一、我们先建议您进入安全模式下观察情况如何？"><a href="#一、我们先建议您进入安全模式下观察情况如何？" class="headerlink" title="一、我们先建议您进入安全模式下观察情况如何？"></a>一、我们先建议您进入安全模式下观察情况如何？</h3><ol>
-<li>按Windows+R, 然后在输入框中输入msconfig，按回车。</li>
-<li>然后选择上方的引导。</li>
-<li>然后在安全引导上打勾，按确定，重新启动。<br>退出安全模式，只要在刚才的安全引导上面清除勾，然后重启即可。<h3 id="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："><a href="#二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：" class="headerlink" title="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："></a>二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：</h3>干净启动步骤：</li>
-<li>按Windows+R, 然后在输入框中输入msconfig，按回车，弹出系统配置对话框。</li>
-<li>选择常规，单击“有选择的启动”，然后单击清除“加载启动项”上面的勾。</li>
-<li>再点击“服务”，单击“隐藏所有Microsoft”服务，然后单击全部禁用。</li>
-<li>再点击“启动”，点击“打开任务管理器”，点击启动项，然后单击禁用。</li>
-<li>单击确定，重新启动系统。<br>如果要恢复到正常状态只要在系统配置对话框：“常规”选项卡上，点按或单击“正常启动”选项即可。<h3 id="三、硬盘、内存等问题检查"><a href="#三、硬盘、内存等问题检查" class="headerlink" title="三、硬盘、内存等问题检查"></a>三、硬盘、内存等问题检查</h3></li>
-<li>要检查硬盘驱动器的问题<br>打开您的开始菜单/屏幕，单击搜索，键入chkdsk / F C：，并设置一个磁盘检查在下一次您的计算机重新启动。（注意备份/保存文件）；您的电脑很可能要话一段时间完成操作，这取决于您的硬盘驱动器的大小和速度。</li>
-<li>内存问题<br>按Win+R键，运行：MdSched.exe<br>选择“立即重新启动并检查问题”，执行内存检查。尝试能否通过测试。（注意备份/保存文件）</li>
-<li>驱动程序问题<br>按Win+X，选择计算机管理，打开设备管理器，右键单击您的所有设备，然后单击更新驱动程序。请注意，Windows可能无法找到更新的驱动程序对于某些设备 – 您可能必须手动去制造商的网站上找到他们。</li>
-</ol>
-]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>震惊吧？没想到我还会写这种无营养的东西<br><a id="more"></a></p><p>这是从 <a href="https://answers.microsoft.com/zh-hans/windows/forum/windows8_1-performance/%E6%88%91%E7%9A%84windows81%E8%93%9D%E5%B1%8F/44c59f81-d369-404e-a76f-7dc07be26877?auth=1" target="_blank" rel="noopener">Windows 技术支持</a> 获得的，作者可能是 <a href="https://answers.microsoft.com/zh-hans/profile/32b2a57c-dff7-468f-bacc-88ffbebac373" target="_blank" rel="noopener">Johns Wu</a></p><h3 id="一、我们先建议您进入安全模式下观察情况如何？"><a href="#一、我们先建议您进入安全模式下观察情况如何？" class="headerlink" title="一、我们先建议您进入安全模式下观察情况如何？"></a>一、我们先建议您进入安全模式下观察情况如何？</h3><ol><li>按Windows+R, 然后在输入框中输入msconfig，按回车。</li><li>然后选择上方的引导。</li><li>然后在安全引导上打勾，按确定，重新启动。<br>退出安全模式，只要在刚才的安全引导上面清除勾，然后重启即可。<h3 id="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："><a href="#二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：" class="headerlink" title="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："></a>二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：</h3>干净启动步骤：</li><li>按Windows+R, 然后在输入框中输入msconfig，按回车，弹出系统配置对话框。</li><li>选择常规，单击“有选择的启动”，然后单击清除“加载启动项”上面的勾。</li><li>再点击“服务”，单击“隐藏所有Microsoft”服务，然后单击全部禁用。</li><li>再点击“启动”，点击“打开任务管理器”，点击启动项，然后单击禁用。</li><li>单击确定，重新启动系统。<br>如果要恢复到正常状态只要在系统配置对话框：“常规”选项卡上，点按或单击“正常启动”选项即可。<h3 id="三、硬盘、内存等问题检查"><a href="#三、硬盘、内存等问题检查" class="headerlink" title="三、硬盘、内存等问题检查"></a>三、硬盘、内存等问题检查</h3></li><li>要检查硬盘驱动器的问题<br>打开您的开始菜单/屏幕，单击搜索，键入chkdsk / F C：，并设置一个磁盘检查在下一次您的计算机重新启动。（注意备份/保存文件）；您的电脑很可能要话一段时间完成操作，这取决于您的硬盘驱动器的大小和速度。</li><li>内存问题<br>按Win+R键，运行：MdSched.exe<br>选择“立即重新启动并检查问题”，执行内存检查。尝试能否通过测试。（注意备份/保存文件）</li><li>驱动程序问题<br>按Win+X，选择计算机管理，打开设备管理器，右键单击您的所有设备，然后单击更新驱动程序。请注意，Windows可能无法找到更新的驱动程序对于某些设备 – 您可能必须手动去制造商的网站上找到他们。</li></ol>]]></content>
     
     <summary type="html">
     
@@ -497,69 +445,6 @@
     
     
       <category term="看看就好" scheme="https://blog.zhangsy.me/tags/%E7%9C%8B%E7%9C%8B%E5%B0%B1%E5%A5%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windwos 10 开机黑屏解决方案</title>
-    <link href="https://blog.zhangsy.me/2017/09/05/Windwos-10-%E5%BC%80%E6%9C%BA%E9%BB%91%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>https://blog.zhangsy.me/2017/09/05/Windwos-10-开机黑屏解决方案/</id>
-    <published>2017-09-05T12:11:56.000Z</published>
-    <updated>2017-09-05T13:24:11.546Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
-<p>方案来自网络，作者未知，进行了重写 <del>与配图</del>[配图既麻烦又无必要，暂时不上]</p>
-</blockquote>
-<ol>
-<li>按下<code>Ctrl</code>+<code>Shift</code>+<code>ESC</code>组合键，打开任务管理器[配图一]</li>
-<li>[若已经开启，请跳过这一步骤]点击左下角的 详细信息 ，以显示全部内容[配图四]</li>
-<li>点击窗口左上角的 文件 -&gt; 运行新任务[配图三]</li>
-<li>在新打开的 新建任务 中输入 explorer.exe ，注意不要输错[配图四]</li>
-<li>应该已经能够正常显示桌面</li>
-</ol>
-<blockquote>
-<p>仅为临时方案，且原因未知，若您知道这是为什么，请告诉我，谢谢您</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
-&lt;p&gt;方案来自网络，作者未知，进行了重写 &lt;del&gt;与配图&lt;/del&gt;[配图既麻烦又无必要，暂时不上]&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;l
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SSD 数据恢复 —— 来自 SanDisk 的推荐</title>
-    <link href="https://blog.zhangsy.me/2017/08/31/SSD-%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6-%E2%80%94%E2%80%94-%E6%9D%A5%E8%87%AA-SanDisk-%E7%9A%84%E6%8E%A8%E8%8D%90/"/>
-    <id>https://blog.zhangsy.me/2017/08/31/SSD-数据恢复软件-——-来自-SanDisk-的推荐/</id>
-    <published>2017-08-31T14:49:39.000Z</published>
-    <updated>2017-08-31T15:37:39.597Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>简而言之，</p>
-<p>对于功能正常的固态硬盘：推荐使用 <a href="http://www.krollontrack.com/data-recovery/recovery-software/" target="_blank" rel="external">Ontrack EasyRecovery</a>（译作“易恢复”） 或者 <a href="http://www.lc-tech.com/pc/filerecovery/" target="_blank" rel="external">FILERECOVERY</a> 出品的程序</p>
-<p>对于已经出现故障的固态硬盘：您需要将其送往数据恢复公司。他们会尝试为您恢复里面的数据。对此，SanDisk 推荐 <a href="http://www.krollontrack.com/ps211-data-recovery/" target="_blank" rel="external">Kroll Ontrack</a> 或者 <a href="http://www.drivesaversdatarecovery.com/welcome/welcome-sandisk-customers/" target="_blank" rel="external">DriveSavers</a>. 这些公司专注于 SanDisk产品。</p>
-<p>Ontrack EasyRecovery：<a href="http://www.krollontrack.com/data-recovery/recovery-software/" target="_blank" rel="external">http://www.krollontrack.com/data-recovery/recovery-software/</a><br>FILERECOVERY：<a href="http://www.lc-tech.com/pc/filerecovery/" target="_blank" rel="external">http://www.lc-tech.com/pc/filerecovery/</a></p>
-<p>Kroll Ontrack：<a href="http://www.krollontrack.com/ps211-data-recovery/" target="_blank" rel="external">http://www.krollontrack.com/ps211-data-recovery/</a><br>DriveSavers：<a href="http://www.drivesaversdatarecovery.com/welcome/welcome-sandisk-customers/" target="_blank" rel="external">http://www.drivesaversdatarecovery.com/welcome/welcome-sandisk-customers/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;简而言之，&lt;/p&gt;
-&lt;p&gt;对于功能正常的固态硬盘：推荐使用 &lt;a href=&quot;http://www.krollontrack.com/data-recovery/recove
-    
-    </summary>
-    
-    
-      <category term="推荐" scheme="https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/"/>
-    
-      <category term="SSD" scheme="https://blog.zhangsy.me/tags/SSD/"/>
     
   </entry>
   
