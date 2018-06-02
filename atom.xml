@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-06-01T13:13:09.768Z</updated>
+  <updated>2018-06-02T05:14:56.367Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97%EF%BC%9F/"/>
     <id>https://blog.zhangsy.me/2018/06/01/你的树莓派有足够的电力供应吗？/</id>
     <published>2018-06-01T12:23:48.000Z</published>
-    <updated>2018-06-01T13:13:09.768Z</updated>
+    <updated>2018-06-02T05:14:56.367Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>读到 <a href="https://raspberrypi.stackexchange.com/a/51616" target="_blank" rel="noopener">Power Requirement of the Pi - Milliways 的回答</a>。文末的技术细节提供了这两条指令来检查电源供给情况：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ~ vcgencmd get_throttled#应该是 throttled=0x0</div><div class="line">$ ~ cat /sys/class/leds/led1/brightness#应该是255</div></pre></td></tr></table></figure><blockquote><p>好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。</p><pre><code>Working on it – Fitz</code></pre></blockquote>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>读到 <a href="https://raspberrypi.stackexchange.com/a/51616" target="_blank" rel="noopener">Power Requirement of the Pi - Milliways 的回答</a>。文末的技术细节提供了这两条指令来检查电源供给情况：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ~ vcgencmd get_throttled#应该是 throttled=0x0</div><div class="line">$ ~ cat /sys/class/leds/led1/brightness#应该是255</div></pre></td></tr></table></figure><blockquote><p>好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。</p><blockquote><p>Working on it – Fitz</p></blockquote></blockquote>]]></content>
     
     <summary type="html">
     
