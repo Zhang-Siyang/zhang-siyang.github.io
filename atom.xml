@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-06-02T05:14:56.367Z</updated>
+  <updated>2018-06-10T08:02:49.500Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于志愿填报</title>
+    <link href="https://blog.zhangsy.me/2018/06/10/%E5%85%B3%E4%BA%8E%E5%BF%97%E6%84%BF%E5%A1%AB%E6%8A%A5/"/>
+    <id>https://blog.zhangsy.me/2018/06/10/关于志愿填报/</id>
+    <published>2018-06-10T08:01:48.000Z</published>
+    <updated>2018-06-10T08:02:49.500Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><ol><li><p>各档分数线大概也就是招生计划人数对应的分数线，这个得等一分一档表出来才能算，假设某省考生一共有10个，本一招3个，本科招5个，其他招2个，那应该把10个考生按照成绩排行，本一线就是第三名考生的分数，本科线就是第八名考生的分数线（但会有（向下的）浮动，应对有的学生不上、特招、留学等），专科每年一般都是定到200的</p></li><li><p>高考录取其实就是跑程序，程序咋跑有一小本高考手册写得听清楚，讲的大概是允许填报学校总数的限制，各学校允许专业总数的限制，要是学校提档过多退档了该怎么办，是怎样从本省分数最高开始，做完录取工作的。</p></li><li><p>出成绩的时候，学校应该就会把学生叫回到学校，其中一件事儿就是发报考手册，一本各学校招生额度、费用和限制（特殊专业要求的，比如身高），一本各校各专业前三年分数线（这本带个光盘，里面有软件，能方便地筛查）。</p></li><li><p>可以用自己今年的全省排行和排行占比对比到去年看看自己能大概录取到什么学校，其实我就是这么做的，当然了，招生计划一年大过一年，可以不那么保守，但最好有些兜底的</p></li><li><p>服从调剂的院校志愿专业要填满，随机的事要尽量掌握</p></li></ol><p>有点远，记不清细节了。高考报名不算是个很复杂的事儿，判完卷的时候排名就已经有了，适合的学校已经大致有谱了，就查找出来，因为考得多的可能报低了，考得少的可能报高了（但这个一般没啥事儿，不录取他，就影响不了咱的录取）；在我心里有一个挺危险的事儿就是退档，因为我当时还是没搞太明白，觉得就跟踩地雷似的</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;各档分数线大概也就是招生计划人数对应的分数线，这个得等一分一档表出来才能算，假设某省考生一共有10个，本一招3个，本科招5个，其他招2个，那应该把10个考生
+      
+    
+    </summary>
+    
+    
+      <category term="存档" scheme="https://blog.zhangsy.me/tags/%E5%AD%98%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将 DHT11 的温度，用 LCD1602 展现</title>
+    <link href="https://blog.zhangsy.me/2018/06/03/%E5%B0%86-DHT11-%E7%9A%84%E6%B8%A9%E5%BA%A6%EF%BC%8C%E7%94%A8-LCD1602-%E5%B1%95%E7%8E%B0/"/>
+    <id>https://blog.zhangsy.me/2018/06/03/将-DHT11-的温度，用-LCD1602-展现/</id>
+    <published>2018-06-03T11:04:34.000Z</published>
+    <updated>2018-06-10T08:05:51.619Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>是用Arduino实现的；先上代码，仅供浏览，所有权利保留！请勿复制、分发或在您的项目中使用</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;LiquidCrystal.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;DHT.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> LCDHORIZONTAL 16  <span class="comment">/*LCD横向分辨率*/</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> LCDVERTICAL 2   <span class="comment">/*LCD竖向分辨率*/</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> LCDLED 10</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> CUSTOMCHARCOUNT 4</span></div><div class="line"></div><div class="line">byte customChars[CUSTOMCHARCOUNT][<span class="number">8</span>] = &#123;&#123;</div><div class="line">        <span class="comment">/*LCD1602 自定义字符*/</span></div><div class="line">        B00000,</div><div class="line">        B10000,</div><div class="line">        B01000,</div><div class="line">        B00100,</div><div class="line">        B00010,</div><div class="line">        B00001,</div><div class="line">        B00000,</div><div class="line">        B00000</div><div class="line">        <span class="comment">/*反斜杠*/</span></div><div class="line">    &#125;, &#123;</div><div class="line">        B00100,</div><div class="line">        B01010,</div><div class="line">        B01010,</div><div class="line">        B01010,</div><div class="line">        B01110,</div><div class="line">        B11111,</div><div class="line">        B11111,</div><div class="line">        B01110</div><div class="line">        <span class="comment">/*温度计*/</span></div><div class="line">    &#125;, &#123;</div><div class="line">        B00100,</div><div class="line">        B00100,</div><div class="line">        B01010,</div><div class="line">        B01010,</div><div class="line">        B10001,</div><div class="line">        B10001,</div><div class="line">        B10001,</div><div class="line">        B01110</div><div class="line">        <span class="comment">/*水滴*/</span></div><div class="line">    &#125;, &#123;</div><div class="line">        B00100,</div><div class="line">        B00100,</div><div class="line">        B01010,</div><div class="line">        B11011,</div><div class="line">        B00100,</div><div class="line">        B00100,</div><div class="line">        B01010,</div><div class="line">        B01010</div><div class="line">        <span class="comment">/*体感温度*/</span></div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">char</span> title[] = <span class="string">"TEMP RH @DHT11"</span>;    <span class="comment">/*显示在第一行的标题*/</span></div><div class="line"><span class="keyword">char</span> err_cant_con[] = <span class="string">"E!Can't Connect."</span>;   <span class="comment">/*无法连接至DHT11时的错误提示*/</span></div><div class="line"><span class="keyword">uint8_t</span> flag[<span class="number">4</span>] = &#123;<span class="number">0</span>, <span class="string">'|'</span>, <span class="string">'/'</span>, <span class="string">'-'</span>&#125;;   <span class="comment">/*用于表示程序运行状态，大概进度条的意思*/</span></div><div class="line"><span class="keyword">uint8_t</span> pointToFlag = <span class="number">3</span>;    <span class="comment">/*指针，用于运行指示*/</span></div><div class="line">String Separator = String(<span class="string">' '</span>); <span class="comment">/*信息输出用的分割符，预先定义好后节省空间也直观一点*/</span></div><div class="line"><span class="function">LiquidCrystal <span class="title">lcd</span><span class="params">(<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>)</span></span>;</div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> DHTPIN 1    <span class="comment">/*DHT Data针脚*/</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> DHTTYPE DHT11   <span class="comment">/*DHT型号*/</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> DHTDELAYLIMIT 1000</span></div><div class="line"><span class="function">DHT <span class="title">dht</span><span class="params">(DHTPIN, DHTTYPE)</span></span>;</div><div class="line"><span class="keyword">float</span> t, h, hic;    <span class="comment">/*t:温度， h:相对湿度， hic:热度指数（体感温度，摄氏记）*/</span></div><div class="line"><span class="keyword">uint32_t</span> nowORdelayMS;  <span class="comment">/*存储当前时间或需延时的时间（DHT有时间分辨率的概念）*/</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</div><div class="line">    dht.begin();</div><div class="line"></div><div class="line">    lcd.begin(LCDHORIZONTAL, LCDVERTICAL);</div><div class="line">    lcd.print(title);   <span class="comment">/*lcd.begin 后光标定在1行1列， 这时打印标题*/</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; CUSTOMCHARCOUNT; i++) &#123;   <span class="comment">/*自定义字符*/</span></div><div class="line">        lcd.createChar(i, customChars[i]);</div><div class="line">    &#125;</div><div class="line">    pinMode(LCDLED, OUTPUT);    <span class="comment">/*由PWM而非5V针脚供电*/</span></div><div class="line">    analogWrite(LCDLED, <span class="number">120</span>);    <span class="comment">/*可调节的亮度，60一般，120上档次， 190+照顾弱视*/</span></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</div><div class="line">    refreshFlag();  <span class="comment">/*更新运行状态显示*/</span></div><div class="line">    nowORdelayMS = millis();    <span class="comment">/*记录本次获取数据开始时间*/</span></div><div class="line">    t = dht.readTemperature();  <span class="comment">/*获取摄氏温度*/</span></div><div class="line">    h = dht.readHumidity(); <span class="comment">/*获取相对数度*/</span></div><div class="line">    lcd.setCursor(<span class="number">0</span>, <span class="number">1</span>);    <span class="comment">/*设定光标，打印信息用*/</span></div><div class="line">    <span class="keyword">if</span> (isnan(h) || isnan(t)) &#123; <span class="comment">/*错误数据，告知无法连接传感器*/</span></div><div class="line">        lcd.print(err_cant_con);</div><div class="line">        <span class="keyword">return</span>; <span class="comment">/*直接进入下一个loop，*/</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        hic = dht.computeHeatIndex(t, h, <span class="literal">false</span>);    <span class="comment">/*计算hic*/</span></div><div class="line">        String info =   <span class="comment">/*生成温湿度信息*/</span></div><div class="line">            String(<span class="keyword">char</span>(<span class="number">1</span>)) + Separator + String(t, <span class="number">0</span>) + Separator +    <span class="comment">/*有危险！char(1)是为了让 LCD 输出第二个用户自定义字符，需要与前方 lcd.createChar 相绑定*/</span></div><div class="line">            String(<span class="keyword">char</span>(<span class="number">2</span>)) + Separator + String(h, <span class="number">0</span>) + Separator +    <span class="comment">/*同上， 这一个是湿度*/</span></div><div class="line">            String(<span class="keyword">char</span>(<span class="number">3</span>)) + Separator + String(hic, <span class="number">0</span>)    <span class="comment">/*同上，这个是体感温度（hic）*/</span></div><div class="line">            + Separator + Separator</div><div class="line">            ;</div><div class="line">        lcd.print(info);    <span class="comment">/*输出已经准备好的温湿度信息*/</span></div><div class="line">    &#125;</div><div class="line">    nowORdelayMS = DHTDELAYLIMIT - (millis() - nowORdelayMS);  <span class="comment">/*计算应延迟的时间。注意，参与运算的 nowORdelayMS/millis() 有溢出的可能*/</span></div><div class="line">    <span class="keyword">if</span> (nowORdelayMS &gt; <span class="number">1000</span>) &#123;  <span class="comment">/*防止溢出，不然一延时延时个50天谁受得了……*/</span></div><div class="line">        delay(<span class="number">1000</span>);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        delay(nowORdelayMS);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">refreshFlag</span><span class="params">()</span> </span>&#123;</div><div class="line">    lcd.setCursor(LCDHORIZONTAL - <span class="number">1</span>, <span class="number">0</span>);   <span class="comment">/*设定运行状态指示位*/</span></div><div class="line">    lcd.write(flag[pointToFlag-- % CUSTOMCHARCOUNT]); <span class="comment">/*pointToFlag 是 uint8_t ， 利用溢出和对四取模的特点使 (flag[pointToFlag-- % CUSTOMCHARCOUNT]) 在0到(CUSTOMCHARCOUNT - 1)之间循环*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;是用Arduino实现的；先上代码，仅供浏览，所有权利保留！请勿复制、分发或在您的项目中使用&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>你的树莓派有足够的电力供应吗？</title>
@@ -396,55 +442,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 使用 iptables 进行 Shadowsocks 流量统计</title>
-    <link href="https://blog.zhangsy.me/2017/10/15/Linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-Shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
-    <id>https://blog.zhangsy.me/2017/10/15/Linux-使用-iptables-进行-Shadowsocks-流量统计/</id>
-    <published>2017-10-15T05:07:21.000Z</published>
-    <updated>2017-10-15T05:30:39.144Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables</p><p>通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量</p><p>Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的</p><p>只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量</p><a id="more"></a><p>统计5902端口上的出网流量（这里统计的是用户下载流量）:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p tcp --sport 5902</div></pre></td></tr></table></figure><blockquote><p> -A OUTPUT  表示在OUTPUT上增加一条规则<br> -D OUTPUT  表示在OUTPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –sport 5902  表示出网的端口号为5902</p></blockquote><p>统计5902端口上的进网流量（这里统计的是用户上传流量）:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 5902</div></pre></td></tr></table></figure><blockquote><p> -A INPUT表示在INPUT上增加一条规则<br> -D INPUT表示在INPUT上删除一条规则<br> -p tcp  表示指定tcp协议<br> –dport 5902  表示入网的端口号为5902</p></blockquote><p>添加完成之后就可以通过下面命令查看流量信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">iptables -vnL  </div><div class="line">iptables -vnL&gt;/home/iptables.log  #输出内容到文件</div></pre></td></tr></table></figure><p>在INPUT下面的就是入网流量，OUTPUT里面的是出网流量，默认是使用易读的单位，也就是自动转化成M，G。如过需要Bytes做单位，则增加一个-x参数：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -n -v -L -t filter -x</div></pre></td></tr></table></figure><p>流量信息自添加规则之后开始统计，无法显示之前的流量信息。 重启防火墙，流量统计数据将会被重置</p><p>pkts 一列是包的数量 bytes 一列是流量统计结果</p><p>最后：</p><p>一般重启后iptables规则会丢失，因此需要进行保存操作。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save  #保存防火墙配置  </div><div class="line">vi /etc/sysconfig/iptables  #编辑防火墙配置  </div><div class="line">service iptables restart  #重启防火墙</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables&lt;/p&gt;
-&lt;p&gt;通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量&lt;/p&gt;
-&lt;p&gt;Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的&lt;/p&gt;
-&lt;p&gt;只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.zhangsy.me/tags/Linux/"/>
-    
-      <category term="iptables" scheme="https://blog.zhangsy.me/tags/iptables/"/>
-    
-      <category term="Shadowsocks" scheme="https://blog.zhangsy.me/tags/Shadowsocks/"/>
-    
-      <category term="统计" scheme="https://blog.zhangsy.me/tags/%E7%BB%9F%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windwos 软故障初筛</title>
-    <link href="https://blog.zhangsy.me/2017/09/21/Windwos-%E8%BD%AF%E6%95%85%E9%9A%9C%E5%88%9D%E7%AD%9B/"/>
-    <id>https://blog.zhangsy.me/2017/09/21/Windwos-软故障初筛/</id>
-    <published>2017-09-21T13:44:34.000Z</published>
-    <updated>2017-09-21T15:17:48.619Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>震惊吧？没想到我还会写这种无营养的东西<br><a id="more"></a></p><p>这是从 <a href="https://answers.microsoft.com/zh-hans/windows/forum/windows8_1-performance/%E6%88%91%E7%9A%84windows81%E8%93%9D%E5%B1%8F/44c59f81-d369-404e-a76f-7dc07be26877?auth=1" target="_blank" rel="noopener">Windows 技术支持</a> 获得的，作者可能是 <a href="https://answers.microsoft.com/zh-hans/profile/32b2a57c-dff7-468f-bacc-88ffbebac373" target="_blank" rel="noopener">Johns Wu</a></p><h3 id="一、我们先建议您进入安全模式下观察情况如何？"><a href="#一、我们先建议您进入安全模式下观察情况如何？" class="headerlink" title="一、我们先建议您进入安全模式下观察情况如何？"></a>一、我们先建议您进入安全模式下观察情况如何？</h3><ol><li>按Windows+R, 然后在输入框中输入msconfig，按回车。</li><li>然后选择上方的引导。</li><li>然后在安全引导上打勾，按确定，重新启动。<br>退出安全模式，只要在刚才的安全引导上面清除勾，然后重启即可。<h3 id="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："><a href="#二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：" class="headerlink" title="二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错："></a>二、如果安全模式下正常，我们可以尝试进行干净启动步骤排错：</h3>干净启动步骤：</li><li>按Windows+R, 然后在输入框中输入msconfig，按回车，弹出系统配置对话框。</li><li>选择常规，单击“有选择的启动”，然后单击清除“加载启动项”上面的勾。</li><li>再点击“服务”，单击“隐藏所有Microsoft”服务，然后单击全部禁用。</li><li>再点击“启动”，点击“打开任务管理器”，点击启动项，然后单击禁用。</li><li>单击确定，重新启动系统。<br>如果要恢复到正常状态只要在系统配置对话框：“常规”选项卡上，点按或单击“正常启动”选项即可。<h3 id="三、硬盘、内存等问题检查"><a href="#三、硬盘、内存等问题检查" class="headerlink" title="三、硬盘、内存等问题检查"></a>三、硬盘、内存等问题检查</h3></li><li>要检查硬盘驱动器的问题<br>打开您的开始菜单/屏幕，单击搜索，键入chkdsk / F C：，并设置一个磁盘检查在下一次您的计算机重新启动。（注意备份/保存文件）；您的电脑很可能要话一段时间完成操作，这取决于您的硬盘驱动器的大小和速度。</li><li>内存问题<br>按Win+R键，运行：MdSched.exe<br>选择“立即重新启动并检查问题”，执行内存检查。尝试能否通过测试。（注意备份/保存文件）</li><li>驱动程序问题<br>按Win+X，选择计算机管理，打开设备管理器，右键单击您的所有设备，然后单击更新驱动程序。请注意，Windows可能无法找到更新的驱动程序对于某些设备 – 您可能必须手动去制造商的网站上找到他们。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;震惊吧？没想到我还会写这种无营养的东西&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="看看就好" scheme="https://blog.zhangsy.me/tags/%E7%9C%8B%E7%9C%8B%E5%B0%B1%E5%A5%BD/"/>
     
   </entry>
   
