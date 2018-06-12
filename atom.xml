@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.zhangsy.me/"/>
-  <updated>2018-06-10T08:02:49.500Z</updated>
+  <updated>2018-06-12T13:09:17.101Z</updated>
   <id>https://blog.zhangsy.me/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Get my external IP</title>
+    <link href="https://blog.zhangsy.me/2018/06/12/Get-my-external-IP/"/>
+    <id>https://blog.zhangsy.me/2018/06/12/Get-my-external-IP/</id>
+    <published>2018-06-12T12:51:39.000Z</published>
+    <updated>2018-06-12T13:09:17.101Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>HEXO 不能容忍 &gt;!–more–&lt; 前方没有正文。我有点不能忍受 HEXO 了<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">checkip.dyndns.org</div><div class="line">checkip.dyndns.org:8245</div><div class="line">echo.tzo.com</div><div class="line">ip.dnsexit.com</div><div class="line">ip.changeip.com</div><div class="line">myip.dnsomatic.com</div><div class="line">ip1.dynupdate.no-ip.com</div><div class="line">checkip.dns.he.net</div><div class="line">checkip.zerigo.com</div><div class="line">checkip.two-dns.de</div><div class="line">ipv4.wtfismyip.com/text</div><div class="line">ipv4.nsupdate.info/myip</div><div class="line">myip.dtdns.com</div><div class="line">members.3322.org/dyndns/getip</div></pre></td></tr></table></figure></p><p>来自:</p><blockquote><p><a href="http://www.kejidana.com/archives/92" target="_blank" rel="noopener">http://www.kejidana.com/archives/92</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;HEXO 不能容忍 &amp;gt;!–more–&amp;lt; 前方没有正文。我有点不能忍受 HEXO 了&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>关于志愿填报</title>
@@ -415,26 +433,6 @@
         &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;快使用 &lt;code&gt;&amp;amp;#13;&amp;amp;#10&lt;/code&gt; !&lt;/p&gt;
 
       
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 10 为微软拼音添加自定义短语 | 时间-变量</title>
-    <link href="https://blog.zhangsy.me/2017/10/25/Windows-10-%E4%B8%BA%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%AD%E8%AF%AD-%E6%97%B6%E9%97%B4-%E5%8F%98%E9%87%8F/"/>
-    <id>https://blog.zhangsy.me/2017/10/25/Windows-10-为微软拼音添加自定义短语-时间-变量/</id>
-    <published>2017-10-25T13:30:57.000Z</published>
-    <updated>2017-11-30T12:29:05.261Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：<code>&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;</code>，取而代之的居然是：<code>&#39;sj&#39;:&#39;13点28分&#39;</code> ！</p><p>简单贴一下解决办法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置 -&gt; 词库和自学习 -&gt; 添加新的或编辑现有的用户自定义短语 -&gt; 添加 -&gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]</div></pre></td></tr></table></figure><a id="more"></a><p><img src="https://i.imgur.com/nsZGNAj.png" alt="添加示例"></p><p>点击添加即可</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：&lt;code&gt;&amp;#39;sj&amp;#39;:&amp;#39;2017-10-25 13:28:22 CST&amp;#39;&lt;/code&gt;，取而代之的居然是：&lt;code&gt;&amp;#39;sj&amp;#39;:&amp;#39;13点28分&amp;#39;&lt;/code&gt; ！&lt;/p&gt;
-&lt;p&gt;简单贴一下解决办法：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;设置 -&amp;gt; 词库和自学习 -&amp;gt; 添加新的或编辑现有的用户自定义短语 -&amp;gt; 添加 -&amp;gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
