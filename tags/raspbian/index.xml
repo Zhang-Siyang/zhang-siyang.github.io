@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspbian on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/raspbian/</link>
+    <description>Recent content in Raspbian on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Fri, 01 Jun 2018 20:23:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/raspbian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>你的树莓派有足够的电力供应吗？</title>
+      <link>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</link>
+      <pubDate>Fri, 01 Jun 2018 20:23:48 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</guid>
+      <description>读到 Power Requirement of the Pi - Milliways 的回答。文末的技术细节提供了这两条指令来检查电源供给情况：
+$ ~ vcgencmd get_throttled	#应该是 throttled=0x0 $ ~ cat /sys/class/leds/led1/brightness	#应该是255   好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。
+ Working on it – Fitz
+  </description>
+    </item>
+    
+  </channel>
+</rss>

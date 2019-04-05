@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>推荐 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/</link>
+    <description>Recent content in 推荐 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Thu, 31 Aug 2017 22:49:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E6%8E%A8%E8%8D%90/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSD 数据恢复 —— 来自 SanDisk 的推荐</title>
+      <link>https://blog.zhangsy.me/2017/08/31/ssd-%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D-%E6%9D%A5%E8%87%AA-sandisk-%E7%9A%84%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Thu, 31 Aug 2017 22:49:39 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/31/ssd-%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D-%E6%9D%A5%E8%87%AA-sandisk-%E7%9A%84%E6%8E%A8%E8%8D%90/</guid>
+      <description>简而言之，
+对于功能正常的固态硬盘：推荐使用 Ontrack EasyRecovery（译作“易恢复”） 或者 FILERECOVERY 出品的程序
+对于已经出现故障的固态硬盘：您需要将其送往数据恢复公司。他们会尝试为您恢复里面的数据。对此，SanDisk 推荐 Kroll Ontrack 或者 DriveSavers. 这些公司专注于 SanDisk产品。
+Ontrack EasyRecovery：http://www.krollontrack.com/data-recovery/recovery-software/ FILERECOVERY：http://www.lc-tech.com/pc/filerecovery/
+Kroll Ontrack：http://www.krollontrack.com/ps211-data-recovery/ DriveSavers：http://www.drivesaversdatarecovery.com/welcome/welcome-sandisk-customers/</description>
+    </item>
+    
+    <item>
+      <title>那些个平民化的云</title>
+      <link>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</link>
+      <pubDate>Sun, 11 Jun 2017 04:14:28 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</guid>
+      <description>共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card  Syncthing G Suite OneDrive rixCloud iCloud Dropbox Google Drive 坚果云  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "你的树莓派有足够的电力供应吗？",
+      "headline" : "你的树莓派有足够的电力供应吗？",
+      "description" : "读到 Power Requirement of the Pi - Milliways 的回答。文末的技术细节提供了这两条指令来检查电源供给情况：
+$ ~ vcgencmd get_throttled	#应该是 throttled=0x0 $ ~ cat /sys/class/leds/led1/brightness	#应该是255   好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。
+ Working on it – Fitz
+  ",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-06-01 20:23:48 &#43;0000 UTC",
+      "dateModified" : "2018-06-01 20:23:48 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/",
+      "keywords" : [ "RPi","Raspbian", ]
+  }
+</script>
+<title>你的树莓派有足够的电力供应吗？ - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="你的树莓派有足够的电力供应吗？ - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="读到 Power Requirement of the Pi - Milliways 的回答。文末的技术细节提供了这两条指令来检查电源供给情况：
+$ ~ vcgencmd get_throttled	#应该是 throttled=0x0 $ ~ cat /sys/class/leds/led1/brightness	#应该是255   好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。
+ Working on it – Fitz
+  " />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">你的树莓派有足够的电力供应吗？</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2018-06-01 20:23:48 UTC">
+                  01 Jun 2018
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>读到 <a href="https://raspberrypi.stackexchange.com/a/51616">Power Requirement of the Pi - Milliways 的回答</a>。文末的技术细节提供了这两条指令来检查电源供给情况：</p>
+
+<pre><code>$ ~ vcgencmd get_throttled	#应该是 throttled=0x0
+$ ~ cat /sys/class/leds/led1/brightness	#应该是255
+</code></pre>
+
+<blockquote>
+<p>好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。</p>
+
+<blockquote>
+<p>Working on it – Fitz</p>
+</blockquote>
+</blockquote>
+
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

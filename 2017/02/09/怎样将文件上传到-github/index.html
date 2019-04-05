@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-github/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-github/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "怎样将文件上传到 Github",
+      "headline" : "怎样将文件上传到 Github",
+      "description" : "<p>把想要向大家分享的文件上传到 Github 似乎是一个比较不错的选择，下载速度快，易于分享，棒棒的！可是我笨笨的，老是容易忘，所以干脆写下来分享给大家和自己！</p>",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-02-09 00:24:13 &#43;0000 UTC",
+      "dateModified" : "2017-02-09 00:24:13 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-github/",
+      "keywords" : [ "Github","Guide","Howto", ]
+  }
+</script>
+<title>怎样将文件上传到 Github - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="怎样将文件上传到 Github - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="把想要向大家分享的文件上传到 Github 似乎是一个比较不错的选择，下载速度快，易于分享，棒棒的！可是我笨笨的，老是容易忘，所以干脆写下来分享给大家和自己！" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">怎样将文件上传到 Github</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2017-02-09 00:24:13 UTC">
+                  09 Feb 2017
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>把想要向大家分享的文件上传到 Github 似乎是一个比较不错的选择，下载速度快，易于分享，棒棒的！可是我笨笨的，老是容易忘，所以干脆写下来分享给大家和自己！</p>
+
+<h2 id="第一步-在github中建立仓库">【第一步】在Github中建立仓库</h2>
+
+<p>建立仓库用图形化的方式还是很适合的，毕竟方便又简单嘛</p>
+
+<h3 id="打开你的-github-主页">打开你的 Github 主页</h3>
+
+<p><img src="https://imgur.com/Rraxdet.png" alt="Github主页" /></p>
+
+<h3 id="点击右上角的-new-repository">点击右上角的 &ldquo;New repository&rdquo;</h3>
+
+<p><img src="https://imgur.com/E9VNHHS.png" alt="New repository" /></p>
+
+<h3 id="填入仓库名称-描述也可以写上去">填入仓库名称，描述也可以写上去</h3>
+
+<p><img src="https://imgur.com/vJyYt2V.png" alt="填入仓库名和描述" /></p>
+
+<h3 id="建议点击下方的-initialize-this-repository-with-a-readme-就可以省去上传readme文件的步骤了"><strong>建议点击下方的 &ldquo;Initialize this repository with a README&rdquo; 就可以省去上传README文件的步骤了</strong></h3>
+
+<p><img src="https://imgur.com/YJzKS3c.png" alt="Initialize this repository with a README" /></p>
+
+<h3 id="点击-create-repository-以完成">点击 &ldquo;Create repository&rdquo; 以完成</h3>
+
+<p><img src="https://imgur.com/x5vbxvw.png" alt="完成！" /></p>
+
+<h2 id="第二步-克隆仓库">【第二步】克隆仓库</h2>
+
+<blockquote>
+<p>使用之前，请先确认你的账户信息已被添加到系统之中
+你可以使用以下两条命令来添加你的账户信息：</p>
+
+<ul>
+<li><code>git config --global user.email &quot;CE.BB.CAT@GMAIL.COM&quot;</code>  //这是我的 Github 注册邮箱</li>
+<li><code>git config --global user.name &quot;Zhang-Siyang&quot;</code>  //这是我的 Github 用户名</li>
+</ul>
+</blockquote>
+
+<h3 id="我们先来看一下目前的文件系统情况">我们先来看一下目前的文件系统情况：</h3>
+
+<blockquote>
+<p><code>pi@RaspberryPi-2B:~ $ ls</code>
+<code>Buckup  Desktop  Documents  Downloads  Music  oldconffiles  Pictures  Public  python_games  Templates  Videos</code></p>
+</blockquote>
+
+<h3 id="运行-git-clone-把-github-上的仓库-克隆-下来">运行 <code>git clone</code> ，把 Github 上的仓库 &ldquo;克隆&rdquo; 下来</h3>
+
+<pre><code>git clone https://github.com/Zhang-Siyang/Text.git
+</code></pre>
+
+<h3 id="现在的文件按系统情况">现在的文件按系统情况：</h3>
+
+<blockquote>
+<p><code>pi@RaspberryPi-2B:~ $ ls</code>
+<code>Buckup  Desktop  Documents  Downloads  Music  oldconffiles  Pictures  Public  python_games  Templates  Text  Videos</code>
+可以看到，Text 已经clone下来了</p>
+
+<h3 id="现在就可以进入-text-目录编写新文件了-不过如果没有readme-md的话-还是建立一个比较好">现在就可以进入 Text 目录编写新文件了！ [ 不过如果没有README.md的话，还是建立一个比较好 ]</h3>
+
+<p>例如：<code>history &gt;History.Txt</code></p>
+</blockquote>
+
+<h2 id="第三步-建立-readme-md-文档">【第三步】建立 README.md 文档</h2>
+
+<blockquote>
+<p>这时你应该处于 Text 文件夹内，你输入<code>pwd</code> 之后应该会提示像这样的信息，关键是最后一级：</p>
+
+<pre><code>&gt;/home/pi/Text
+&gt;```
+
+### 依次执行下列命令
+
+echo &quot;# 这里是测试用的文件夹，稍后应该被删除&quot; &gt;&gt; README.md
+</code></pre>
+
+<p>git init
+git add README.md
+git commit -m &ldquo;建立 README.md 文档
+git remote add origin <a href="https://github.com/Zhang-Siyang/Text.git">https://github.com/Zhang-Siyang/Text.git</a>
+git push -u origin master</p>
+
+<pre><code>如果有出错信息，看第四步中的解决方法
+
+## 【第四步】上传当前文件夹内所有文件
+
+### 依次执行下列命令
+</code></pre>
+
+<p>git add .
+git commit -m &ldquo;测试上传一个TXT文档&rdquo;
+git remote add origin <a href="https://github.com/Zhang-Siyang/Text.git">https://github.com/Zhang-Siyang/Text.git</a>
+git push origin master
+    输入密码即完成上传
+```</p>
+
+<h4 id="如果提示-fatal-远程-origin-已经存在-则执行-git-remote-rm-origin-然后从上一条命令接着执行">如果提示&rdquo;fatal: 远程 origin 已经存在。&rdquo;则执行：<code>git remote rm origin</code>，然后从上一条命令接着执行</h4>
+</blockquote>
+
+<h2 id="效果">效果：</h2>
+
+<h3 id="全部文件视图">全部文件视图：</h3>
+
+<p><img src="https://imgur.com/kqYH8ig.png" alt="Top" /></p>
+
+<h3 id="文件内容">文件内容：</h3>
+
+<p><img src="https://imgur.com/peWIFcb.png" alt="Inside" /></p>
+
+<h2 id="我还是一个小白-应该还会有不少纰漏-欢迎大牛斧正"><strong>我还是一个小白，应该还会有不少纰漏，欢迎大牛斧正 ！</strong></h2>
+
+<p>感谢 <a href="https://www.cnblogs.com/findingsea/archive/2012/08/27/2654549.html">关于初学者上传文件到github的方法</a> 第一次教会了我。是Findingsea写的。</p>
+
+<p>文章相关原图下载：<a href="https://imgur.com/a/p7TwM">原图</a></p>
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

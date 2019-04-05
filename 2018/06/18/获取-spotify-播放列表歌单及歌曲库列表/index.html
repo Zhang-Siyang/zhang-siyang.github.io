@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2018/06/18/%E8%8E%B7%E5%8F%96-spotify-%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%AD%8C%E5%8D%95%E5%8F%8A%E6%AD%8C%E6%9B%B2%E5%BA%93%E5%88%97%E8%A1%A8/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2018/06/18/%E8%8E%B7%E5%8F%96-spotify-%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%AD%8C%E5%8D%95%E5%8F%8A%E6%AD%8C%E6%9B%B2%E5%BA%93%E5%88%97%E8%A1%A8/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "获取 Spotify 播放列表（歌单）及歌曲库列表",
+      "headline" : "获取 Spotify 播放列表（歌单）及歌曲库列表",
+      "description" : "#!/usr/bin/env bash echo &quot;&quot; &gt; $1 start=0 step=50 for i in {1..10} do curl &quot;https://api.spotify.com/v1/me/tracks?offset=${start}&amp;limit=${step}&amp;market=from_token&quot; -H 'authorization: Bearer ${token}' -H 'origin: https://open.spotify.com' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: zh-CN,zh-MO;q=0.9,zh-SG;q=0.8,zh;q=0.7' -H 'user-agent: '${UA}' -H 'accept: application/json' -H 'referer: https://open.spotify.com/collection/tracks' -H 'authority: api.spotify.com' -H 'dnt: 1' --compressed &gt;&gt; $1 start=`expr $start + $step` done echo &quot;Congraturation!&quot;  cat tem|grep '^ \&quot;name\|^ &quot;name'|sed 's/^ &quot;name&quot; : /Name:/'|sed 's/,$//'|sed 's/&quot;//g'|less  ",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-06-18 11:02:52 &#43;0000 UTC",
+      "dateModified" : "2018-06-18 11:02:52 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2018/06/18/%E8%8E%B7%E5%8F%96-spotify-%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%AD%8C%E5%8D%95%E5%8F%8A%E6%AD%8C%E6%9B%B2%E5%BA%93%E5%88%97%E8%A1%A8/",
+      "keywords" : [  ]
+  }
+</script>
+<title>获取 Spotify 播放列表（歌单）及歌曲库列表 - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="获取 Spotify 播放列表（歌单）及歌曲库列表 - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="#!/usr/bin/env bash echo &quot;&quot; &gt; $1 start=0 step=50 for i in {1..10} do curl &quot;https://api.spotify.com/v1/me/tracks?offset=${start}&amp;limit=${step}&amp;market=from_token&quot; -H &#39;authorization: Bearer ${token}&#39; -H &#39;origin: https://open.spotify.com&#39; -H &#39;accept-encoding: gzip, deflate, br&#39; -H &#39;accept-language: zh-CN,zh-MO;q=0.9,zh-SG;q=0.8,zh;q=0.7&#39; -H &#39;user-agent: &#39;${UA}&#39; -H &#39;accept: application/json&#39; -H &#39;referer: https://open.spotify.com/collection/tracks&#39; -H &#39;authority: api.spotify.com&#39; -H &#39;dnt: 1&#39; --compressed &gt;&gt; $1 start=`expr $start &#43; $step` done echo &quot;Congraturation!&quot;  cat tem|grep &#39;^ \&quot;name\|^ &quot;name&#39;|sed &#39;s/^ &quot;name&quot; : /Name:/&#39;|sed &#39;s/,$//&#39;|sed &#39;s/&quot;//g&#39;|less  " />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">获取 Spotify 播放列表（歌单）及歌曲库列表</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2018-06-18 11:02:52 UTC">
+                  18 Jun 2018
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <pre><code class="language-shell">#!/usr/bin/env bash
+echo &quot;&quot; &gt; $1
+start=0
+step=50
+for i in {1..10}
+do
+    curl &quot;https://api.spotify.com/v1/me/tracks?offset=${start}&amp;limit=${step}&amp;market=from_token&quot; -H 'authorization: Bearer ${token}' -H 'origin: https://open.spotify.com' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: zh-CN,zh-MO;q=0.9,zh-SG;q=0.8,zh;q=0.7' -H 'user-agent: '${UA}' -H 'accept: application/json' -H 'referer: https://open.spotify.com/collection/tracks' -H 'authority: api.spotify.com' -H 'dnt: 1' --compressed &gt;&gt; $1
+    start=`expr $start + $step`
+done
+echo &quot;Congraturation!&quot;
+</code></pre>
+
+<pre><code class="language-shell">cat tem|grep '^      \&quot;name\|^        &quot;name'|sed 's/^      &quot;name&quot; : /Name:/'|sed 's/,$//'|sed 's/&quot;//g'|less
+</code></pre>
+
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

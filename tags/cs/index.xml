@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/cs/</link>
+    <description>Recent content in Cs on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sun, 05 Mar 2017 19:34:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20170305-今天的C#实验报告</title>
+      <link>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Sun, 05 Mar 2017 19:34:52 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</guid>
+      <description>&lt;p&gt;实验目标: 掌握C#的基本用法
+实验人: ZhangSiyang
+实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

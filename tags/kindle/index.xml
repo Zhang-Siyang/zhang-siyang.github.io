@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kindle on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/kindle/</link>
+    <description>Recent content in Kindle on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Thu, 13 Jul 2017 02:01:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kindle 邮箱支持哪些格式？</title>
+      <link>https://blog.zhangsy.me/2017/07/13/kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Thu, 13 Jul 2017 02:01:14 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/13/kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F/</guid>
+      <description>Kindle个人文档服务与以下设备兼容：
+ Fire平板电脑 Kindle电子书阅读器 Kindle iPhone/iPad/iPod touch阅读软件 Kindle安卓阅读软件  通过将文档发送至您的〖发送至Kindle〗电子邮箱，您可将其发送至兼容设备。〖发送至Kindle〗电子邮箱是系统在您注册兼容设备时为您分配的唯一电子邮箱。有关〖发送至Kindle〗电子邮箱的详细信息，请参阅使用您的〖发送至Kindle〗电子邮箱。
+Kindle个人文档服务支持以下文件类型：
+Kindle格式（.MOBI、.AZW） Microsoft Word（.DOC、.DOCX） HTML（.HTML、.HTM） RTF (.RTF) Text (.TXT) (Kindle X 咪咕电子书阅读器不支持) JPEG（.JPEG、.JPG） GIF (.GIF) PNG (.PNG) BMP (.BMP)
+ PDF (.PDF)  Kindle个人文档服务 不支持 以下文件类型：
+Electronic Publication (.EPUB)  重要： 建议您在发送文件之前将文件名改成英文（包括ZIP压缩文件和文件夹中的文件名）。我们可能会限制通过Kindle个人文档服务发送或存储的文档数量。详情请参阅Kindle个人文档服务使用条件 。
+来自 Kindle个人文档服务 , 缓存时间：2017-07-13
+PS &amp;ldquo;- [x] &amp;ldquo;（复选框列表） 好像不能正常渲染，先这样吧</description>
+    </item>
+    
+  </channel>
+</rss>

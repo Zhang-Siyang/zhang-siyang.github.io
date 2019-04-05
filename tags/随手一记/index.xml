@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随手一记 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E9%9A%8F%E6%89%8B%E4%B8%80%E8%AE%B0/</link>
+    <description>Recent content in 随手一记 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sun, 13 Aug 2017 14:39:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E9%9A%8F%E6%89%8B%E4%B8%80%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian/Ubuntu 单独安装 ab 命令</title>
+      <link>https://blog.zhangsy.me/2017/08/13/debian/ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 13 Aug 2017 14:39:18 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/13/debian/ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/</guid>
+      <description>sudo apt-get install apache2-utils  </description>
+    </item>
+    
+  </channel>
+</rss>

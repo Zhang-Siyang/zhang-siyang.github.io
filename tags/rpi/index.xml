@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rpi on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/rpi/</link>
+    <description>Recent content in Rpi on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Fri, 01 Jun 2018 20:23:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>你的树莓派有足够的电力供应吗？</title>
+      <link>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</link>
+      <pubDate>Fri, 01 Jun 2018 20:23:48 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</guid>
+      <description>读到 Power Requirement of the Pi - Milliways 的回答。文末的技术细节提供了这两条指令来检查电源供给情况：
+$ ~ vcgencmd get_throttled	#应该是 throttled=0x0 $ ~ cat /sys/class/leds/led1/brightness	#应该是255   好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。
+ Working on it – Fitz
+  </description>
+    </item>
+    
+    <item>
+      <title>一种更棒的树莓派换源思路</title>
+      <link>https://blog.zhangsy.me/2017/02/16/%E4%B8%80%E7%A7%8D%E6%9B%B4%E6%A3%92%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Thu, 16 Feb 2017 19:55:02 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/16/%E4%B8%80%E7%A7%8D%E6%9B%B4%E6%A3%92%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90%E6%80%9D%E8%B7%AF/</guid>
+      <description>&lt;p&gt;最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。&lt;/p&gt;
+
+&lt;p&gt;事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>我在树莓派上都做了些什么</title>
+      <link>https://blog.zhangsy.me/2017/02/07/%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Tue, 07 Feb 2017 13:54:35 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/07/%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</guid>
+      <description> DDNS Vsftp Hexo - Node.js NTP Nginx DNS &amp;amp;&amp;amp; GFW Hosts  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K2 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/k2/</link>
+    <description>Recent content in K2 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Tue, 15 Aug 2017 11:16:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/k2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>K2 A2 自定义灯光</title>
+      <link>https://blog.zhangsy.me/2017/08/15/k2-a2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89/</link>
+      <pubDate>Tue, 15 Aug 2017 11:16:35 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/15/k2-a2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89/</guid>
+      <description>Usage : mtk_gpio -d &amp;lt;type&amp;gt; &amp;lt;bool&amp;gt; type: Red : 8 Blue	: 10 Yellow	: 11 bool:	Open:	: 1 Close	: 0 Example	: mtk_gpio -d 8 1 &amp;amp;&amp;amp; mtk_gpio -d 11 1 /*Orange*/  </description>
+    </item>
+    
+  </channel>
+</rss>

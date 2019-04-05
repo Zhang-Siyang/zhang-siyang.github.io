@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>速记 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E9%80%9F%E8%AE%B0/</link>
+    <description>Recent content in 速记 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sun, 08 Jul 2018 01:03:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E9%80%9F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spotify 不能切歌，界面卡顿</title>
+      <link>https://blog.zhangsy.me/2018/07/08/spotify-%E4%B8%8D%E8%83%BD%E5%88%87%E6%AD%8C%E7%95%8C%E9%9D%A2%E5%8D%A1%E9%A1%BF/</link>
+      <pubDate>Sun, 08 Jul 2018 01:03:47 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/07/08/spotify-%E4%B8%8D%E8%83%BD%E5%88%87%E6%AD%8C%E7%95%8C%E9%9D%A2%E5%8D%A1%E9%A1%BF/</guid>
+      <description>清空缓存无效，登出后再重新登录，问题解决</description>
+    </item>
+    
+  </channel>
+</rss>

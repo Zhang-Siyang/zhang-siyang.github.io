@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分享 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 分享 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Fri, 21 Jul 2017 14:38:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>怎样把收藏的歌曲信息从 QQ 音乐转到网易云音乐？ | QQ 音乐歌单备份/导出</title>
+      <link>https://blog.zhangsy.me/2017/07/21/%E6%80%8E%E6%A0%B7%E6%8A%8A%E6%94%B6%E8%97%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%E4%BB%8E-qq-%E9%9F%B3%E4%B9%90%E8%BD%AC%E5%88%B0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-qq-%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E5%A4%87%E4%BB%BD/%E5%AF%BC%E5%87%BA/</link>
+      <pubDate>Fri, 21 Jul 2017 14:38:08 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/21/%E6%80%8E%E6%A0%B7%E6%8A%8A%E6%94%B6%E8%97%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%E4%BB%8E-qq-%E9%9F%B3%E4%B9%90%E8%BD%AC%E5%88%B0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-qq-%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E5%A4%87%E4%BB%BD/%E5%AF%BC%E5%87%BA/</guid>
+      <description>昨天帮老妈（其实是我想）把常用音乐软件从 QQ 音乐转到网易云音乐，但是老妈建了好多个歌单，又有好多是收费音乐，没办法用下载 -&amp;gt; 识别的方式收藏，一番搜寻过后找到了这个，他可以帮你把QQ音乐的所有歌单转制为 酷我播放列表格式 ，进而在网易云里一键导入
+ 上面的链接有我自作主张添加的小尾巴哦，是想帮助那个同学识别来源啦，不喜欢的话，可以用这个没有识别信息的 话说没有 https 诶
+ 就这样复制一下，粘到转换工具里就好了
+网易云怎么导入就不教了吧? 登陆 后打开云导入界面，就很简单了
+可是人家想要自己搭一个可找到仓库地址也不会架，就很气</description>
+    </item>
+    
+  </channel>
+</rss>

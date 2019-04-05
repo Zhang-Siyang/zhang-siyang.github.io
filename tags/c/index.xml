@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/c/</link>
+    <description>Recent content in C on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Mon, 10 Jul 2017 17:17:56 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C-小记-参数的传入</title>
+      <link>https://blog.zhangsy.me/2017/07/10/c-%E5%B0%8F%E8%AE%B0-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/</link>
+      <pubDate>Mon, 10 Jul 2017 17:17:56 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/10/c-%E5%B0%8F%E8%AE%B0-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt; int main( int argc, char * argv [] ) { printf( &amp;quot;argc = %d\n&amp;quot;, argc ); for( int i = 0; i &amp;lt; argc; ++i ) { printf( &amp;quot;argv[ %d ] = %s\n&amp;quot;, i, argv[ i ] ); } }  </description>
+    </item>
+    
+  </channel>
+</rss>

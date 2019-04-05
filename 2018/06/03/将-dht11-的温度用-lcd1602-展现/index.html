@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2018/06/03/%E5%B0%86-dht11-%E7%9A%84%E6%B8%A9%E5%BA%A6%E7%94%A8-lcd1602-%E5%B1%95%E7%8E%B0/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2018/06/03/%E5%B0%86-dht11-%E7%9A%84%E6%B8%A9%E5%BA%A6%E7%94%A8-lcd1602-%E5%B1%95%E7%8E%B0/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "将 DHT11 的温度，用 LCD1602 展现",
+      "headline" : "将 DHT11 的温度，用 LCD1602 展现",
+      "description" : "<p><img src="https://i.imgur.com/6DQ5nof.png" alt="" /></p>",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-06-03 19:04:34 &#43;0000 UTC",
+      "dateModified" : "2018-06-03 19:04:34 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2018/06/03/%E5%B0%86-dht11-%E7%9A%84%E6%B8%A9%E5%BA%A6%E7%94%A8-lcd1602-%E5%B1%95%E7%8E%B0/",
+      "keywords" : [  ]
+  }
+</script>
+<title>将 DHT11 的温度，用 LCD1602 展现 - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="将 DHT11 的温度，用 LCD1602 展现 - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">将 DHT11 的温度，用 LCD1602 展现</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2018-06-03 19:04:34 UTC">
+                  03 Jun 2018
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p><img src="https://i.imgur.com/6DQ5nof.png" alt="" /></p>
+
+<p>是用Arduino实现的</p>
+
+<pre><code class="language-c++">/**
+ Author:ZhangSiyang[CE.BB.CAT@Gmail.com]
+ LICENSE:MIT
+ DATE:201806
+ */
+#include &lt;LiquidCrystal.h&gt;
+#include &lt;DHT.h&gt;
+
+#define LCDHORIZONTAL 16  /*LCD横向分辨率*/
+#define LCDVERTICAL 2   /*LCD竖向分辨率*/
+#define LCDLED 10
+#define CUSTOMCHARCOUNT 4
+
+byte customChars[CUSTOMCHARCOUNT][8] = {{
+        /*LCD1602 自定义字符*/
+        B00000,
+        B10000,
+        B01000,
+        B00100,
+        B00010,
+        B00001,
+        B00000,
+        B00000
+        /*反斜杠*/
+    }, {
+        B00100,
+        B01010,
+        B01010,
+        B01010,
+        B01110,
+        B11111,
+        B11111,
+        B01110
+        /*温度计*/
+    }, {
+        B00100,
+        B00100,
+        B01010,
+        B01010,
+        B10001,
+        B10001,
+        B10001,
+        B01110
+        /*水滴*/
+    }, {
+        B00100,
+        B00100,
+        B01010,
+        B11011,
+        B00100,
+        B00100,
+        B01010,
+        B01010
+        /*体感温度*/
+    }
+};
+
+char title[] = &quot;TEMP RH @DHT11&quot;;    /*显示在第一行的标题*/
+char err_cant_con[] = &quot;E!Can't Connect.&quot;;   /*无法连接至DHT11时的错误提示*/
+uint8_t flag[4] = {0, '|', '/', '-'};   /*用于表示程序运行状态，大概进度条的意思*/
+uint8_t pointToFlag = 3;    /*指针，用于运行指示*/
+String Separator = String(' '); /*信息输出用的分割符，预先定义好后节省空间也直观一点*/
+LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
+
+#define DHTPIN 1    /*DHT Data针脚*/
+#define DHTTYPE DHT11   /*DHT型号*/
+#define DHTDELAYLIMIT 1000
+DHT dht(DHTPIN, DHTTYPE);
+float t, h, hic;    /*t:温度， h:相对湿度， hic:热度指数（体感温度，摄氏记）*/
+uint32_t nowORdelayMS;  /*存储当前时间或需延时的时间（DHT有时间分辨率的概念）*/
+
+void setup() {
+    dht.begin();
+
+    lcd.begin(LCDHORIZONTAL, LCDVERTICAL);
+    lcd.print(title);   /*lcd.begin 后光标定在1行1列， 这时打印标题*/
+    for (int i = 0; i &lt; CUSTOMCHARCOUNT; i++) {   /*自定义字符*/
+        lcd.createChar(i, customChars[i]);
+    }
+    pinMode(LCDLED, OUTPUT);    /*由PWM而非5V针脚供电*/
+    analogWrite(LCDLED, 120);    /*可调节的亮度，60一般，120上档次， 190+照顾弱视*/
+}
+void loop() {
+    refreshFlag();  /*更新运行状态显示*/
+    nowORdelayMS = millis();    /*记录本次获取数据开始时间*/
+    t = dht.readTemperature();  /*获取摄氏温度*/
+    h = dht.readHumidity(); /*获取相对数度*/
+    lcd.setCursor(0, 1);    /*设定光标，打印信息用*/
+    if (isnan(h) || isnan(t)) { /*错误数据，告知无法连接传感器*/
+        lcd.print(err_cant_con);
+        return; /*直接进入下一个loop，*/
+    } else {
+        hic = dht.computeHeatIndex(t, h, false);    /*计算hic*/
+        String info =   /*生成温湿度信息*/
+            String(char(1)) + Separator + String(t, 0) + Separator +    /*有危险！char(1)是为了让 LCD 输出第二个用户自定义字符，需要与前方 lcd.createChar 相绑定*/
+            String(char(2)) + Separator + String(h, 0) + Separator +    /*同上， 这一个是湿度*/
+            String(char(3)) + Separator + String(hic, 0)    /*同上，这个是体感温度（hic）*/
+            + Separator + Separator
+            ;
+        lcd.print(info);    /*输出已经准备好的温湿度信息*/
+    }
+    nowORdelayMS = DHTDELAYLIMIT - (millis() - nowORdelayMS);  /*计算应延迟的时间。注意，参与运算的 nowORdelayMS/millis() 有溢出的可能*/
+    if (nowORdelayMS &gt; 1000) {  /*防止溢出，不然一延时延时个50天谁受得了……*/
+        delay(1000);
+    } else {
+        delay(nowORdelayMS);
+    }
+}
+
+void refreshFlag() {
+    lcd.setCursor(LCDHORIZONTAL - 1, 0);   /*设定运行状态指示位*/
+    lcd.write(flag[pointToFlag-- % CUSTOMCHARCOUNT]); /*pointToFlag 是 uint8_t ， 利用溢出和对四取模的特点使 (flag[pointToFlag-- % CUSTOMCHARCOUNT]) 在0到(CUSTOMCHARCOUNT - 1)之间循环*/
+}
+</code></pre>
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

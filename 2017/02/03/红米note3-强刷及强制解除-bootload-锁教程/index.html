@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2017/02/03/%E7%BA%A2%E7%B1%B3note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-bootload-%E9%94%81%E6%95%99%E7%A8%8B/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/02/03/%E7%BA%A2%E7%B1%B3note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-bootload-%E9%94%81%E6%95%99%E7%A8%8B/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "红米Note3 强刷及强制解除 Bootload 锁教程",
+      "headline" : "红米Note3 强刷及强制解除 Bootload 锁教程",
+      "description" : "昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。
+ 闲话：一直以来都比较喜欢小米公司，觉得很合我的心，年轻、爱发烧，但最近我发现去官网找个文件都找不到，“产能不足”也很严重。是小米急躁了吗？
+ 进入9008强刷模式  解压附件&rdquo;fastboot_edl.7z&rdquo;并进入解压出的文件夹，你应该能看到几个文件 重启你的手机到 fastboot 模式（按住“音量下”与“电源键”），将之连接电脑 双击文件夹中的 edl.cmd 手机震动之后，就代表已经从 900E 模式暂时跳转到 9008 模式了，手机会亮起红色呼吸灯，具体可进入设备管理器确认 进入设备管理器，安装附件中的高通驱动  强行解锁bootloader  将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式 用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件 在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁
+  fastboot oem unlock-go fastboot oem device-info  第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统 若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项
+所需文件  *Name:*【刷机工具】MiPhone20151028.exe Size:26.0 MB (27,305,815 字节) CRC32: 47962DD3 MD5: 64A2B6F5620DB2BF249DAC0CE2017428 SHA-1: 7FA20958DA2A4061DAFA5A007D3575895927EED7 Download:http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe
+*Name:*【高通驱动】Qualcomm_Driver.7z Download:https://www.",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-02-03 20:50:53 &#43;0000 UTC",
+      "dateModified" : "2017-02-03 20:50:53 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2017/02/03/%E7%BA%A2%E7%B1%B3note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-bootload-%E9%94%81%E6%95%99%E7%A8%8B/",
+      "keywords" : [ "XiaoMi","RedMi Note3","Guide","Unlock","Flash", ]
+  }
+</script>
+<title>红米Note3 强刷及强制解除 Bootload 锁教程 - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="红米Note3 强刷及强制解除 Bootload 锁教程 - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。
+ 闲话：一直以来都比较喜欢小米公司，觉得很合我的心，年轻、爱发烧，但最近我发现去官网找个文件都找不到，“产能不足”也很严重。是小米急躁了吗？
+ 进入9008强刷模式  解压附件&rdquo;fastboot_edl.7z&rdquo;并进入解压出的文件夹，你应该能看到几个文件 重启你的手机到 fastboot 模式（按住“音量下”与“电源键”），将之连接电脑 双击文件夹中的 edl.cmd 手机震动之后，就代表已经从 900E 模式暂时跳转到 9008 模式了，手机会亮起红色呼吸灯，具体可进入设备管理器确认 进入设备管理器，安装附件中的高通驱动  强行解锁bootloader  将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式 用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件 在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁
+  fastboot oem unlock-go fastboot oem device-info  第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统 若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项
+所需文件  *Name:*【刷机工具】MiPhone20151028.exe Size:26.0 MB (27,305,815 字节) CRC32: 47962DD3 MD5: 64A2B6F5620DB2BF249DAC0CE2017428 SHA-1: 7FA20958DA2A4061DAFA5A007D3575895927EED7 Download:http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe
+*Name:*【高通驱动】Qualcomm_Driver.7z Download:https://www." />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">红米Note3 强刷及强制解除 Bootload 锁教程</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2017-02-03 20:50:53 UTC">
+                  03 Feb 2017
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            
+
+<p>昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。</p>
+
+<!-- more -->
+
+<blockquote>
+<p>闲话：一直以来都比较喜欢小米公司，觉得很合我的心，年轻、爱发烧，但最近我发现去官网找个文件都找不到，“产能不足”也很严重。是小米急躁了吗？</p>
+</blockquote>
+
+<h2 id="进入9008强刷模式">进入9008强刷模式</h2>
+
+<ol>
+<li>解压附件&rdquo;fastboot_edl.7z&rdquo;并进入解压出的文件夹，你应该能看到几个文件</li>
+<li>重启你的手机到 fastboot 模式（按住“音量下”与“电源键”），将之连接电脑</li>
+<li>双击文件夹中的 edl.cmd</li>
+<li>手机震动之后，就代表已经从 900E 模式暂时跳转到 9008 模式了，手机会亮起红色呼吸灯，具体可进入设备管理器确认</li>
+<li>进入设备管理器，安装附件中的高通驱动</li>
+</ol>
+
+<h2 id="强行解锁bootloader">强行解锁bootloader</h2>
+
+<ol>
+<li>将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式</li>
+<li>用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件</li>
+<li>在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁<br />
+<br /></li>
+</ol>
+
+<pre><code>fastboot oem unlock-go
+fastboot oem device-info
+</code></pre>
+
+<p>第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统
+<img src="https://i.imgur.com/ydFqK7q.png" alt="解锁成功" />
+若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项</p>
+
+<h2 id="所需文件">所需文件</h2>
+
+<blockquote>
+<h2 id="name-刷机工具-miphone20151028-exe">*Name:*【刷机工具】<em>MiPhone20151028.exe</em></h2>
+
+<p>Size:26.0 MB (27,305,815 字节)
+CRC32: 47962DD3
+MD5: 64A2B6F5620DB2BF249DAC0CE2017428
+SHA-1: 7FA20958DA2A4061DAFA5A007D3575895927EED7
+Download:<a href="http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe">http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe</a></p>
+
+<h2 id="name-高通驱动-qualcomm-driver-7z">*Name:*【高通驱动】<em>Qualcomm_Driver.7z</em></h2>
+
+<p>Download:<a href="https://www.dropbox.com/s/owqq8f5385j2c5n/Qualcomm_Driver.7z?dl=1">https://www.dropbox.com/s/owqq8f5385j2c5n/Qualcomm_Driver.7z?dl=1</a>
+Size:339 KB (347,919 字节)
+CRC32: 37EB2F65
+MD5: 50C8020099D6DE5F8DD92F485CA95A9B
+SHA-1: A906552770CB6286A50A2016EC639D01B2D33EA9</p>
+
+<h2 id="name-原线刷包-kenzo-global-images-v7-1-8-0-lhomicl-20160129-0000-14-5-1-global-9706e12561-tgz">*Name:*【原线刷包】<em>kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz</em></h2>
+
+<p>Size:1.26 GB (1,356,148,824 字节)
+CRC32: 334B0B9A
+MD5: 9706E1256126FCB74F373BCAB6848E9E
+SHA-1: B7D9FC7C80ADF0D94002A0BFF8B3A16ADDA8C14D
+Download:<a href="http://obigota.d.miui.com/V7.1.8.0.LHOMICL/kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz">http://obigota.d.miui.com/V7.1.8.0.LHOMICL/kenzo_global_images_V7.1.8.0.LHOMICL_20160129.0000.14_5.1_global_9706e12561.tgz</a></p>
+
+<h2 id="name-fastboot-edl-7z"><em>Name:fastboot_edl.7z</em></h2>
+
+<p>Size:135 KB (138,259 字节)
+Download:<a href="https://www.dropbox.com/s/p6noweo7yl21d5g/fastboot_edl.7z?dl=1">https://www.dropbox.com/s/p6noweo7yl21d5g/fastboot_edl.7z?dl=1</a>
+CRC32: E79A4C7F
+MD5: BD5DB3C6DDA08910312849CF39EE3F18
+SHA-1: 7A9FE43E254A4C7B22BB7A2890903F7D029B9378</p>
+
+<h2 id="name-unlocked-bootloader-zip"><em>Name:Unlocked_Bootloader.zip</em></h2>
+
+<p>Size:212 KB (217,205 字节)
+Download:<a href="https://www.dropbox.com/s/vw3nf1zbvvco44h/Unlocked_Bootloader.zip?dl=1">https://www.dropbox.com/s/vw3nf1zbvvco44h/Unlocked_Bootloader.zip?dl=1</a>
+CRC32: D2CCA8C7
+MD5: F69EEB321FB63C4CCAC51CBEF7545B87
+SHA-1: 51CBFD17C177841A1786095BFFEABFC53E536EE6</p>
+</blockquote>
+
+<p>注：如以上文件的下载链接失效，请发送邮件至CE.BB.CAT(at)GMAIL.COM。特别地，线刷包【可能】可以用其他线刷包替代。</p>
+
+<p>原文【By:emuzychenko】：<a href="https://forum.xda-developers.com/android/software-hacking/guide-how-to-reboot-to-edl-fastboot-t3394292">https://forum.xda-developers.com/android/software-hacking/guide-how-to-reboot-to-edl-fastboot-t3394292</a></p>
+
+<p>本文基于译文【By:clawneo】：<a href="http://bbs.zhiyoo.com/forum.php?mod=viewthread&amp;tid=12591147">http://bbs.zhiyoo.com/forum.php?mod=viewthread&amp;tid=12591147</a></p>
+
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Bat on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/.bat/</link>
+    <description>Recent content in .Bat on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sat, 04 Mar 2017 00:22:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/.bat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[破事水]机房个性化工具</title>
+      <link>https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 04 Mar 2017 00:22:57 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/</guid>
+      <description>忽然发现，这是这一周一来唯一一篇博文。
+@echo off echo 当前盘符：%~d0 ::0. 显示文件后缀名 reg add &amp;quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&amp;quot; /v &amp;quot;HideFileExt&amp;quot; /t REG_DWORD /d 00000000 ::1. 壁纸 set regadd=reg add &amp;quot;HKEY_CURRENT_USER\Control Panel\Desktop %regadd%&amp;quot; /v TileWallpaper /d &amp;quot;0&amp;quot; /f ::0为居中，1为平铺 %regadd%&amp;quot; /v Wallpaper /d &amp;quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&amp;quot; /f %regadd%&amp;quot; /v WallpaperStyle /d &amp;quot;10&amp;quot; /f ::WallpaperStyle6为适应，2为拉伸，10为填充 start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters ::更换完成 ::2. Hosts xcopy &amp;quot;%~d0\Mine\GFW\hosts&amp;quot; &amp;quot;%~dp0&amp;quot; xcopy &amp;quot;%~dp0\hosts&amp;quot; &amp;quot;C:\Windows\System32\drivers\etc&amp;quot; ipconfig /flushdns ::3. 常用文件拷贝 xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y xcopy %~dp0\stu\* /E D:\stu\ /Y echo 继续？ pause ::4.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>审查 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E5%AE%A1%E6%9F%A5/</link>
+    <description>Recent content in 审查 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Fri, 11 Aug 2017 16:03:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E5%AE%A1%E6%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>纪录</title>
+      <link>https://blog.zhangsy.me/2017/08/11/%E7%BA%AA%E5%BD%95/</link>
+      <pubDate>Fri, 11 Aug 2017 16:03:29 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/11/%E7%BA%AA%E5%BD%95/</guid>
+      <description>早就想过，当我到了下一段时间里，我该如何对待往事？
+我选择将他们记录下来，以便纪念，谁对谁错，也都留到以后吧</description>
+    </item>
+    
+  </channel>
+</rss>

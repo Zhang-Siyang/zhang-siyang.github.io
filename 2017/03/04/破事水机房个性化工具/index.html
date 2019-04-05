@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "[破事水]机房个性化工具",
+      "headline" : "[破事水]机房个性化工具",
+      "description" : "忽然发现，这是这一周一来唯一一篇博文。
+@echo off echo 当前盘符：%~d0 ::0. 显示文件后缀名 reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD /d 00000000 ::1. 壁纸 set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop %regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f ::0为居中，1为平铺 %regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f %regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f ::WallpaperStyle6为适应，2为拉伸，10为填充 start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters ::更换完成 ::2. Hosts xcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot; xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot; ipconfig /flushdns ::3. 常用文件拷贝 xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y xcopy %~dp0\stu\* /E D:\stu\ /Y echo 继续？ pause ::4.",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-03-04 00:22:57 &#43;0000 UTC",
+      "dateModified" : "2017-03-04 00:22:57 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/",
+      "keywords" : [ "Tool",".Bat", ]
+  }
+</script>
+<title>[破事水]机房个性化工具 - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="[破事水]机房个性化工具 - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="忽然发现，这是这一周一来唯一一篇博文。
+@echo off echo 当前盘符：%~d0 ::0. 显示文件后缀名 reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD /d 00000000 ::1. 壁纸 set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop %regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f ::0为居中，1为平铺 %regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f %regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f ::WallpaperStyle6为适应，2为拉伸，10为填充 start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters ::更换完成 ::2. Hosts xcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot; xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot; ipconfig /flushdns ::3. 常用文件拷贝 xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y xcopy %~dp0\stu\* /E D:\stu\ /Y echo 继续？ pause ::4." />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">[破事水]机房个性化工具</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2017-03-04 00:22:57 UTC">
+                  04 Mar 2017
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>忽然发现，这是这一周一来唯一一篇博文。</p>
+
+<!-- more -->
+
+<pre><code>@echo off
+echo 当前盘符：%~d0
+
+::0. 显示文件后缀名
+reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v &quot;HideFileExt&quot; /t REG_DWORD  /d 00000000
+
+::1. 壁纸
+set regadd=reg add &quot;HKEY_CURRENT_USER\Control Panel\Desktop
+%regadd%&quot; /v TileWallpaper /d &quot;0&quot; /f
+::0为居中，1为平铺
+%regadd%&quot; /v Wallpaper /d &quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&quot; /f
+%regadd%&quot; /v WallpaperStyle /d &quot;10&quot; /f
+::WallpaperStyle6为适应，2为拉伸，10为填充
+start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters
+::更换完成
+
+::2. Hosts
+xcopy &quot;%~d0\Mine\GFW\hosts&quot; &quot;%~dp0&quot;
+xcopy &quot;%~dp0\hosts&quot; &quot;C:\Windows\System32\drivers\etc&quot;
+ipconfig /flushdns
+
+::3. 常用文件拷贝
+xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y
+xcopy %~dp0\stu\* /E D:\stu\ /Y
+
+echo 继续？
+pause
+
+::4. START Chrome
+&quot;%~d0\Mine\GFW\ChromeUpdater+6.1.5\chrome.exe&quot; https://www.google.com/ncr
+
+echo 继续？
+pause
+
+::5. 安装NPP
+&quot;%~d0\Mine\软件\程序开发\npp*Installer.exe&quot; /S
+::配置文件
+
+::6. 安装 RIME
+&quot;%~d0\Mine\软件\程序开发\weasel-0.9.30.0-installer.exe&quot; /S
+::配置文件
+</code></pre>
+
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

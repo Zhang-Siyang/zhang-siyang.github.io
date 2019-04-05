@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homework on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/homework/</link>
+    <description>Recent content in Homework on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sat, 01 Apr 2017 00:30:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/homework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20170401- T-SQL 语句实训作业</title>
+      <link>https://blog.zhangsy.me/2017/04/01/20170401-t-sql-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Sat, 01 Apr 2017 00:30:46 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/04/01/20170401-t-sql-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/</guid>
+      <description>&lt;p&gt;实验目标: 进一步熟悉 T-SQL 语句
+实验人: ZhangSiyang
+实验内容: 完成老师给出十四道题，详细见下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20170321-简单 T-SQL 语句练习</title>
+      <link>https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Wed, 22 Mar 2017 20:03:06 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/</guid>
+      <description>&lt;p&gt;本篇文章记录 20170321 交的 SQL 语句实训报告&lt;/p&gt;
+
+&lt;p&gt;实验目标: 掌握 T-SQL 的基本用法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20170305-今天的C#实验报告</title>
+      <link>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Sun, 05 Mar 2017 19:34:52 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</guid>
+      <description>&lt;p&gt;实验目标: 掌握C#的基本用法
+实验人: ZhangSiyang
+实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

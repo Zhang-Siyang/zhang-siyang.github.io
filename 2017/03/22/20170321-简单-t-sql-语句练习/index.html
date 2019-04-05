@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Siyang" />
+  <meta property="og:url" content="https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/" />
+  <link rel="canonical" href="https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/" /><link rel="shortcut icon" href="logo.png" type="image/x-png" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zhangsy.me/"
+      },
+      "articleSection" : "posts",
+      "name" : "20170321-简单 T-SQL 语句练习",
+      "headline" : "20170321-简单 T-SQL 语句练习",
+      "description" : "<p>本篇文章记录 20170321 交的 SQL 语句实训报告</p>
+
+<p>实验目标: 掌握 T-SQL 的基本用法</p>",
+      "inLanguage" : "zh-CN",
+      "author" : "Siyang",
+      "creator" : "Siyang",
+      "publisher": "Siyang",
+      "accountablePerson" : "Siyang",
+      "copyrightHolder" : "Siyang",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-03-22 20:03:06 &#43;0000 UTC",
+      "dateModified" : "2017-03-22 20:03:06 &#43;0000 UTC",
+      "url" : "https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/",
+      "keywords" : [ "Homework", ]
+  }
+</script>
+<title>20170321-简单 T-SQL 语句练习 - Siyang&#39;s Blog</title>
+  <meta property="og:title" content="20170321-简单 T-SQL 语句练习 - Siyang&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="本篇文章记录 20170321 交的 SQL 语句实训报告
+
+实验目标: 掌握 T-SQL 的基本用法" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Siyang&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-96156731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post Chinese" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">20170321-简单 T-SQL 语句练习</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2017-03-22 20:03:06 UTC">
+                  22 Mar 2017
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://blog.zhangsy.me/">@Siyang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>本篇文章记录 20170321 交的 SQL 语句实训报告</p>
+
+<p>实验目标: 掌握 T-SQL 的基本用法</p>
+
+<p>实验人: ZhangSiyang</p>
+
+<h2 id="1-创建名为studb的数据库-属性都取默认值">1. 创建名为stuDB的数据库，属性都取默认值</h2>
+
+<pre><code>1)创建名为stuDB的数据库，属性都取默认值。
+</code></pre>
+
+<h5 id="代码">代码</h5>
+
+<pre><code class="language-sql">create database stuDB;
+</code></pre>
+
+<h5 id="收获">收获</h5>
+
+<p>创建数据库：<code>create database NAME</code>，未指定的参数取默认值</p>
+
+<h2 id="2-删除数据库studb">2. 删除数据库stuDB</h2>
+
+<h5 id="题目">题目</h5>
+
+<pre><code>2)删除数据库stuDB。
+</code></pre>
+
+<h5 id="代码-1">代码</h5>
+
+<pre><code class="language-sql">drop database stuDB;
+</code></pre>
+
+<h5 id="收获-1">收获</h5>
+
+<p>删除数据库：<code>drop database NAME</code></p>
+
+<h2 id="3-创建满足如下要求的数据库">3. 创建满足如下要求的数据库</h2>
+
+<h5 id="题目-1">题目</h5>
+
+<pre><code>3)创建满足如下要求的数据库：
+   数据库名称stuDB(存储位置D:\SQL),包含两个数据文件和两个日志文件：
+   第一个数据文件stuDB_data1初始大小为50MB，文件的最大大小不受限制，文件的增长率为10%；
+   第二个数据文件stuDB_data2初始大小为50MB，文件的最大大小200MB，文件的增长率为10MB；
+   日志文件stuDB_log1初始大小为10MB，文件的最大大小为100MB，文件的增长率为10MB；
+   日志文件stuDB_log2初始大小为10MB，文件的最大大小为100MB，文件的增长率为10%。
+</code></pre>
+
+<h5 id="代码-2">代码</h5>
+
+<pre><code class="language-sql">create database stuDB
+	ON ( 
+		NAME = stuDB_data1,
+		FILENAME='D:\stuDB_data1.MDF',
+		SIZE = 50, 
+		FILEGROWTH = 10% ) , 
+		( 
+		NAME = stuDB_data2, 
+		FILENAME='D:\stuDB_data2.mdf',
+		SIZE = 50, 
+		FILEGROWTH = 10%,
+		MAXSIZE = UNLIMITED ) 
+
+	LOG ON ( 
+		NAME = stuDB_log1,
+		FILENAME='D:\stuDB_log1.ldf', 
+		SIZE = 10, 
+		MAXSIZE = 100, 
+		FILEGROWTH = 10 ), 
+		( 
+		NAME = stuDB_log2,
+		FILENAME='D:\stuDB_log2.ldf',
+		SIZE = 10,
+		MAXSIZE=100, 
+		FILEGROWTH = 10% 
+		);
+</code></pre>
+
+<h5 id="收获-2">收获</h5>
+
+<ol>
+<li>NAME 与 FILENAME 都是必须指出的，单位为mb时，可写可不写</li>
+<li>格式见上</li>
+</ol>
+
+<h2 id="4-在studb数据库中添加数据文件studb-data3-初">4. 在stuDB数据库中添加数据文件stuDB_data3,初……</h2>
+
+<h5 id="题目-2">题目</h5>
+
+<pre><code>4)在stuDB数据库中添加数据文件stuDB_data3,初始大小为20MB，增长增量为15%，最大大小100MB；
+</code></pre>
+
+<h5 id="代码-3">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+add file (
+	name = stuDB_data3,
+	filename='D:\stuDB_data3.MDF',
+	size =20,
+	filegrowth = 15%,
+	maxsize=100);
+</code></pre>
+
+<h5 id="收获-3">收获</h5>
+
+<p>添加文件只需三步：1. 进入相应数据库 2. 添加文件 3. 执行</p>
+
+<h2 id="5-将数据文件studb-data3的最大大小改为不受限制">5. 将数据文件stuDB_data3的最大大小改为不受限制</h2>
+
+<h5 id="题目-3">题目</h5>
+
+<pre><code>5)修改数据库stuDB的属性，将数据文件stuDB_data3的最大大小改为不受限制；
+</code></pre>
+
+<h5 id="代码-4">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+modify file(
+	name =stuDB_data3,
+	maxsize = unlimited
+);
+</code></pre>
+
+<h5 id="收获-4">收获</h5>
+
+<p>主要是学习到这个格式，别的……没有</p>
+
+<h2 id="6-删除日志文件studb-log2">6. 删除日志文件stuDB_log2</h2>
+
+<h5 id="题目-4">题目</h5>
+
+<pre><code>6)将日志文件stuDB_log2删除；
+</code></pre>
+
+<h5 id="代码-5">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+REMOVE file stuDB_log2;
+</code></pre>
+
+<h5 id="收获-5">收获</h5>
+
+<p>REMOVE file FILENAME</p>
+
+<h2 id="7-创建自定义文件组second">7. 创建自定义文件组second</h2>
+
+<h5 id="题目-5">题目</h5>
+
+<pre><code>7)创建自定义文件组second；
+</code></pre>
+
+<h5 id="代码-6">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+add filegroup second;
+</code></pre>
+
+<h2 id="8-添加数据文件studb-data4到文件组second">8. 添加数据文件stuDB_data4到文件组second</h2>
+
+<h5 id="题目-6">题目</h5>
+
+<pre><code>8)添加数据文件stuDB_data4到文件组second,初始大小为20MB，增长增量为10MB，最大大小100MB；
+</code></pre>
+
+<h5 id="代码-7">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+add file (
+	name=stuDB_data4,
+	filename='D:\stuDB_data4.MDF',
+	size=20,
+	filegrowth=10,
+	maxsize=100
+)to filegroup second;
+</code></pre>
+
+<h5 id="收获-6">收获</h5>
+
+<p>&hellip;to filegroup second;</p>
+
+<h2 id="9-删除文件组second">9. 删除文件组second</h2>
+
+<h5 id="题目-7">题目</h5>
+
+<pre><code>9)删除文件组second；
+</code></pre>
+
+<h5 id="代码-8">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+REMOVE file stuDB_data4
+REMOVE filegroup second;
+</code></pre>
+
+<h5 id="收获-7">收获</h5>
+
+<p>删除文件组时，文件组内必须没有文件</p>
+
+<h2 id="10-将数据库studb重命名为studentdb">10. 将数据库stuDB重命名为studentDB</h2>
+
+<h5 id="题目-8">题目</h5>
+
+<pre><code>10)将数据库stuDB重命名为studentDB；
+</code></pre>
+
+<h5 id="代码-9">代码</h5>
+
+<pre><code class="language-sql">alter database stuDB
+modify name = studentDB;
+</code></pre>
+
+<h2 id="11-按如下要求创建数据库">11. 按如下要求创建数据库</h2>
+
+<h5 id="题目-9">题目</h5>
+
+<pre><code>11)按如下要求创建数据库：
+        数据库名称studentDB(存储位置D:\SQL，要求判断该服务器上是否已有同名数据库,若有,将其删除),
+        包含三个数据文件和一个日志文件：
+        第一个数据文件stuDB_data1放在主文件组PRIMARY,初始大小为50MB,其他属性默认；
+        第二个数据文件stuDB_data2放在SECOND文件组，初始大小为50MB，其他属性默认；
+        第三个数据文件stuDB_data3放在SECOND文件组，初始大小为50MB，其他属性默认；
+    日志文件stuDB_log初始大小为10MB，文件的最大大小为100MB。
+</code></pre>
+
+<h5 id="代码-10">代码</h5>
+
+<pre><code class="language-sql">if exists(select * from sysdatabases
+		where name = 'stuDB')	
+	drop database stuDB
+create database studentDB
+	on	(
+		NAME = stuDB_data1,
+		FILENAME = 'D:\SQL\stuDB_data1.MDF',
+		SIZE = 50 )to filegroup PRIMARY , 
+		( 
+		NAME = stuDB_data2, 
+		FILENAME = 'D:\SQL\stuDB_data2.mdf',
+		SIZE = 50 )to filegroup SECOND ,
+		(
+		NAME = stuDB_data3,
+                FILENAME = 'D:\SQL\stuDB_data3.mdf',
+                SIZE = 50 )to filegroup SECOND
+	log on	(
+		NAME = stuDB_log,
+		FILENAME = 'stuDB_log.ldf',
+		SIZE = 10,
+		MAXSIZE =100);
+</code></pre>
+
+<h5 id="收获-8">收获</h5>
+
+<pre><code>if exists(select * from sysdatabases
+                where name = 'stuDB')
+        drop database stuDB
+</code></pre>
+
+<p>文中所述代码均已开源 : &lt; TODO &gt;</p>
+          </div>
+          
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://zsy.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

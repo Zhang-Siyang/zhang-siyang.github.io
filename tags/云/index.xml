@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云 on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/%E4%BA%91/</link>
+    <description>Recent content in 云 on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sun, 11 Jun 2017 04:14:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>那些个平民化的云</title>
+      <link>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</link>
+      <pubDate>Sun, 11 Jun 2017 04:14:28 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</guid>
+      <description>共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card  Syncthing G Suite OneDrive rixCloud iCloud Dropbox Google Drive 坚果云  </description>
+    </item>
+    
+  </channel>
+</rss>

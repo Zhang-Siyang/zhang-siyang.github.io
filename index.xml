@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/</link>
+    <description>Recent content on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Mon, 01 Apr 2019 23:44:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>写在蓝桥省赛后</title>
+      <link>https://blog.zhangsy.me/2019/04/01/%E5%86%99%E5%9C%A8%E8%93%9D%E6%A1%A5%E7%9C%81%E8%B5%9B%E5%90%8E/</link>
+      <pubDate>Mon, 01 Apr 2019 23:44:38 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2019/04/01/%E5%86%99%E5%9C%A8%E8%93%9D%E6%A1%A5%E7%9C%81%E8%B5%9B%E5%90%8E/</guid>
+      <description>去年冬天报名了蓝桥杯省赛（Java B组），学校里这次的规定是『个人报名，拿奖报销』，自报名后有一搭没一搭地也在练。我记得报名是在将近寒假，学校组织的（也就是前文说的训练）训练是在寒假里进行的，开始几天确实在训练，也一般能够把题做出来，到后来就不行了，倒不是因为训练的题太难了，而是因为一如既往地开启了『放假了就可以装死度日』模式。
+不用说，一个寒假又这样浪费下去，但是还是积累了些编程之外的收获的。
+开学后，想着离至赛还有一个月，锻炼锻炼怎么也不能太差，拿个三等奖总是可以的吧。但事实是，我虽然一天天没有闲下来过，但又是在挥霍时间了，一会看看这个，一会看看那个——我现在想，我拿这些时间全投入到Golang上是不是能学出师？——。
+没错，时间一转眼就到了比赛，早上匆匆洗漱好了之后赶赴赛场，又因为bus久等不来和两位同学叫了DiDi，还好的是及时赶到了，司机师傅也蛮不错，看起来像是80后。担当考点的学校不小，听说那里的学生（是大学生没错）每天早上都会有跑操。路过人为停掉的电梯，我们到达了考场，说实话设施和制度都有点老旧了。
+比赛过程没什么可说的，蓝桥杯的OJ系统是我没有见过的，八成是市面上OJ改了改面容。题目的部分我可能会在新的post里面讲。
+（电脑装了一溜输入法，长见识了）
+然后我就知道了自己拿了省赛一等奖，获得进入国赛的机会……
+说这么多话，其实我想说的是：蓝桥杯的省赛一等奖好不值钱啊！！！我底子是比身边的同学好一点点，但去了就拿一等奖是什么意思？
+我现在想，一是因为参赛学生太多，国赛门槛其实也不咋高，就不得不让我这样的也能拿个一等奖；二是因为…………很多人实在编程基础都没学好，奖项覆盖率高达六成的情况下，我校获奖率只有五成……</description>
+    </item>
+    
+    <item>
+      <title>魔幻还是现实？</title>
+      <link>https://blog.zhangsy.me/2019/03/21/%E9%AD%94%E5%B9%BB%E8%BF%98%E6%98%AF%E7%8E%B0%E5%AE%9E/</link>
+      <pubDate>Thu, 21 Mar 2019 12:12:41 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2019/03/21/%E9%AD%94%E5%B9%BB%E8%BF%98%E6%98%AF%E7%8E%B0%E5%AE%9E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何加速龟速的Homebrew</title>
+      <link>https://blog.zhangsy.me/2019/03/11/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E9%BE%9F%E9%80%9F%E7%9A%84homebrew/</link>
+      <pubDate>Mon, 11 Mar 2019 22:44:07 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2019/03/11/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E9%BE%9F%E9%80%9F%E7%9A%84homebrew/</guid>
+      <description>简而言之，快使用中科大全家桶！！！
+# Homebrew 源代码仓库替换为USTC镜像 cd &amp;quot;$(brew --repo)&amp;quot; git remote set-url origin https://mirrors.ustc.edu.cn/brew.git # Homebrew Bottles (二进制)源[针对bash用户的，zsh同理] echo &#39;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&#39; &amp;gt;&amp;gt; ~/.bash_profile source ~/.bash_profile # Homebrew Cask 源替换为 USTC 镜像 cd &amp;quot;$(brew --repo)&amp;quot;/Library/Taps/homebrew/homebrew-cask git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git  </description>
+    </item>
+    
+    <item>
+      <title>如果你今天不努力工作，明天你将被机器人替代</title>
+      <link>https://blog.zhangsy.me/2019/02/20/%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E6%98%8E%E5%A4%A9%E4%BD%A0%E5%B0%86%E8%A2%AB%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9B%BF%E4%BB%A3/</link>
+      <pubDate>Wed, 20 Feb 2019 23:48:15 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2019/02/20/%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E6%98%8E%E5%A4%A9%E4%BD%A0%E5%B0%86%E8%A2%AB%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9B%BF%E4%BB%A3/</guid>
+      <description>摄自2019年2月大陆某地</description>
+    </item>
+    
+    <item>
+      <title>照片一张   夏天清晨的太阳</title>
+      <link>https://blog.zhangsy.me/2019/02/20/%E7%85%A7%E7%89%87%E4%B8%80%E5%BC%A0-%E5%A4%8F%E5%A4%A9%E6%B8%85%E6%99%A8%E7%9A%84%E5%A4%AA%E9%98%B3/</link>
+      <pubDate>Wed, 20 Feb 2019 23:47:25 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2019/02/20/%E7%85%A7%E7%89%87%E4%B8%80%E5%BC%A0-%E5%A4%8F%E5%A4%A9%E6%B8%85%E6%99%A8%E7%9A%84%E5%A4%AA%E9%98%B3/</guid>
+      <description>摄于2018年6月。想必如果使用Google算法加持过的相机应用会有更理想的效果，那会儿的曦光实在太棒了</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.zhangsy.me/about/</link>
+      <pubDate>Mon, 18 Feb 2019 13:46:19 +0800</pubDate>
+      
+      <guid>https://blog.zhangsy.me/about/</guid>
+      <description>讲中文</description>
+    </item>
+    
+    <item>
+      <title>GPGSV 报文格式</title>
+      <link>https://blog.zhangsy.me/2018/07/19/gpgsv-%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Thu, 19 Jul 2018 13:11:45 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/07/19/gpgsv-%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F/</guid>
+      <description>$GPGSV,报文总数,当前报文序号,识别卫星总数,[PRN,仰角,方位角,信噪比],校验</description>
+    </item>
+    
+    <item>
+      <title>Spotify 不能切歌，界面卡顿</title>
+      <link>https://blog.zhangsy.me/2018/07/08/spotify-%E4%B8%8D%E8%83%BD%E5%88%87%E6%AD%8C%E7%95%8C%E9%9D%A2%E5%8D%A1%E9%A1%BF/</link>
+      <pubDate>Sun, 08 Jul 2018 01:03:47 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/07/08/spotify-%E4%B8%8D%E8%83%BD%E5%88%87%E6%AD%8C%E7%95%8C%E9%9D%A2%E5%8D%A1%E9%A1%BF/</guid>
+      <description>清空缓存无效，登出后再重新登录，问题解决</description>
+    </item>
+    
+    <item>
+      <title>今天 Ubuntu 启动不开了</title>
+      <link>https://blog.zhangsy.me/2018/07/06/%E4%BB%8A%E5%A4%A9-ubuntu-%E5%90%AF%E5%8A%A8%E4%B8%8D%E5%BC%80%E4%BA%86/</link>
+      <pubDate>Fri, 06 Jul 2018 23:35:24 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/07/06/%E4%BB%8A%E5%A4%A9-ubuntu-%E5%90%AF%E5%8A%A8%E4%B8%8D%E5%BC%80%E4%BA%86/</guid>
+      <description>关机之前一切正常。再开机时，跑进度条跑个没完，不记得当时有没有冷关机了，反正后来是进入 recovery 模式用预设的 dpkg 修复模式搞好的（这个模式进了两次，第一次没什么有价值的输出，若干次重启后再运行提示是否要更新什么的，后面就是哗哗哗卸掉一堆包，好了）
+事后看了看，是 vsftpd 不知为什么没有卸载干净，错误报告我也看得不是很明白，对我的 Linux 和英文能力表示捂脸
+今天去了图书馆，很多人，十有八九都是女生，虽说我校比例失当是没错，可还是回回看，回回惊。
+apt purge &amp;lt;packageName&amp;gt; 可以清除包残留（如配置文件）</description>
+    </item>
+    
+    <item>
+      <title>QQ 群聊下载文件巨慢，咋办？</title>
+      <link>https://blog.zhangsy.me/2018/07/01/qq-%E7%BE%A4%E8%81%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%B7%A8%E6%85%A2%E5%92%8B%E5%8A%9E/</link>
+      <pubDate>Sun, 01 Jul 2018 20:53:26 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/07/01/qq-%E7%BE%A4%E8%81%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%B7%A8%E6%85%A2%E5%92%8B%E5%8A%9E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>获取 Spotify 播放列表（歌单）及歌曲库列表</title>
+      <link>https://blog.zhangsy.me/2018/06/18/%E8%8E%B7%E5%8F%96-spotify-%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%AD%8C%E5%8D%95%E5%8F%8A%E6%AD%8C%E6%9B%B2%E5%BA%93%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Mon, 18 Jun 2018 11:02:52 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/18/%E8%8E%B7%E5%8F%96-spotify-%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%AD%8C%E5%8D%95%E5%8F%8A%E6%AD%8C%E6%9B%B2%E5%BA%93%E5%88%97%E8%A1%A8/</guid>
+      <description>#!/usr/bin/env bash echo &amp;quot;&amp;quot; &amp;gt; $1 start=0 step=50 for i in {1..10} do curl &amp;quot;https://api.spotify.com/v1/me/tracks?offset=${start}&amp;amp;limit=${step}&amp;amp;market=from_token&amp;quot; -H &#39;authorization: Bearer ${token}&#39; -H &#39;origin: https://open.spotify.com&#39; -H &#39;accept-encoding: gzip, deflate, br&#39; -H &#39;accept-language: zh-CN,zh-MO;q=0.9,zh-SG;q=0.8,zh;q=0.7&#39; -H &#39;user-agent: &#39;${UA}&#39; -H &#39;accept: application/json&#39; -H &#39;referer: https://open.spotify.com/collection/tracks&#39; -H &#39;authority: api.spotify.com&#39; -H &#39;dnt: 1&#39; --compressed &amp;gt;&amp;gt; $1 start=`expr $start + $step` done echo &amp;quot;Congraturation!&amp;quot;  cat tem|grep &#39;^ \&amp;quot;name\|^ &amp;quot;name&#39;|sed &#39;s/^ &amp;quot;name&amp;quot; : /Name:/&#39;|sed &#39;s/,$//&#39;|sed &#39;s/&amp;quot;//g&#39;|less  </description>
+    </item>
+    
+    <item>
+      <title>Hexo RSS 默认路径是什么？</title>
+      <link>https://blog.zhangsy.me/2018/06/16/hexo-rss-%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Sat, 16 Jun 2018 20:38:20 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/16/hexo-rss-%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>一般是 /atom.xml，博主可能改成 feed[.xml]，rss[.xml]</description>
+    </item>
+    
+    <item>
+      <title>Putty 命令行参数</title>
+      <link>https://blog.zhangsy.me/2018/06/14/putty-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Thu, 14 Jun 2018 17:09:45 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/14/putty-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get my external IP</title>
+      <link>https://blog.zhangsy.me/2018/06/12/get-my-external-ip/</link>
+      <pubDate>Tue, 12 Jun 2018 20:51:39 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/12/get-my-external-ip/</guid>
+      <description>&lt;p&gt;HEXO 不能容忍 &amp;gt;!&amp;ndash;more&amp;ndash;&amp;lt; 前方没有正文。我有点不能忍受 HEXO 了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于志愿填报</title>
+      <link>https://blog.zhangsy.me/2018/06/10/%E5%85%B3%E4%BA%8E%E5%BF%97%E6%84%BF%E5%A1%AB%E6%8A%A5/</link>
+      <pubDate>Sun, 10 Jun 2018 16:01:48 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/10/%E5%85%B3%E4%BA%8E%E5%BF%97%E6%84%BF%E5%A1%AB%E6%8A%A5/</guid>
+      <description>各档分数线大概也就是招生计划人数对应的分数线，这个得等一分一档表出来才能算，假设某省考生一共有10个，本一招3个，本科招5个，其他招2个，那应该把10个考生按照成绩排行，本一线就是第三名考生的分数，本科线就是第八名考生的分数线（但会有（向下的）浮动，应对有的学生不上、特招、留学等），专科每年一般都是定到200的
+ 高考录取其实就是跑程序，程序咋跑有一小本高考手册写得听清楚，讲的大概是允许填报学校总数的限制，各学校允许专业总数的限制，要是学校提档过多退档了该怎么办，是怎样从本省分数最高开始，做完录取工作的。
+ 出成绩的时候，学校应该就会把学生叫回到学校，其中一件事儿就是发报考手册，一本各学校招生额度、费用和限制（特殊专业要求的，比如身高），一本各校各专业前三年分数线（这本带个光盘，里面有软件，能方便地筛查）。
+ 可以用自己今年的全省排行和排行占比对比到去年看看自己能大概录取到什么学校，其实我就是这么做的，当然了，招生计划一年大过一年，可以不那么保守，但最好有些兜底的
+ 服从调剂的院校志愿专业要填满，随机的事要尽量掌握
+  有点远，记不清细节了。高考报名不算是个很复杂的事儿，判完卷的时候排名就已经有了，适合的学校已经大致有谱了，就查找出来，因为考得多的可能报低了，考得少的可能报高了（但这个一般没啥事儿，不录取他，就影响不了咱的录取）；在我心里有一个挺危险的事儿就是退档，因为我当时还是没搞太明白，觉得就跟踩地雷似的</description>
+    </item>
+    
+    <item>
+      <title>将 DHT11 的温度，用 LCD1602 展现</title>
+      <link>https://blog.zhangsy.me/2018/06/03/%E5%B0%86-dht11-%E7%9A%84%E6%B8%A9%E5%BA%A6%E7%94%A8-lcd1602-%E5%B1%95%E7%8E%B0/</link>
+      <pubDate>Sun, 03 Jun 2018 19:04:34 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/03/%E5%B0%86-dht11-%E7%9A%84%E6%B8%A9%E5%BA%A6%E7%94%A8-lcd1602-%E5%B1%95%E7%8E%B0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/6DQ5nof.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你的树莓派有足够的电力供应吗？</title>
+      <link>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</link>
+      <pubDate>Fri, 01 Jun 2018 20:23:48 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/06/01/%E4%BD%A0%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%89%E8%B6%B3%E5%A4%9F%E7%9A%84%E7%94%B5%E5%8A%9B%E4%BE%9B%E5%BA%94%E5%90%97/</guid>
+      <description>读到 Power Requirement of the Pi - Milliways 的回答。文末的技术细节提供了这两条指令来检查电源供给情况：
+$ ~ vcgencmd get_throttled	#应该是 throttled=0x0 $ ~ cat /sys/class/leds/led1/brightness	#应该是255   好久没有更新博客，回头看看之前写的博文有的也需要删掉或精简。
+ Working on it – Fitz
+  </description>
+    </item>
+    
+    <item>
+      <title>事情是不可能做完的，不要幻想</title>
+      <link>https://blog.zhangsy.me/2018/05/05/%E4%BA%8B%E6%83%85%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%AE%8C%E7%9A%84%E4%B8%8D%E8%A6%81%E5%B9%BB%E6%83%B3/</link>
+      <pubDate>Sat, 05 May 2018 17:15:40 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/05/05/%E4%BA%8B%E6%83%85%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%AE%8C%E7%9A%84%E4%B8%8D%E8%A6%81%E5%B9%BB%E6%83%B3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>雷柏 Rapoo V500 系列键盘灯调整方法</title>
+      <link>https://blog.zhangsy.me/2018/05/04/%E9%9B%B7%E6%9F%8F-rapoo-v500-%E7%B3%BB%E5%88%97%E9%94%AE%E7%9B%98%E7%81%AF%E8%B0%83%E6%95%B4%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 04 May 2018 10:50:30 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/05/04/%E9%9B%B7%E6%9F%8F-rapoo-v500-%E7%B3%BB%E5%88%97%E9%94%AE%E7%9B%98%E7%81%AF%E8%B0%83%E6%95%B4%E6%96%B9%E6%B3%95/</guid>
+      <description>半☀键为呼吸模式切换；全☀键为调节亮度
+ 这方案也是绝了，偏偏外包装、说明书和页面介绍都没有写，结合键帽粗劣的做工，觉得赚的还是太多，被骂还是太少。
+ </description>
+    </item>
+    
+    <item>
+      <title>文摘</title>
+      <link>https://blog.zhangsy.me/2018/04/17/%E6%96%87%E6%91%98/</link>
+      <pubDate>Tue, 17 Apr 2018 21:21:12 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/04/17/%E6%96%87%E6%91%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>解决Linux 与 Windows的时间冲突，让Windows也使用硬件时钟</title>
+      <link>https://blog.zhangsy.me/2018/03/31/%E8%A7%A3%E5%86%B3linux-%E4%B8%8E-windows%E7%9A%84%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%E8%AE%A9windows%E4%B9%9F%E4%BD%BF%E7%94%A8%E7%A1%AC%E4%BB%B6%E6%97%B6%E9%92%9F/</link>
+      <pubDate>Sat, 31 Mar 2018 13:02:30 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/03/31/%E8%A7%A3%E5%86%B3linux-%E4%B8%8E-windows%E7%9A%84%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%E8%AE%A9windows%E4%B9%9F%E4%BD%BF%E7%94%A8%E7%A1%AC%E4%BB%B6%E6%97%B6%E9%92%9F/</guid>
+      <description>非常简单，设置一下注册表即可：
+Windows Registry Editor Version 5.00 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation] &amp;quot;RealTimeIsUniversal&amp;quot;=dword:00000001  保存为 .reg 文件，双击导入系统注册表即可</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 安装镜像下载[备忘]</title>
+      <link>https://blog.zhangsy.me/2018/02/10/ubuntu-%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Sat, 10 Feb 2018 15:37:58 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/02/10/ubuntu-%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%A4%87%E5%BF%98/</guid>
+      <description>https://mirrors.aliyun.com/ubuntu-releases/ https://mirrors.ustc.edu.cn/ubuntu-releases/ https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/ https://mirrors.zju.edu.cn/ubuntu-releases/ https://ftp.sjtu.edu.cn/ubuntu-cd/ https://mirrors.neusoft.edu.cn/ubuntu-releases/ http://mirrors.163.com/ubuntu-releases/
+猪厂(163) 的镜像服务器是唯一不支持 Https 的……</description>
+    </item>
+    
+    <item>
+      <title>Linux SSH 提示 Permission denied (publickey). 但密码和密钥都是正确的?</title>
+      <link>https://blog.zhangsy.me/2018/01/26/linux-ssh-%E6%8F%90%E7%A4%BA-permission-denied-publickey.-%E4%BD%86%E5%AF%86%E7%A0%81%E5%92%8C%E5%AF%86%E9%92%A5%E9%83%BD%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84/</link>
+      <pubDate>Fri, 26 Jan 2018 14:47:48 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/01/26/linux-ssh-%E6%8F%90%E7%A4%BA-permission-denied-publickey.-%E4%BD%86%E5%AF%86%E7%A0%81%E5%92%8C%E5%AF%86%E9%92%A5%E9%83%BD%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84/</guid>
+      <description>先记上：chsh username -s zsh -&amp;gt; chsh username -s /bin/zsh 以后完善</description>
+    </item>
+    
+    <item>
+      <title>Zsh 显示当前主机和用户名</title>
+      <link>https://blog.zhangsy.me/2018/01/10/zsh-%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E4%B8%BB%E6%9C%BA%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</link>
+      <pubDate>Wed, 10 Jan 2018 11:44:25 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2018/01/10/zsh-%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E4%B8%BB%E6%9C%BA%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux 小计</title>
+      <link>https://blog.zhangsy.me/2017/12/17/linux-%E5%B0%8F%E8%AE%A1/</link>
+      <pubDate>Sun, 17 Dec 2017 15:25:39 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/12/17/linux-%E5%B0%8F%E8%AE%A1/</guid>
+      <description>systemctl 中可执行文件要使用绝对路径, 像 systemd 就要使用 /lib/systemd/systemd (不然会在 systemctl status $name 中报 Executable path is not absolute )
+查看进程的可执行文件路径可以在 /proc/$PID 中查看 exe 指向何处来确定</description>
+    </item>
+    
+    <item>
+      <title>Nginx 反代 Google 之类网站 也太简单了点[还有HTTPS]</title>
+      <link>https://blog.zhangsy.me/2017/12/09/nginx-%E5%8F%8D%E4%BB%A3-google-%E4%B9%8B%E7%B1%BB%E7%BD%91%E7%AB%99-%E4%B9%9F%E5%A4%AA%E7%AE%80%E5%8D%95%E4%BA%86%E7%82%B9%E8%BF%98%E6%9C%89https/</link>
+      <pubDate>Sat, 09 Dec 2017 12:38:53 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/12/09/nginx-%E5%8F%8D%E4%BB%A3-google-%E4%B9%8B%E7%B1%BB%E7%BD%91%E7%AB%99-%E4%B9%9F%E5%A4%AA%E7%AE%80%E5%8D%95%E4%BA%86%E7%82%B9%E8%BF%98%E6%9C%89https/</guid>
+      <description>&lt;p&gt;反代一个网站实在简单：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;apt install nginx&lt;/li&gt;
+&lt;li&gt;nano /etc/nginx/nginx.conf&lt;/li&gt;
+&lt;li&gt;nano /etc/nginx/google.conf&lt;/li&gt;
+&lt;li&gt;nginx -s reload&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;本文以 Debian/Ubuntu 为基础, CentOS 系大概同理,请提前准备好HTTPS证书,拿 certbot 申请个 Let&amp;rsquo;s Encrypt 就够了&lt;/p&gt;
+
+&lt;p&gt;博主很菜, 请多多指正, 多谢!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chrome 62 新功能！自带原生截图！</title>
+      <link>https://blog.zhangsy.me/2017/12/04/chrome-62-%E6%96%B0%E5%8A%9F%E8%83%BD%E8%87%AA%E5%B8%A6%E5%8E%9F%E7%94%9F%E6%88%AA%E5%9B%BE/</link>
+      <pubDate>Mon, 04 Dec 2017 23:06:46 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/12/04/chrome-62-%E6%96%B0%E5%8A%9F%E8%83%BD%E8%87%AA%E5%B8%A6%E5%8E%9F%E7%94%9F%E6%88%AA%E5%9B%BE/</guid>
+      <description>&lt;p&gt;介绍了 区域截图、全页面截图、可视范围截图、页面元素按块截图 四种方法，应该够用了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On the Internet, nobody knows you&#39;re a dog</title>
+      <link>https://blog.zhangsy.me/2017/12/01/on-the-internet-nobody-knows-youre-a-dog/</link>
+      <pubDate>Fri, 01 Dec 2017 14:23:00 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/12/01/on-the-internet-nobody-knows-youre-a-dog/</guid>
+      <description>{% cq %} 我看不一定 {% endcq %}
+Pic Backup</description>
+    </item>
+    
+    <item>
+      <title>冬天里的迷迷茫茫</title>
+      <link>https://blog.zhangsy.me/2017/11/30/%E5%86%AC%E5%A4%A9%E9%87%8C%E7%9A%84%E8%BF%B7%E8%BF%B7%E8%8C%AB%E8%8C%AB/</link>
+      <pubDate>Thu, 30 Nov 2017 15:47:39 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/11/30/%E5%86%AC%E5%A4%A9%E9%87%8C%E7%9A%84%E8%BF%B7%E8%BF%B7%E8%8C%AB%E8%8C%AB/</guid>
+      <description>&lt;p&gt;这篇日志写一写冬天里的慌张&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>适用于 Linux 新手的语言设置教程</title>
+      <link>https://blog.zhangsy.me/2017/11/28/%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E6%96%B0%E6%89%8B%E7%9A%84%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Tue, 28 Nov 2017 00:08:22 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/11/28/%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E6%96%B0%E6%89%8B%E7%9A%84%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B/</guid>
+      <description>$ sudo locale-gen &amp;quot;en_US.UTF-8&amp;quot; Generating locales... en_US.UTF-8... done Generation complete. $ sudo dpkg-reconfigure locales Generating locales... en_US.UTF-8... up-to-date Generation complete.  From : https://askubuntu.com/a/227513</description>
+    </item>
+    
+    <item>
+      <title>K2 常用网址 - 备忘</title>
+      <link>https://blog.zhangsy.me/2017/11/27/k2-%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80-%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Mon, 27 Nov 2017 21:24:52 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/11/27/k2-%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80-%E5%A4%87%E5%BF%98/</guid>
+      <description>Breed : https://breed.hackpascal.net Padavan : http://opt.cn2qq.com/padavan/ MD5 : http://opt.cn2qq.com/padavan/MD5.txt Forum : http://www.right.com.cn/forum/thread-161324-1-1.html PandoraBox : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/ SHA256 : http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/sha256sums Tomato-Phoenix : http://dl.tomato.org.cn/mt7620/V105/  </description>
+    </item>
+    
+    <item>
+      <title>说实话,这样的推广我也是蛮喜欢的</title>
+      <link>https://blog.zhangsy.me/2017/11/16/%E8%AF%B4%E5%AE%9E%E8%AF%9D%E8%BF%99%E6%A0%B7%E7%9A%84%E6%8E%A8%E5%B9%BF%E6%88%91%E4%B9%9F%E6%98%AF%E8%9B%AE%E5%96%9C%E6%AC%A2%E7%9A%84/</link>
+      <pubDate>Thu, 16 Nov 2017 14:09:33 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/11/16/%E8%AF%B4%E5%AE%9E%E8%AF%9D%E8%BF%99%E6%A0%B7%E7%9A%84%E6%8E%A8%E5%B9%BF%E6%88%91%E4%B9%9F%E6%98%AF%E8%9B%AE%E5%96%9C%E6%AC%A2%E7%9A%84/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;发到 V2 屡屡失败, 原因是站点在大多数节点的发主题帖都要验证手机, 而我并不想&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>笔记-如何在 textarea 内通过代码来换行？</title>
+      <link>https://blog.zhangsy.me/2017/11/14/%E7%AC%94%E8%AE%B0-%E5%A6%82%E4%BD%95%E5%9C%A8-textarea-%E5%86%85%E9%80%9A%E8%BF%87%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%8D%A2%E8%A1%8C/</link>
+      <pubDate>Tue, 14 Nov 2017 23:40:59 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/11/14/%E7%AC%94%E8%AE%B0-%E5%A6%82%E4%BD%95%E5%9C%A8-textarea-%E5%86%85%E9%80%9A%E8%BF%87%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%8D%A2%E8%A1%8C/</guid>
+      <description>快使用 &amp;amp;#13;&amp;amp;#10 !</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 为微软拼音添加自定义短语 | 时间-变量</title>
+      <link>https://blog.zhangsy.me/2017/10/25/windows-10-%E4%B8%BA%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%AD%E8%AF%AD-%E6%97%B6%E9%97%B4-%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Wed, 25 Oct 2017 21:30:57 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/10/25/windows-10-%E4%B8%BA%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%AD%E8%AF%AD-%E6%97%B6%E9%97%B4-%E5%8F%98%E9%87%8F/</guid>
+      <description>&lt;p&gt;在 Windows10 的 2017秋季创意者更新 中，微软去掉了从前人性的短语：&lt;code&gt;&#39;sj&#39;:&#39;2017-10-25 13:28:22 CST&#39;&lt;/code&gt;，取而代之的居然是：&lt;code&gt;&#39;sj&#39;:&#39;13点28分&#39;&lt;/code&gt; ！&lt;/p&gt;
+
+&lt;p&gt;简单贴一下解决办法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;设置 -&amp;gt; 词库和自学习 -&amp;gt; 添加新的或编辑现有的用户自定义短语 -&amp;gt; 添加 -&amp;gt; [拼音：sj, 短语：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%]
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 使用 iptables 进行 Shadowsocks 流量统计</title>
+      <link>https://blog.zhangsy.me/2017/10/15/linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sun, 15 Oct 2017 13:07:21 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/10/15/linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/</guid>
+      <description>&lt;p&gt;通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables&lt;/p&gt;
+
+&lt;p&gt;通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量&lt;/p&gt;
+
+&lt;p&gt;Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的&lt;/p&gt;
+
+&lt;p&gt;只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windwos 软故障初筛</title>
+      <link>https://blog.zhangsy.me/2017/09/21/windwos-%E8%BD%AF%E6%95%85%E9%9A%9C%E5%88%9D%E7%AD%9B/</link>
+      <pubDate>Thu, 21 Sep 2017 21:44:34 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/09/21/windwos-%E8%BD%AF%E6%95%85%E9%9A%9C%E5%88%9D%E7%AD%9B/</guid>
+      <description>&lt;p&gt;震惊吧？没想到我还会写这种无营养的东西&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windwos 10 开机黑屏解决方案</title>
+      <link>https://blog.zhangsy.me/2017/09/05/windwos-10-%E5%BC%80%E6%9C%BA%E9%BB%91%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 05 Sep 2017 20:11:56 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/09/05/windwos-10-%E5%BC%80%E6%9C%BA%E9%BB%91%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description> 方案来自网络，作者未知，进行了重写 与配图[配图既麻烦又无必要，暂时不上]
+  按下Ctrl+Shift+ESC组合键，打开任务管理器[配图一] [若已经开启，请跳过这一步骤]点击左下角的 详细信息 ，以显示全部内容[配图四] 点击窗口左上角的 文件 -&amp;gt; 运行新任务[配图三] 在新打开的 新建任务 中输入 explorer.exe ，注意不要输错[配图四] 应该已经能够正常显示桌面   仅为临时方案，且原因未知，若您知道这是为什么，请告诉我，谢谢您
+ </description>
+    </item>
+    
+    <item>
+      <title>SSD 数据恢复 —— 来自 SanDisk 的推荐</title>
+      <link>https://blog.zhangsy.me/2017/08/31/ssd-%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D-%E6%9D%A5%E8%87%AA-sandisk-%E7%9A%84%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Thu, 31 Aug 2017 22:49:39 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/31/ssd-%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D-%E6%9D%A5%E8%87%AA-sandisk-%E7%9A%84%E6%8E%A8%E8%8D%90/</guid>
+      <description>简而言之，
+对于功能正常的固态硬盘：推荐使用 Ontrack EasyRecovery（译作“易恢复”） 或者 FILERECOVERY 出品的程序
+对于已经出现故障的固态硬盘：您需要将其送往数据恢复公司。他们会尝试为您恢复里面的数据。对此，SanDisk 推荐 Kroll Ontrack 或者 DriveSavers. 这些公司专注于 SanDisk产品。
+Ontrack EasyRecovery：http://www.krollontrack.com/data-recovery/recovery-software/ FILERECOVERY：http://www.lc-tech.com/pc/filerecovery/
+Kroll Ontrack：http://www.krollontrack.com/ps211-data-recovery/ DriveSavers：http://www.drivesaversdatarecovery.com/welcome/welcome-sandisk-customers/</description>
+    </item>
+    
+    <item>
+      <title>真是个万丈高 qiang 拔地起的时代</title>
+      <link>https://blog.zhangsy.me/2017/08/30/%E7%9C%9F%E6%98%AF%E4%B8%AA%E4%B8%87%E4%B8%88%E9%AB%98-qiang-%E6%8B%94%E5%9C%B0%E8%B5%B7%E7%9A%84%E6%97%B6%E4%BB%A3/</link>
+      <pubDate>Wed, 30 Aug 2017 22:51:12 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/30/%E7%9C%9F%E6%98%AF%E4%B8%AA%E4%B8%87%E4%B8%88%E9%AB%98-qiang-%E6%8B%94%E5%9C%B0%E8%B5%B7%E7%9A%84%E6%97%B6%E4%BB%A3/</guid>
+      <description>在淘宝众筹发现一个很有趣的产品，在手机端复制链接发进了微信群里，群友说打不开，我这才猛地想起来淘宝系的链接都无法在微信内打开，得用淘口令分享！可我是从浏览器里看到的网址，上哪找淘口令去？还好淘宝开放了 API ，又有善人写出网页端的实现，就是每天只有100次的公用有点可怜了，有能力了我写个 2^8 次的网页端吧。
+产品：https://izhongchou.taobao.com/dreamdetail.htm?id=20066827 淘口令生成：http://tool.taokemiao.com/
+ 给大老爷们的(对微信用户友好的)那款产品的淘口令：复制这条信息，打开「手机淘宝」领券下单 《OeVF0WEsAqu《
+（其实也有别的次数多点的，我看这个页面比较好看）
+ </description>
+    </item>
+    
+    <item>
+      <title>Nano 中，将默认的 [TAB] -&gt; 	 换为 [TAB] -&gt; &#39; &#39;*4</title>
+      <link>https://blog.zhangsy.me/2017/08/29/nano-%E4%B8%AD%E5%B0%86%E9%BB%98%E8%AE%A4%E7%9A%84-tab-%E6%8D%A2%E4%B8%BA-tab-4/</link>
+      <pubDate>Tue, 29 Aug 2017 12:15:19 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/29/nano-%E4%B8%AD%E5%B0%86%E9%BB%98%E8%AE%A4%E7%9A%84-tab-%E6%8D%A2%E4%B8%BA-tab-4/</guid>
+      <description>If you use nano with a language like python (as in your example) it&amp;rsquo;s also a good idea to convert tabs to spaces.
+Edit your ~/.nanorc file (or create it) and add:
+set tabsize 4 set tabstospaces  If you already got a file with tabs and want to convert them to spaces i recommend the expandcommand (shell):
+expand -4 input.py &amp;gt; output.py  From: How to make the tab character 4 spaces instead of 8 spaces in nano?</description>
+    </item>
+    
+    <item>
+      <title>请停用 No-IP 的 DDNS 产品，否则有密码泄露的风险</title>
+      <link>https://blog.zhangsy.me/2017/08/21/%E8%AF%B7%E5%81%9C%E7%94%A8-no-ip-%E7%9A%84-ddns-%E4%BA%A7%E5%93%81%E5%90%A6%E5%88%99%E6%9C%89%E5%AF%86%E7%A0%81%E6%B3%84%E9%9C%B2%E7%9A%84%E9%A3%8E%E9%99%A9/</link>
+      <pubDate>Mon, 21 Aug 2017 13:55:15 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/21/%E8%AF%B7%E5%81%9C%E7%94%A8-no-ip-%E7%9A%84-ddns-%E4%BA%A7%E5%93%81%E5%90%A6%E5%88%99%E6%9C%89%E5%AF%86%E7%A0%81%E6%B3%84%E9%9C%B2%E7%9A%84%E9%A3%8E%E9%99%A9/</guid>
+      <description>就像标题中提及的那样，在一次次的配置之失败后，我打开了 noip2 (V 2.1.9) 的 调试模式(-d) ，猛然发现他们仅将用户名与密码 Base64 编码后就传送至服务器，关键是他们使用了 http 协议，途径的所有路由皆能获取你的密码，如果您的所在地不是美国，那还需要经过国际出口
+上图中，我对敏感信息进行了遮盖
+我会继续寻找安全免费的 DDNS 服务，但我自己有域名，所以我大概只会贴出来试用中比较好的，并不会实际使用
+ 我会使用我自己的域名和安全的 NS 服务商提供的 API，如果条件允许，请你也这么做
+  ip1.dynupdate.no-ip.com 这是 No-IP 搭建的IP回显服务器，自己访问一下就知道是什么意思了 https://api.ipify.org 这个也是，而且是专门做这个的 官网
+ </description>
+    </item>
+    
+    <item>
+      <title>Base64Encoding 演示代码[JavaScript]</title>
+      <link>https://blog.zhangsy.me/2017/08/20/base64encoding-%E6%BC%94%E7%A4%BA%E4%BB%A3%E7%A0%81javascript/</link>
+      <pubDate>Sun, 20 Aug 2017 17:11:46 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/20/base64encoding-%E6%BC%94%E7%A4%BA%E4%BB%A3%E7%A0%81javascript/</guid>
+      <description>很简单的代码，用来做算法示范再好不过了，来自 一只猿
+function Base64Encoding(input) { var keyStr = &amp;quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=&amp;quot;; var output = &amp;quot;&amp;quot;; var chr1, chr2, chr3, enc1, enc2, enc3, enc4; var i = 0; input = utf8_encode(input); while (i &amp;lt; input.length) { chr1 = input.charCodeAt(i++); chr2 = input.charCodeAt(i++); chr3 = input.charCodeAt(i++); enc1 = chr1 &amp;gt;&amp;gt; 2; enc2 = ((chr1 &amp;amp; 3) &amp;lt;&amp;lt; 4) | (chr2 &amp;gt;&amp;gt; 4); enc3 = ((chr2 &amp;amp; 15) &amp;lt;&amp;lt; 2) | (chr3 &amp;gt;&amp;gt; 6); enc4 = chr3 &amp;amp; 63; if (isNaN(chr2)) { enc3 = enc4 = 64; } else if (isNaN(chr3)) { enc4 = 64; } output = output + keyStr.</description>
+    </item>
+    
+    <item>
+      <title>K2 A2 自定义灯光</title>
+      <link>https://blog.zhangsy.me/2017/08/15/k2-a2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89/</link>
+      <pubDate>Tue, 15 Aug 2017 11:16:35 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/15/k2-a2-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%81%AF%E5%85%89/</guid>
+      <description>Usage : mtk_gpio -d &amp;lt;type&amp;gt; &amp;lt;bool&amp;gt; type: Red : 8 Blue	: 10 Yellow	: 11 bool:	Open:	: 1 Close	: 0 Example	: mtk_gpio -d 8 1 &amp;amp;&amp;amp; mtk_gpio -d 11 1 /*Orange*/  </description>
+    </item>
+    
+    <item>
+      <title>Debian/Ubuntu 单独安装 ab 命令</title>
+      <link>https://blog.zhangsy.me/2017/08/13/debian/ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 13 Aug 2017 14:39:18 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/13/debian/ubuntu-%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85-ab-%E5%91%BD%E4%BB%A4/</guid>
+      <description>sudo apt-get install apache2-utils  </description>
+    </item>
+    
+    <item>
+      <title>大学生活记录</title>
+      <link>https://blog.zhangsy.me/2017/08/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 11 Aug 2017 16:10:30 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/11/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>纪录</title>
+      <link>https://blog.zhangsy.me/2017/08/11/%E7%BA%AA%E5%BD%95/</link>
+      <pubDate>Fri, 11 Aug 2017 16:03:29 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/08/11/%E7%BA%AA%E5%BD%95/</guid>
+      <description>早就想过，当我到了下一段时间里，我该如何对待往事？
+我选择将他们记录下来，以便纪念，谁对谁错，也都留到以后吧</description>
+    </item>
+    
+    <item>
+      <title>怎样把收藏的歌曲信息从 QQ 音乐转到网易云音乐？ | QQ 音乐歌单备份/导出</title>
+      <link>https://blog.zhangsy.me/2017/07/21/%E6%80%8E%E6%A0%B7%E6%8A%8A%E6%94%B6%E8%97%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%E4%BB%8E-qq-%E9%9F%B3%E4%B9%90%E8%BD%AC%E5%88%B0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-qq-%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E5%A4%87%E4%BB%BD/%E5%AF%BC%E5%87%BA/</link>
+      <pubDate>Fri, 21 Jul 2017 14:38:08 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/21/%E6%80%8E%E6%A0%B7%E6%8A%8A%E6%94%B6%E8%97%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%E4%BB%8E-qq-%E9%9F%B3%E4%B9%90%E8%BD%AC%E5%88%B0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-qq-%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E5%A4%87%E4%BB%BD/%E5%AF%BC%E5%87%BA/</guid>
+      <description>昨天帮老妈（其实是我想）把常用音乐软件从 QQ 音乐转到网易云音乐，但是老妈建了好多个歌单，又有好多是收费音乐，没办法用下载 -&amp;gt; 识别的方式收藏，一番搜寻过后找到了这个，他可以帮你把QQ音乐的所有歌单转制为 酷我播放列表格式 ，进而在网易云里一键导入
+ 上面的链接有我自作主张添加的小尾巴哦，是想帮助那个同学识别来源啦，不喜欢的话，可以用这个没有识别信息的 话说没有 https 诶
+ 就这样复制一下，粘到转换工具里就好了
+网易云怎么导入就不教了吧? 登陆 后打开云导入界面，就很简单了
+可是人家想要自己搭一个可找到仓库地址也不会架，就很气</description>
+    </item>
+    
+    <item>
+      <title>Kindle 邮箱支持哪些格式？</title>
+      <link>https://blog.zhangsy.me/2017/07/13/kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Thu, 13 Jul 2017 02:01:14 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/13/kindle-%E9%82%AE%E7%AE%B1%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E6%A0%BC%E5%BC%8F/</guid>
+      <description>Kindle个人文档服务与以下设备兼容：
+ Fire平板电脑 Kindle电子书阅读器 Kindle iPhone/iPad/iPod touch阅读软件 Kindle安卓阅读软件  通过将文档发送至您的〖发送至Kindle〗电子邮箱，您可将其发送至兼容设备。〖发送至Kindle〗电子邮箱是系统在您注册兼容设备时为您分配的唯一电子邮箱。有关〖发送至Kindle〗电子邮箱的详细信息，请参阅使用您的〖发送至Kindle〗电子邮箱。
+Kindle个人文档服务支持以下文件类型：
+Kindle格式（.MOBI、.AZW） Microsoft Word（.DOC、.DOCX） HTML（.HTML、.HTM） RTF (.RTF) Text (.TXT) (Kindle X 咪咕电子书阅读器不支持) JPEG（.JPEG、.JPG） GIF (.GIF) PNG (.PNG) BMP (.BMP)
+ PDF (.PDF)  Kindle个人文档服务 不支持 以下文件类型：
+Electronic Publication (.EPUB)  重要： 建议您在发送文件之前将文件名改成英文（包括ZIP压缩文件和文件夹中的文件名）。我们可能会限制通过Kindle个人文档服务发送或存储的文档数量。详情请参阅Kindle个人文档服务使用条件 。
+来自 Kindle个人文档服务 , 缓存时间：2017-07-13
+PS &amp;ldquo;- [x] &amp;ldquo;（复选框列表） 好像不能正常渲染，先这样吧</description>
+    </item>
+    
+    <item>
+      <title>C-小记-参数的传入</title>
+      <link>https://blog.zhangsy.me/2017/07/10/c-%E5%B0%8F%E8%AE%B0-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/</link>
+      <pubDate>Mon, 10 Jul 2017 17:17:56 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/10/c-%E5%B0%8F%E8%AE%B0-%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E5%85%A5/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt; int main( int argc, char * argv [] ) { printf( &amp;quot;argc = %d\n&amp;quot;, argc ); for( int i = 0; i &amp;lt; argc; ++i ) { printf( &amp;quot;argv[ %d ] = %s\n&amp;quot;, i, argv[ i ] ); } }  </description>
+    </item>
+    
+    <item>
+      <title>[视频转载]HowFun / 我們畢典之後要做什麼</title>
+      <link>https://blog.zhangsy.me/2017/07/08/%E8%A7%86%E9%A2%91%E8%BD%AC%E8%BD%BDhowfun-/-%E6%88%91%E5%80%91%E7%95%A2%E5%85%B8%E4%B9%8B%E5%BE%8C%E8%A6%81%E5%81%9A%E4%BB%80%E9%BA%BC/</link>
+      <pubDate>Sat, 08 Jul 2017 19:20:54 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/08/%E8%A7%86%E9%A2%91%E8%BD%AC%E8%BD%BDhowfun-/-%E6%88%91%E5%80%91%E7%95%A2%E5%85%B8%E4%B9%8B%E5%BE%8C%E8%A6%81%E5%81%9A%E4%BB%80%E9%BA%BC/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/0u7Nqr8.png&#34; alt=&#34;封面&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>鞋带·舞者</title>
+      <link>https://blog.zhangsy.me/2017/07/08/%E9%9E%8B%E5%B8%A6%E8%88%9E%E8%80%85/</link>
+      <pubDate>Sat, 08 Jul 2017 10:47:47 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/07/08/%E9%9E%8B%E5%B8%A6%E8%88%9E%E8%80%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>那些个平民化的云</title>
+      <link>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</link>
+      <pubDate>Sun, 11 Jun 2017 04:14:28 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/06/11/%E9%82%A3%E4%BA%9B%E4%B8%AA%E5%B9%B3%E6%B0%91%E5%8C%96%E7%9A%84%E4%BA%91/</guid>
+      <description>共享个东西总是那么难，还是出墙吧，至少不用上交 ID Card  Syncthing G Suite OneDrive rixCloud iCloud Dropbox Google Drive 坚果云  </description>
+    </item>
+    
+    <item>
+      <title>站点布局调整中</title>
+      <link>https://blog.zhangsy.me/2017/06/05/%E7%AB%99%E7%82%B9%E5%B8%83%E5%B1%80%E8%B0%83%E6%95%B4%E4%B8%AD/</link>
+      <pubDate>Mon, 05 Jun 2017 22:09:28 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/06/05/%E7%AB%99%E7%82%B9%E5%B8%83%E5%B1%80%E8%B0%83%E6%95%B4%E4%B8%AD/</guid>
+      <description>如题，这两天会进行主题的更换与微小调整 更换主题过后，将会恢复长久以来停止的更新
+谢谢各位的关注</description>
+    </item>
+    
+    <item>
+      <title>如何有效地提问 By王掌柜</title>
+      <link>https://blog.zhangsy.me/2017/04/06/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E5%9C%B0%E6%8F%90%E9%97%AE-by%E7%8E%8B%E6%8E%8C%E6%9F%9C/</link>
+      <pubDate>Thu, 06 Apr 2017 20:48:24 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/04/06/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E5%9C%B0%E6%8F%90%E9%97%AE-by%E7%8E%8B%E6%8E%8C%E6%9F%9C/</guid>
+      <description> 当你不在乎我的时间时，我很生气 一个比较郁闷的事实是，大多数人不擅长提问，更不懂网络时代的社交礼仪。
+常碰到网友留言：你好，在吗？
+这是毫无价值的沟通开场白，没有任何积极意义。对方的时间很宝贵，你要懂得尊重他人的时间财富。你永远不要在微信上说“你好，在吗”，你应当直接说出你要沟通的事情。
+如果你是有教养的人，你当然可以保持这种开场白习惯，但建议在“你好，在吗”之后，直接有事说事，不要等着对方回应“在”后才发送真正要沟通的内容。
+网络社交场景，不是去别人家门口敲门，问一句“在不在”。你在微信上发出去的消息，对方是可以收到的。
+只有愿意或者不愿意回复的消息，没有收不到的消息。
+至于如何跟别人提问，学问就更大了。我在《谁动了我的网络资产》图书里专门写了一个章节，来阐释有效提问的重要性。希望能让读者有微小的启发，改变过去不适宜的提问习惯。
+可能吧的阿禅 Jason Ng 写了篇公众号文章，标题是：真的，再这样提问就没人理你了！
+阿禅总结得非常到位，精辟，值得所有人花五分钟时间认真研读一遍。
+本文从王掌柜（极客电台播主）的博客上转载，如有侵权，还请与我联系（邮箱见左侧）.
+别不把别人的时间当时间 </description>
+    </item>
+    
+    <item>
+      <title>20170401- T-SQL 语句实训作业</title>
+      <link>https://blog.zhangsy.me/2017/04/01/20170401-t-sql-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Sat, 01 Apr 2017 00:30:46 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/04/01/20170401-t-sql-%E8%AF%AD%E5%8F%A5%E5%AE%9E%E8%AE%AD%E4%BD%9C%E4%B8%9A/</guid>
+      <description>&lt;p&gt;实验目标: 进一步熟悉 T-SQL 语句
+实验人: ZhangSiyang
+实验内容: 完成老师给出十四道题，详细见下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>上山下乡</title>
+      <link>https://blog.zhangsy.me/2017/03/24/%E4%B8%8A%E5%B1%B1%E4%B8%8B%E4%B9%A1/</link>
+      <pubDate>Fri, 24 Mar 2017 20:37:36 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/24/%E4%B8%8A%E5%B1%B1%E4%B8%8B%E4%B9%A1/</guid>
+      <description>我进山了。 上山很累，山路很窄。路边有被丢弃的枝杈，很细，不能做拐杖。 电波衰减得很厉害，离保定才不过二三十里，就没有信号了，即使是2G。 难以置信的，有一块开垦了的农田，在近山顶时。 下山了，旁边没有护栏。 有羊羔与狗屎，但没有WiFi。 一个地方大户在门前修了水泥路，停了一辆老人电瓶车【四轮】 那个黑洞好像是地窖。 哦！到大路了！ 回来的路上，我看着旁边的电线杆.  </description>
+    </item>
+    
+    <item>
+      <title>20170321-简单 T-SQL 语句练习</title>
+      <link>https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Wed, 22 Mar 2017 20:03:06 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/22/20170321-%E7%AE%80%E5%8D%95-t-sql-%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/</guid>
+      <description>&lt;p&gt;本篇文章记录 20170321 交的 SQL 语句实训报告&lt;/p&gt;
+
+&lt;p&gt;实验目标: 掌握 T-SQL 的基本用法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20170305-今天的C#实验报告</title>
+      <link>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Sun, 05 Mar 2017 19:34:52 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/05/20170305-%E4%BB%8A%E5%A4%A9%E7%9A%84c#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</guid>
+      <description>&lt;p&gt;实验目标: 掌握C#的基本用法
+实验人: ZhangSiyang
+实验内容: [C#特性演示,C#实现的冒泡排序,矩形每行成员及行内最大值的输出]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[破事水]机房个性化工具</title>
+      <link>https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 04 Mar 2017 00:22:57 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/03/04/%E7%A0%B4%E4%BA%8B%E6%B0%B4%E6%9C%BA%E6%88%BF%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B7%A5%E5%85%B7/</guid>
+      <description>忽然发现，这是这一周一来唯一一篇博文。
+@echo off echo 当前盘符：%~d0 ::0. 显示文件后缀名 reg add &amp;quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&amp;quot; /v &amp;quot;HideFileExt&amp;quot; /t REG_DWORD /d 00000000 ::1. 壁纸 set regadd=reg add &amp;quot;HKEY_CURRENT_USER\Control Panel\Desktop %regadd%&amp;quot; /v TileWallpaper /d &amp;quot;0&amp;quot; /f ::0为居中，1为平铺 %regadd%&amp;quot; /v Wallpaper /d &amp;quot;%~d0\Mine\壁纸\wallhaven-312106.jpg&amp;quot; /f %regadd%&amp;quot; /v WallpaperStyle /d &amp;quot;10&amp;quot; /f ::WallpaperStyle6为适应，2为拉伸，10为填充 start RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters ::更换完成 ::2. Hosts xcopy &amp;quot;%~d0\Mine\GFW\hosts&amp;quot; &amp;quot;%~dp0&amp;quot; xcopy &amp;quot;%~dp0\hosts&amp;quot; &amp;quot;C:\Windows\System32\drivers\etc&amp;quot; ipconfig /flushdns ::3. 常用文件拷贝 xcopy %~dp0\ZhangSiyang\* /E D:\ZhangSiyang\ /Y xcopy %~dp0\stu\* /E D:\stu\ /Y echo 继续？ pause ::4.</description>
+    </item>
+    
+    <item>
+      <title>JDK 的安装与配置【For Windows】</title>
+      <link>https://blog.zhangsy.me/2017/02/21/jdk-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AEfor-windows/</link>
+      <pubDate>Tue, 21 Feb 2017 23:15:17 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/21/jdk-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AEfor-windows/</guid>
+      <description>&lt;p&gt;总是被叫走装环境，干脆写篇博客算了
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;jdk-的安装&#34;&gt;JDK 的安装&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;下载 JDK 安装包&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;我本人推荐从官网下载 JDK ，不要在什么 百度、360 上面下载
+&lt;code&gt;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;选择合适你的版本，就像我，我选择的就是下图中最后那一个【阅读协议后，点击接受协议】&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你好，世界！</title>
+      <link>https://blog.zhangsy.me/2017/02/20/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Mon, 20 Feb 2017 21:54:23 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/20/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+      <description>&lt;p&gt;今天是开学第一天，昨晚看过课表之后竟有种 二上大一上 的感觉，上午高数讲了好多图形相关的，感觉蛮适合我这种学渣，英语依然是 LiuYuran 老师，很欢快嘛。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一种更棒的树莓派换源思路</title>
+      <link>https://blog.zhangsy.me/2017/02/16/%E4%B8%80%E7%A7%8D%E6%9B%B4%E6%A3%92%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Thu, 16 Feb 2017 19:55:02 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/16/%E4%B8%80%E7%A7%8D%E6%9B%B4%E6%A3%92%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90%E6%80%9D%E8%B7%AF/</guid>
+      <description>&lt;p&gt;最近两天情绪很失落，具体原因就别说了，人在这种时刻总爱干点别的事情去转移注意力，这次我选择了玩我的树莓派。&lt;/p&gt;
+
+&lt;p&gt;事情就是那么赶巧，怂人就好敲个 update 这种时刻我爱钻研的劲儿上来了，明明我换过更新源的，怎么还有 raspberrypi.org 的字样呢？更别提那论字节数的速度了，想想都知道我 ?? 在国际出口又没干什么好事儿。别的不多说了，直接贴配置文件吧：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>怎样将文件上传到 Github</title>
+      <link>https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-github/</link>
+      <pubDate>Thu, 09 Feb 2017 00:24:13 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/09/%E6%80%8E%E6%A0%B7%E5%B0%86%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0-github/</guid>
+      <description>&lt;p&gt;把想要向大家分享的文件上传到 Github 似乎是一个比较不错的选择，下载速度快，易于分享，棒棒的！可是我笨笨的，老是容易忘，所以干脆写下来分享给大家和自己！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>我在树莓派上都做了些什么</title>
+      <link>https://blog.zhangsy.me/2017/02/07/%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Tue, 07 Feb 2017 13:54:35 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/07/%E6%88%91%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E9%83%BD%E5%81%9A%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</guid>
+      <description> DDNS Vsftp Hexo - Node.js NTP Nginx DNS &amp;amp;&amp;amp; GFW Hosts  </description>
+    </item>
+    
+    <item>
+      <title>红米Note3 强刷及强制解除 Bootload 锁教程</title>
+      <link>https://blog.zhangsy.me/2017/02/03/%E7%BA%A2%E7%B1%B3note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-bootload-%E9%94%81%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 03 Feb 2017 20:50:53 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/02/03/%E7%BA%A2%E7%B1%B3note3-%E5%BC%BA%E5%88%B7%E5%8F%8A%E5%BC%BA%E5%88%B6%E8%A7%A3%E9%99%A4-bootload-%E9%94%81%E6%95%99%E7%A8%8B/</guid>
+      <description>昨天【2017-02-02】想给手机从头到尾重新做一遍系统，结果一不小心把手机 BL 锁上了，手机系统又已经清空无法用官方工具解锁，多亏了下面那篇译文才得以重新解开 BL 锁。这篇文章就是把那篇译文整理之后的作品。
+ 闲话：一直以来都比较喜欢小米公司，觉得很合我的心，年轻、爱发烧，但最近我发现去官网找个文件都找不到，“产能不足”也很严重。是小米急躁了吗？
+ 进入9008强刷模式  解压附件&amp;rdquo;fastboot_edl.7z&amp;rdquo;并进入解压出的文件夹，你应该能看到几个文件 重启你的手机到 fastboot 模式（按住“音量下”与“电源键”），将之连接电脑 双击文件夹中的 edl.cmd 手机震动之后，就代表已经从 900E 模式暂时跳转到 9008 模式了，手机会亮起红色呼吸灯，具体可进入设备管理器确认 进入设备管理器，安装附件中的高通驱动  强行解锁bootloader  将线刷前的手机系统开启 开发者模式 并开启 OEM解锁模式 用 Unlocked_Bootloader.zip 中的 emmc_appsboot.mbn 替换线刷包中的对应文件 在9008模式下用文末提供的刷机工具刷入经替换之后的线刷包【建议选择 清除所有数据 】。刷入之后进入 Fastboot 模式，在电脑端执行以下命令即可解除BL锁
+  fastboot oem unlock-go fastboot oem device-info  第二条命令提示“Device unlocked：ture”【如下图】代表成功解锁，机器会震动后进入系统 若解锁失败，机器震动后将会闪两次 MI 字界面 之后黑屏，失败原因大多是线刷前系统未开启开发者模式-未勾选OEM解锁模式选项
+所需文件  *Name:*【刷机工具】MiPhone20151028.exe Size:26.0 MB (27,305,815 字节) CRC32: 47962DD3 MD5: 64A2B6F5620DB2BF249DAC0CE2017428 SHA-1: 7FA20958DA2A4061DAFA5A007D3575895927EED7 Download:http://121.22.250.4/bigota.d.miui.com/tools/MiPhone20151028.exe
+*Name:*【高通驱动】Qualcomm_Driver.7z Download:https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

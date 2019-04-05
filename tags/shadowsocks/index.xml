@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shadowsocks on Siyang&#39;s Blog</title>
+    <link>https://blog.zhangsy.me/tags/shadowsocks/</link>
+    <description>Recent content in Shadowsocks on Siyang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 13:07:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zhangsy.me/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 使用 iptables 进行 Shadowsocks 流量统计</title>
+      <link>https://blog.zhangsy.me/2017/10/15/linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sun, 15 Oct 2017 13:07:21 +0000</pubDate>
+      
+      <guid>https://blog.zhangsy.me/2017/10/15/linux-%E4%BD%BF%E7%94%A8-iptables-%E8%BF%9B%E8%A1%8C-shadowsocks-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/</guid>
+      <description>&lt;p&gt;通过ifconfig只能看到所有的流量总和,如果想实时统计某个端口上用了多少流量，最简单的方法便是通过iptables&lt;/p&gt;
+
+&lt;p&gt;通过这个方法也可以去统计 Shadowsocks 的每个账号用了多少流量&lt;/p&gt;
+
+&lt;p&gt;Shadowsocks 多用户版为每个用户分配了不同的服务器连接端口号，服务器对该用户的所有流量均是通过这个端口发出的&lt;/p&gt;
+
+&lt;p&gt;只需要以这个端口为源端口，统计OUTPUT流量，就可以精确统计 Shadowsocks 的单用户流量&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
